@@ -1,0 +1,49 @@
+.navigation {
+  position: fixed;
+  left: 40px;
+  top: 30%;
+  transform: translateY(-20%) translateX(-100px);
+  background-color: #092542;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 50px;
+  opacity: 0;
+  animation: fade-nav-in 800ms ease-in-out 1 1200ms forwards;
+  z-index: 666666666;
+}
+
+@keyframes fade-nav-in {
+  
+    to {
+      transform: translateY(-20%) translateX(-29px);
+      opacity: 1;
+    }
+
+}
+.navigation a {
+  position: relative;
+  background-color: rgba(103, 95, 95, 0.204);
+  border-radius: 50%;
+}
+
+.iconn {
+  font-size: 25px;
+  border-radius: 50%;
+  padding: 5px;
+  transition: fill 0.1s ease;
+  fill: rgb(249, 250, 250);
+}
+
+
+
+.navigation .iconn:hover {
+  fill: #8976f7;
+  border: 2px solid #8976f7;
+}
+
+
+

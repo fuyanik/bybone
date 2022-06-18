@@ -1,0 +1,111 @@
+#cards{
+   
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    background-color: #F7F9FC;
+    align-items: center;
+    justify-content: space-evenly;
+
+   
+}
+
+.cards-main{
+    right: 2px;
+    position: relative;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+.cardo{
+    
+    z-index: 55;
+ border-radius: 15px;
+display: flex;
+flex-direction: column;
+width: 300px;
+height: 390px;
+background-color: white;
+cursor: pointer;
+
+ box-shadow: rgb(0 57 132 / 10%) 0px 4px 8px 0px;
+box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+justify-content: start;
+
+}
+
+
+
+
+
+
+.cardo span {
+    align-self: center;
+    margin-top: -48px;
+    color: rgba(15, 17, 15, 0.144);
+   
+}
+
+
+.cards-logo{
+    top: 25px;
+    position: relative;
+    align-self: center;
+    width: 120px;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.cards-logo2{
+    right: 5px;
+    top: 25px;
+    position: relative;
+    align-self: center;
+    width: 130px;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+    
+.cards-logo3{
+    top: 25px;
+    position: relative;
+    align-self: center;
+    width: 110px;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+    
+    
+  
+ 
+
+.cards p {
+    color: black ;
+    font-weight: 500;
+    margin-left: 20px;
+    max-width:250px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.cards-icon{
+    right: 25px;
+    position: relative;
+    cursor: pointer;
+    font-size: 35px
+}

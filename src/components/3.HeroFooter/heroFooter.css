@@ -1,0 +1,303 @@
+.HeroFooter {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  animation: HeroFooter-anim 700ms ease 1 2000ms forwards;
+  height: 0;
+}
+@keyframes HeroFooter-anim {
+  
+  to {
+    height: auto;
+  }
+}
+
+.app-footer-left {
+    width: 1px;
+    height: 25vh;
+    background-color: #8976f7;
+ 
+
+     animation: app-footer-one-anim 700ms ease 1 2350ms forwards;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  @keyframes app-footer-one-anim {
+    
+    to {
+      visibility: visible;
+      width: 45%;
+  
+    }
+  
+  }
+   
+  .laptop{
+    overflow: hidden;
+    
+    height: auto;
+    position: relative;
+    right: 5px;
+    animation: laptopAnimate 750ms ease 1 2950ms forwards;
+    visibility: hidden;
+  }
+
+  
+@keyframes laptopAnimate {
+  from {
+   
+    width: 5px;
+  }
+
+  to {
+   
+    visibility: visible;
+    width: 270px;
+  }
+}
+
+
+.app-footer-left-text{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   visibility: hidden;
+  animation: textAnimate 750ms ease 1 3600ms forwards;
+}
+
+@keyframes textAnimate {
+  from {
+   top: 25px;
+  opacity: 0;
+  }
+
+  to {
+    top: 0px;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+  .app-footer-left h2{
+    position: relative;
+    left: 17px;
+    bottom: 12px;
+    line-height: 48px;
+    font-family: "Poppins", sans-serif;
+    max-width: 200px;
+    font-size: 42px;
+    font-weight: 400;
+    color: #fefefe;
+    margin-top: -1px;
+
+  }
+
+  
+
+
+
+
+
+/* EXPLORE NOW BUTTON */
+
+ .app-footer-left-text button {
+    margin-top: -70px;
+    margin-left: -49px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   align-self: center;
+   }
+   
+   .app-footer-left-text button.learn-more {
+    width: 12rem;
+    height: auto;
+   
+   }
+   
+   .app-footer-left-text button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+   
+    border-radius: 1.625rem;
+    border: 1px solid #ddcdcd08;
+   }
+   
+   .app-footer-left-text button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   .app-footer-left-text button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    top: -1px;
+    left: 6px;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   .app-footer-left-text button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   .app-footer-left-text  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 20px;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: rgba(255, 255, 255, 0.711);
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-align: center;
+    text-transform:none;
+    font-family: "Poppins", sans-serif;
+
+   }
+   
+   .app-footer-left-text button:hover .circle {
+    width: 100%;
+    background: #EC787B;
+   }
+   
+   .app-footer-left-text button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   .app-footer-left-text button:hover .button-text {
+    color: #fff;
+   }
+   
+ 
+  
+
+   .app-footer-right {
+    width: 55%;
+    height: 25vh;
+    background-color: white;
+    display: flex;
+   justify-content: space-evenly;
+    align-items: center;
+   
+  }
+
+  .app-footer-right-items{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: space-around;
+    max-width: 300px;
+    place-items: start;
+    animation: textAnimateRight 799ms ease 1 4300ms forwards;
+    visibility: hidden;
+  }
+
+  .app-footer-right-items2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: space-around;
+    max-width: 300px;
+    place-items: start;
+    animation: textAnimateRight 799ms ease 1 4500ms forwards;
+    visibility: hidden;
+  }
+
+  @keyframes textAnimateRight {
+    from {
+     top: 25px;
+    opacity: 0;
+    }
+  
+    to {
+      top: 0px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .app-footer-right-head{
+    gap: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+  }
+
+  .app-footer-right-head h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.804);
+ 
+  }
+
+  .app-footer-right-items p {
+    width: 220px;
+    top: -25px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.515);
+    line-height: 29px;
+    letter-spacing: 0.3px;
+   
+    
+    
+  }
+
+  
+  .app-footer-right-items2 p {
+    width: 220px;
+    top: -25px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.515);
+    line-height: 29px;
+    letter-spacing: 0.3px;
+   
+    
+    
+  }
+    
+  
+  
