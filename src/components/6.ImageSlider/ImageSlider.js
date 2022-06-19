@@ -4,6 +4,12 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import "./imageSlider.css";
 import PingButton from './pingButton';
 import divido from './divido.jpg';
+import { BsFillFileArrowUpFill} from 'react-icons/bs';
+
+
+
+
+
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -25,12 +31,13 @@ const ImageSlider = ({ slides }) => {
     <section className='slider'>
      
      <div className='slider-head'>
-        <h1 data-aos="fade-up"  data-aos-duration="700"> COLLECTİON</h1>
+        <h1 data-aos="fade-up"  data-aos-duration="700"> COLLECTION</h1>
         <img src={divido} className="divido" alt="logo"  data-aos="fade-up"  data-aos-duration="900"/>
      </div>
      <div className='slider-main '>
-      <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide}    />
-      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}  />
+     
+     <BsFillFileArrowUpFill   id='image-router' className='left-arrow' onClick={prevSlide}    />
+      <BsFillFileArrowUpFill className='right-arrow' onClick={nextSlide}  />
    
       {SliderData.map((slide, index) => {
         return (

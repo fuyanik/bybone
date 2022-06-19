@@ -17,11 +17,14 @@ function SideNavbar() {
         <AiOutlineUser className="iconn" />
       </a>
     
-      <a href="#product-route">
+      <a href="#image-router">
         <TiGroupOutline className="iconn" />
       </a>
-      <a href="#contact">
+    
+      <a href="#image-router">
         <BiMessageRoundedDots className="iconn" />
+    
+    
       </a>
       <a href="#footer">
         <BsArrowDownCircle className="iconn" />

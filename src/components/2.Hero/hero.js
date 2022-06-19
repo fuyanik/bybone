@@ -1,5 +1,8 @@
 import "./hero.css";
-import illüst from './illüst.png';
+
+// import illüst from './illüst.png';
+//   <img src={illüst} className="illüst" alt="logo"  data-aos="fade-left"  data-aos-duration="1100" data-aos-delay="3000" />
+
 const Hero = () => {
 
 
@@ -37,7 +40,7 @@ const Hero = () => {
 
                </div> 
                  
-               <img src={illüst} className="illüst" alt="logo"  data-aos="fade-left"  data-aos-duration="1100" data-aos-delay="3000" />
+            
                <div className="hero-circle"></div>
 
 

@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;1,700&family=Satisfy&display=swap');
 .slider {
-    top: 5px;
+    top: 155px;
     position: relative;
     height: 110vh;
     display: flex;
@@ -7,13 +8,16 @@
     align-items: center;
     background-color: #F7F9FC;
     flex-direction: column;
+     width: 100%;
+    height: 600px;
+   
   
   }
   .slider-main {
-    top: 55px;
-    left: 15px;
+    width: 100%;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -25,7 +29,7 @@
     align-items: center;
     justify-content: center;
 
-    left: 20px;
+    left: 1px;
 
   }
   .slider h1{
@@ -33,22 +37,25 @@
     top: 45px;
     position: relative;
     align-self: center;
-    font-family: 'Poppins', sans-serif;
-    color: #262c31;
+    font-family: 'Satisfy', cursive;
+    color: #092542;
     font-size: 48px;
+    letter-spacing: 5px;
   }
   .divido{
-  
+   
     position: relative;
     width: 650px;
   }
 
   .image {
+   top: -24px;
+    overflow: hidden;
     position: relative;
-    right: 42px;
-    min-width: 1150px;
-    width: 1150px;
-    height: 600px;
+  
+    min-width: 1350px;
+    width: 1350px;
+    max-height: 600px;
     border-radius: 15px;
     background-position: center;
     background-size: cover;
@@ -56,24 +63,39 @@
   }
 
   
-  .right-arrow {
+  .slider-main-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
     position: relative;
-    top: 1%;
-    left: 98%;
-    font-size: 3rem;
-    color: #EC787B;
+    top: 15px;
+  }
+
+  .right-arrow {
+    
+    z-index: 9999999999999999999999999999999999999999;
+    position: relative;
+   
+    
+    font-size: 50px;
+    color: #8976f7;
     z-index: 10;
     cursor: pointer;
     user-select: none;
+    transform: rotate(90deg);
+    bottom: 50px;
+    left: 33px;
   
   }
   
   .left-arrow {
+  
+    right: 40px;
+    transform: rotate(-90deg);
     position: relative;
-    top: 1%;
-    right: 5.5%;
-    font-size: 3rem;
-    color: #EC787B;
+    font-size: 50px;
+  
+    color: #8976f7;
     z-index: 10;
     cursor: pointer;
     user-select: none;

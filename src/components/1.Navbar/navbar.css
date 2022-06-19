@@ -1,19 +1,28 @@
 
 .Navbar {
+  z-index: 999999999999999999999999999999999;
     display: flex;
     width: 100%;
-    height: 55px;
+    height: 85px;
     justify-content: space-between;
      position: fixed;
     align-items: center;
+    background-color: #092542;
   }
   
+  .logom{
+    left: 45px;
+   top: 2px;
+    position: relative;
+    display: flex;
+    width: 90px;
+  }
   .Navbar ul {
     cursor: pointer;
     position: relative;
     justify-content: center;
     align-items: center;
-    left: 10%;
+    left: -5%;
     display: flex;
     list-style: none;
     color: rgba(255, 255, 255, 0.944);
@@ -30,6 +39,9 @@
     list-style: none;
     transition: 300ms;
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
   }
 
 
@@ -53,7 +65,7 @@
 
 
 .navbar-button {
-  top: 5px;
+  top: px;
  position: relative;
  right: 5%;
  cursor: pointer;
@@ -81,5 +93,46 @@
 
 
 
+/* From uiverse.io by @alexruix */
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+ }
+ 
+ .input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f433;
+  color: #0d0c22;
+  transition: .3s ease;
+ }
+ 
+ .input::placeholder {
+  color: #9e9ea7;
+ }
+ 
 
+ 
+ .icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
 
