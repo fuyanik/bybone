@@ -5,7 +5,7 @@ import "./imageSlider.css";
 import PingButton from './pingButton';
 import divido from './divido.jpg';
 import { BsFillFileArrowUpFill} from 'react-icons/bs';
-
+//<img src={divido} className="divido" alt="logo"  data-aos="fade-up"  data-aos-duration="900"/>
 
 
 
@@ -32,7 +32,7 @@ const ImageSlider = ({ slides }) => {
      
      <div className='slider-head'>
         <h1 data-aos="fade-up"  data-aos-duration="700"> COLLECTION</h1>
-        <img src={divido} className="divido" alt="logo"  data-aos="fade-up"  data-aos-duration="900"/>
+   
      </div>
      <div className='slider-main '>
      

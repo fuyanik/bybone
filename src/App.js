@@ -23,6 +23,7 @@ function App() {
        <Hero/>
        <HeroFooter/>
        <Product/>
+   
        <ImageSlider slides={SliderData} />
        <SideNavbar/>
      
