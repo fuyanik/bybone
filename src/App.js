@@ -1,42 +1,26 @@
-import Navbar from "./components/1.Navbar/navbar";
-import Hero from "./components/2.Hero/hero";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-import HeroFooter from "./components/3.HeroFooter/heroFooter";
-import Product from "./components/4.Product/product";
-import Cards from "./components/5.Cards/cards";
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom';
+import {Routes, Route, Link, NavLink} from 'react-router-dom';
+import Home from './Home';
+import AboutUs from './pages/AboutUs/aboutUs';
+import ContactUs from './pages/Contact Us/contactUs';
 
-import ImageSlider from "./components/6.ImageSlider/ImageSlider.js";
-import { SliderData } from "./components/6.ImageSlider/SliderData.js"; 
-import SideNavbar from "./components/SideNavbar/nav.js";
-
-
-
-AOS.init();
-
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-       
-       <Navbar/>
-       <Hero/>
-       <HeroFooter/>
-       <Product/>
-   
-       <ImageSlider slides={SliderData} />
-       <SideNavbar/>
+  
+   <BrowserRouter>
+     <Routes>
+           <Route path="/" element={<Home/>} />
+           <Route path="/contact" element={<ContactUs/>} />
+           <Route path="/about" element={<AboutUs/>} />
+
+     </Routes>
      
-     
-   
-       <div
-       style={{
-        height: "500px",
-       }}
-       > </div>
-       
-    </div>
-  );
+   </BrowserRouter>
+
+  
+  
+  
+    )
 }
 
-export default App;

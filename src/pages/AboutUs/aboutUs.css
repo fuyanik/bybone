@@ -1,0 +1,10 @@
+.AboutUs{
+    background-color: #da37373a;
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+}
+
+.allPage{
+    width: 100%;
+}
