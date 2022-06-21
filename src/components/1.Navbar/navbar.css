@@ -1,5 +1,7 @@
 
 .Navbar {
+ top: 0px;
+  position: absolute;
   z-index: 999999999999999999999999999999999;
     display: flex;
     width: 100%;

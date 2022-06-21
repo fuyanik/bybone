@@ -1,10 +1,184 @@
-.AboutUs{
-    background-color: #da37373a;
-    width: 100wh;
-    height: 100vh;
-    display: flex;
+@font-face {
+    font-family: Sofia-Medium;
+    src: url(https://static1.squarespace.com/static/5ffcb5ab91eb492f96d336f9/t/623b8115228e7c135751b8b6/1648066838560/Sofia+Pro+Medium+Az.otf);
+}
+@font-face {
+    font-family: Sofia-Light;
+    src: url(https://static1.squarespace.com/static/5ffcb5ab91eb492f96d336f9/t/623b8110c38c234c268b5098/1648066832999/Sofia+Pro+Light+Az.otf);
 }
 
-.allPage{
+
+.AboutUs{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+  
+  
+    display: flex;
+    flex-direction: column;
+
+}
+.about-us-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+      width: 100%;
+     height: 100vh;
+     display: flex;
+     animation: aboutPage 1000ms ease 1 1700ms forwards;
+     overflow: hidden;
+}
+
+@keyframes aboutPage {
+    to {
+      height: 67vh;
+    }
+  } 
+
+.left-image{
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 430px;
+}
+
+.about-us-main-center h2 {
+    z-index: 2;
+    top: 90px;
+    left: 175px;
+    position: relative;
+    font-size: 49px;
+    letter-spacing: 2px;
+    font-family: Sofia-Medium;
+    color:  #065ED7;
+}
+.about-us-image{
+    top: 25px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 356px;
+    width: 620px;
+}
+
+
+
+
+.about-us-footer{
+    top: 75px;
+    position: relative;
+   display: flex;
     width: 100%;
+    height: 22vh;
+    display: flex;
+    background-color: #092542;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.about-us-footer-arrow{
+    background-position: center;
+    background-size: cover;
+   
+    height: 50px;
+}
+.footer-card{
+    margin-right: 55px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-card-head{
+    margin-top: 18px;
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-card-head h4{
+    font-family: Sofia-Medium;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.footer-card p {
+    font-family: Sofia-Light;
+    color: rgba(255, 255, 255, 0.784);
+    font-size: 15px;
+    font-weight: 200;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+    top: -21px;
+    left: 25px;
+}
+
+.footer-card-head-logo{
+    width: 54px;
+    height: 54px;
+}
+
+
+
+.about-us-main-left{
+    left: 25px;
+   top: 50px;
+    position: relative;
+    display: flex;
+    height: 380px;
+    width: 356px;
+    justify-content: space-around;
+    flex-direction: column;
+   
+}
+
+
+.about-us-main-right{
+    right: 25px;
+   top: 50px;
+    position: relative;
+    display: flex;
+    height: 380px;
+    width: 356px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.main-cards{
+    display: flex;
+    
+    height: 100px;
+}
+
+.main-cards-texts{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    max-width: 313px;
+}
+
+.main-cards-texts h4 {
+    left: 10px;
+    top: -25px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: #374048;
+    font-size: 18px;
+
+}
+.main-cards-texts p {
+    top: -65px;
+    left: 10px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color:  #82898F;
+    font-size: 14px;
+    font-weight: 200;
 }
