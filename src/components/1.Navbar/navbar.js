@@ -1,22 +1,38 @@
 import "./navbar.css"
 import logom from './logom.png'
-import Searchİnput from "./searchİnput";
+
+import { useState } from "react";
 import NavbarDropdown from "./navbarDropdown";
 
 
-const Navbar = () => {
 
+const Navbar = () => {
+       const [isDisplay, setİsDisplay] = useState(true);
+       const [height, setHeight] = useState("0px");
+       const [border, setBorder] = useState("none");
 
   return (
 
    <div className="Navbar"  data-aos="fade-down"  data-aos-duration="700">
 
 
-    <NavbarDropdown/>
+    {isDisplay && <NavbarDropdown
+    onMouse={() =>  setHeight("310px")}
+    onLeave={() => {setHeight("0px");  setBorder("none")  }  }
+    height={height}
+   border={border}
+
+    />  }
+    
+ 
 
      <a href="/"> <img src={logom} className="logom" alt="logo"  /> </a> 
           <ul className="navbar-items">
-            <li>  Collection</li>
+            <li
+            onMouseMove={() => { setHeight("310px"); setBorder("1px solid var(--pink)")  }   }
+            onMouseLeave={() =>  {setHeight("0px");  setBorder("none")  }  }
+            
+            >  Collection</li>
             
             
             <a href="/features"  style={{ 

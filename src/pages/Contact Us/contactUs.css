@@ -8,7 +8,7 @@ ContactUs{
 
 .contactUs-main{
 
-    background-color: #092542;
+    background-color: var(--navyLight);
 
     
     display: flex;

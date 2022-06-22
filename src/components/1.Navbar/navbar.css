@@ -9,7 +9,7 @@
     justify-content: space-between;
      position: fixed;
     align-items: center;
-    background-color: #092542;
+    background-color: var(--navyLight);
   }
   
   .logom{
@@ -89,6 +89,23 @@
 }
  
  
+.navbar-dropdown{
+  top:  63px;
+  left: 160px;
+  position:  absolute;
+  width: 850px;
+  height: 285px;
+  background-color: #092542;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+  border-top: 1px solid var(--pink);
+
+
+
+}
 
 
   

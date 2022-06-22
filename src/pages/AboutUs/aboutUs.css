@@ -74,7 +74,7 @@
     width: 100%;
     height: 22vh;
     display: flex;
-    background-color: #092542;
+    background-color: var(--navyLight);
     justify-content: space-around;
     align-items: center;
    
