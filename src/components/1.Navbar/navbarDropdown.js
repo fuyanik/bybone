@@ -1,19 +1,27 @@
-const NavbarDropdown = ({onMouse,onLeave,height,border}) => {
+//import dropdownİmage from './dropdown.png'
+//<img src={dropdownİmage} className ="dropdown-image" />
+const NavbarDropdown = ({onMouse,onLeave,display}) => {
 
     return (
 
-        <div className="navbar-dropdown"
-        style={{
-            height: height,
-            borderTop: border,
-        }}
+        <div className= { display ? "navbar-dropdown-hover"  :"navbar-dropdown"}
+      
         onMouseMove={onMouse}
         onMouseLeave={onLeave}
         
-        > 
-        
-          
-        
+        >
+            <div className={ display ? "dropdown-item-hover" : "dropdown-items"}> 
+             
+               
+               
+               <div className='dropdown-line'> 
+
+                <h4></h4>
+                
+               </div>
+            
+             </div> 
+    
         </div>
     )
 }

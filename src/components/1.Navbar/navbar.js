@@ -7,55 +7,54 @@ import NavbarDropdown from "./navbarDropdown";
 
 
 const Navbar = () => {
-       const [isDisplay, setİsDisplay] = useState(true);
-       const [height, setHeight] = useState("0px");
-       const [border, setBorder] = useState("none");
+       const [display, setDisplay] = useState(false);
+      
 
   return (
 
    <div className="Navbar"  data-aos="fade-down"  data-aos-duration="700">
 
 
-    {isDisplay && <NavbarDropdown
-    onMouse={() =>  setHeight("310px")}
-    onLeave={() => {setHeight("0px");  setBorder("none")  }  }
-    height={height}
-   border={border}
+     <NavbarDropdown
+    display={display}
+    onMouse={() =>  {  setDisplay(true) }   }
+    onLeave={() => {  setDisplay(false)  }  }
+   
 
-    />  }
+    />  
     
  
 
      <a href="/"> <img src={logom} className="logom" alt="logo"  /> </a> 
           <ul className="navbar-items">
-            <li
-            onMouseMove={() => { setHeight("310px"); setBorder("1px solid var(--pink)")  }   }
-            onMouseLeave={() =>  {setHeight("0px");  setBorder("none")  }  }
+            <li 
+            onMouseMove={() => {setDisplay(true)  }   }
+            onMouseLeave={() =>  {setDisplay(false)  }  }
             
-            >  Collection</li>
+            >  COLLECTİON</li>
             
             
             <a href="/features"  style={{ 
                  textDecoration: "none",
                   color: "white",
 
-           }}>  <li> product features</li> </a>
+           }}>  <li className="navbar-li"> product features</li> </a>
            
             <a href="/about"  style={{ 
                  textDecoration: "none",
                   color: "white",
 
-           }}>   <li> about us</li> </a>
+           }}>   <li className="navbar-li"> about us</li> </a>
           
           
-            <li> Certificates</li>
+            <li className="navbar-li"> Certificates</li>
         
         
            <a href="/contact"  style={{ 
                  textDecoration: "none",
                   color: "white",
 
-           }}>   <li> Contact Us</li> </a> 
+           }}>   <li className="navbar-li"> Contact Us</li> </a> 
          
           </ul>
 
