@@ -42,6 +42,17 @@ ContactUs{
     font-size: 20px;
 }
 
+.contactUs-main-form h1::before{
+    content: "";
+    position: absolute;
+    background-color: var(--purple);
+    height: 0.8px;
+    width: 210px;
+    left: 0;
+    bottom: -2px;
+    transition: 0.4s;
+  }
+
 .form-group{
     position: relative;
     bottom: 135px;

@@ -25,7 +25,7 @@ function Home() {
        <Hero/>
        <HeroFooter/>
        <Product/>
-       <ImageSlider slides={SliderData} />
+     
        <SideNavbar/>
    
      

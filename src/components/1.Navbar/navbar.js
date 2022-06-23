@@ -1,6 +1,6 @@
 import "./navbar.css"
-import logom from './logom.png'
-
+import logom from './images/logom.png'
+import {Routes, Route, Link, NavLink} from 'react-router-dom';
 import { useState } from "react";
 import NavbarDropdown from "./navbarDropdown";
 
@@ -14,47 +14,60 @@ const Navbar = () => {
 
    <div className="Navbar"  data-aos="fade-down"  data-aos-duration="700">
 
-
+   <div className="navbar-hover-help"
+   onMouseMove={() => setDisplay(true)}
+   onMouseLeave={() =>  {setDisplay(false)  }  }
+   > </div>
+    
      <NavbarDropdown
     display={display}
     onMouse={() =>  {  setDisplay(true) }   }
     onLeave={() => {  setDisplay(false)  }  }
+    />  
    
 
-    />  
     
  
 
-     <a href="/"> <img src={logom} className="logom" alt="logo"  /> </a> 
+     <Link to="/"> <img src={logom} className="logom" alt="logo"  /> </Link> 
           <ul className="navbar-items">
             <li 
+            style={{
+              position: "relative",
+           
+              cursor: "pointer",
+              height: "100px",
+              top:"40px"
+            }}
             onMouseMove={() => {setDisplay(true)  }   }
             onMouseLeave={() =>  {setDisplay(false)  }  }
+          
             
             >  COLLECTİON</li>
             
             
-            <a href="/features"  style={{ 
+            <Link to="/features"  style={{ 
                  textDecoration: "none",
                   color: "white",
 
-           }}>  <li className="navbar-li"> product features</li> </a>
+           }}>  <li className="navbar-li"> product features</li> </Link>
            
-            <a href="/about"  style={{ 
+            <Link to="/about"  style={{ 
                  textDecoration: "none",
                   color: "white",
 
-           }}>   <li className="navbar-li"> about us</li> </a>
+           }}>   <li className="navbar-li"> about us</li> </Link>
           
           
             <li className="navbar-li"> Certificates</li>
         
         
-           <a href="/contact"  style={{ 
+           <Link to="/contact"  style={{ 
                  textDecoration: "none",
+
                   color: "white",
 
-           }}>   <li className="navbar-li"> Contact Us</li> </a> 
+           }}>   <li className="navbar-li"> Contact Us</li> </Link> 
          
           </ul>
 

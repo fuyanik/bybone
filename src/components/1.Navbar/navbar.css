@@ -11,6 +11,17 @@
     align-items: center;
     background-color: var(--navyLight);
   }
+
+  .navbar-hover-help{
+    left: 250px;
+    top: 30px;
+    width: 90px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0);
+    cursor: pointer;
+  
+    position: absolute;
+  }
   
   .logom{
     left: 45px;
@@ -19,7 +30,7 @@
     display: flex;
     width: 90px;
   }
-  .Navbar ul {
+  .navbar-items {
     cursor: pointer;
     position: relative;
     justify-content: center;
@@ -136,6 +147,7 @@
 .dropdown-item-hover{
 animation: dropdown-hovero 150ms ease-in 300ms forwards;
 opacity: 0;
+z-index: 999999999999999999999999999999999999999;
 }
 
 @keyframes dropdown-hovero{
@@ -149,17 +161,123 @@ opacity: 0;
 }
 
 
+.dropdown-main-items{
+  width: 1045px;
+  height: 100%;
+  display: flex;
 
+}
 .dropdown-image{
-  left: 1px;
-  bottom: -13px;
+  left: 12px;
+  bottom: -2px;
   position: relative;
-  width: 250px;
-  object-fit: fill;
+  height: 286px;
+  width: 240px;
+  background-size: cover;
+  background-position: center;
+  
   border-radius: 15px;
+  background-color: rgba(54, 9, 252, 0);
  
+}
+
+
+.dropdown-divider{
+
+  color: rgba(255, 255, 255, 0.499);
+  transform:  rotate(90deg);
+  position: absolute;
+  left: 150px;
+  top: 50%;
+
+}
+
+.dropdown-item-line{
+
+  top: -9px;
+  left: 52px;
+ 
+  display: flex;
+  width: 160px;
+  height: auto;
+
+  position: relative;
+}
+
+
+
+.dropdown-head{
+  bottom: 12px;
+  position: relative;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.dropdown-head::before{
+  content: "";
+  position: absolute;
+  background-color: var(--purple);
+  height: 1.2px;
+  width: 90px;
+  left: 0;
+  bottom: 220px;
+  transition: 0.4s;
+}
+
+.dropdown-item-line ul {
+  position: relative;
+  top: 25px;
+  right: 114px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  gap: 1px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+cursor: pointer;
+
+}
+
+
+
+
+.dropdown-item-line li {
+  position: relative;
+  display: flex;
+  list-style: none;
+  transition: 300ms;
+  cursor: pointer;
+
+  letter-spacing: 1px;
   
 }
+
+
+.dropdown-item-line li::after{
+  content: "";
+  position: absolute;
+  background-color: #ec7b7b;
+  height: 0.1rem;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  transition: 0.4s;
+  
+}
+
+
+.dropdown-item-line li:hover::after{
+width: 100%;
+
+
+}
+
+
 
 
 
