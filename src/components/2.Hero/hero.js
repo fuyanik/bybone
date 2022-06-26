@@ -16,7 +16,7 @@ const Hero = () => {
              <div className="hero-main-text"> 
 
                  <p  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="500"> We are byBone, </p>
-                 <h2  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="700">SIMA PORCELAIN AND KITCHENWARE</h2>
+                 <h2  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="700">SIMA PORCELAIN AND KITCHENWARE.</h2>
                  <p data-aos="fade-up"  data-aos-duration="600" data-aos-delay="900">Introduce the product here. A small description about what it is and how it helps the user. </p>
 
                  <div className="hero-main-text-buttons"> 
