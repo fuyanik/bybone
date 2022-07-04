@@ -13,7 +13,7 @@
   border-radius: 50px;
   opacity: 0;
   animation: fade-nav-in 800ms ease-in-out 1 1200ms forwards;
-  z-index: 666666666;
+  z-index: 1;
 }
 
 @keyframes fade-nav-in {
@@ -45,5 +45,11 @@
   border: 2px solid #8976f7;
 }
 
-
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  
+}
+  
+}
 

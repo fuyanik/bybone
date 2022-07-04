@@ -1,5 +1,6 @@
 import dropdownİmage from './images/dropdown.png'
 import dropdownİmage2 from './images/dropdownİmage2.png'
+import {Routes, Route, Link, NavLink} from 'react-router-dom';
 //<img src={dropdownİmage} className ="dropdown-image" />
 
 const NavbarDropdown = ({onMouse,onLeave,display}) => {
@@ -14,16 +15,19 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
      
       
                   <img src={dropdownİmage2} className ="dropdown-image" />
-                      <span className='dropdown-divider'>______________________________</span>
+                      <span className='dropdown-divider'>___________________________,___</span>
                       
                       <div className="dropdown-item-line"> 
                            <h4 className="dropdown-head"> Harmony</h4>
                            
                            <ul className="dropdown-list">
-                               <li>Ardent</li>
-                               <li>Blance</li>
-                               <li>Bleezze</li>
-                               <li>Elegance</li>
+                           <Link to="/ardent"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Ardent</li> </Link>
+                           <Link to="/blance"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Blance</li> </Link>
+                           <Link to="/breeze"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Breeze</li> </Link>
+                           <Link to="/elegance"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Elegance</li> </Link>
+                               
+                              
+                               
                                <li>Enigme</li>
                                <li>Gleam</li>
                                <li>Infinity</li>
@@ -32,8 +36,12 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                                <li>Sun</li>
                                <li>Supreme</li>
                                <li>Tropical</li>
-                               
+               
                            </ul>
+                
+
+         
+                               
 
                       </div>
                         

@@ -1,4 +1,7 @@
 .HeroFooter {
+
+  position: relative;
+  top: -20px;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -14,14 +17,14 @@
 
 .app-footer-left {
     width: 1px;
-    height: 25vh;
+    height: 30vh;
     background-color: #8976f7;
  
 
      animation: app-footer-one-anim 700ms ease 1 2350ms forwards;
     
     display: flex;
-    justify-content: center;
+ 
     align-items: center;
     
   }
@@ -30,7 +33,7 @@
     
     to {
       visibility: visible;
-      width: 45%;
+      width: 35%;
   
     }
   
@@ -206,16 +209,24 @@
    
  
   
-
+.video-responsive{
+  
+ 
+  display: flex;
+  position: relative;
+  align-self: center;
+}
    .app-footer-right {
-    width: 55%;
-    height: 25vh;
+   
+    width: 65%;
+    height: 30vh;
     background-color: white;
     display: flex;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
     align-items: center;
-   
+ 
   }
+   
 
   .app-footer-right-items{
     position: relative;
@@ -226,6 +237,7 @@
     place-items: start;
     animation: textAnimateRight 799ms ease 1 4300ms forwards;
     visibility: hidden;
+    
   }
 
   .app-footer-right-items2{
@@ -300,4 +312,9 @@
   }
     
   
+@media screen and (max-width: 768px) {
+  .HeroFooter {
+display: none;
+  }
   
+}

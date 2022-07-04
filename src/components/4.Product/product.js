@@ -2,10 +2,10 @@ import "./product.css"
 import logos from './logos.png';
 
 import ProductButton from "./productButton";
-import {useEffect, useState, useRef} from 'react';
+import {useState, } from 'react';
 const Product = () => { 
 
-const [targetLineClick, setTargetLineClick] = useState("");
+
 const [isClick, setIsClick] = useState(false);
     return(
 <div id="product-href"> 
@@ -28,13 +28,13 @@ const [isClick, setIsClick] = useState(false);
              <div className={`target-line ${isClick ? 'target-line-click' : 'target-line-click-back'}`}> </div>
            
              <ProductButton
-              top = {"152%"}
+              top = {"62%"}
               left = {"861px"}
               
              />
 
              <ProductButton
-              top = {"142%"}
+              top = {"47%"}
               left = {"630px"}
               onClick = {()=> {
                 setIsClick(!isClick);
@@ -43,7 +43,7 @@ const [isClick, setIsClick] = useState(false);
               />
 
              <ProductButton
-              top = {"164%"}
+              top = {"76%"}
               left = {"580px"}
               />
              

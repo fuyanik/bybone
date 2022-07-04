@@ -1,5 +1,6 @@
 import "./features.css";
 import { useState } from "react";
+import newLogo from "./images/newLogo.png";
 
 const PingButton = ({left,top}) => { 
 
@@ -11,6 +12,8 @@ return(
   left: left,
   top: top
  }}
+
+
  
  >
     <div className="box"></div>
@@ -18,11 +21,11 @@ return(
 
     <div
       className="plus"
+      
       onMouseMove={() => setİsVisible(true)}
       onMouseLeave={() => setİsVisible(false)}
     >
-      {" "}
-      +{" "}
+ <img className="button-logo" src={newLogo} />
     </div>
 
     <div

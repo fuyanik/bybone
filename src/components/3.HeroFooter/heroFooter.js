@@ -2,6 +2,7 @@ import "./heroFooter.css";
 import laptop from './laptop.png';
 import icon1 from './icon1.png';
 import icon2 from './icon2.png';
+import YoutubeEmbed from "./youtubeEmbed";
 const HeroFooter = () => { 
 
  return (
@@ -17,7 +18,7 @@ const HeroFooter = () => {
                 
                   <div className="app-footer-left-text" > 
                       
-                       <h2 > Connect With Me</h2>
+                       <h2 > Connect With Us</h2>
                     
                        <button class="learn-more"   >
                                 
@@ -37,34 +38,24 @@ const HeroFooter = () => {
             
              </div>
              
+
+
+
+
+             
   
   
   
              <div className="app-footer-right"  > 
               
-                <div className="app-footer-right-items"> 
-                    
-                    <div className="app-footer-right-head">
-                       <img   src={icon1} className="icon1" alt="laptop" />
-                       <h2> İnnovation</h2>
-                    </div>
+             
 
-                    <p>To meet all service expectations of our customers at world standards</p>
-               
-                </div>
+              <YoutubeEmbed embedId="uz3Vq1zROSU" />
+              <YoutubeEmbed embedId="mohF_TIaoVM" />
+              <YoutubeEmbed embedId="o1_GgZsEsOQ" />
 
 
 
-                <div className="app-footer-right-items2"> 
-                    
-                    <div className="app-footer-right-head">
-                       <img   src={icon2} className="icon1" alt="laptop" />
-                       <h2> Spirit</h2>
-                    </div>
-
-                    <p>To provide fast, competitive services that meet the </p>
-               
-                </div>
 
 
 

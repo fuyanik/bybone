@@ -3,11 +3,25 @@ import logom from './images/logom.png'
 import {Routes, Route, Link, NavLink} from 'react-router-dom';
 import { useState } from "react";
 import NavbarDropdown from "./navbarDropdown";
+import { setGlobalState, useGlobalState } from "../../hookState.js";
+
+import tr from './images/tr.png'
+import eng from './images/eng.png'
+
 
 
 
 const Navbar = () => {
+       const [isClickFlag,setİsClickFlag] = useState(false);
+       const [isClickFlag2,setİsClickFlag2] = useState(true);
+       
        const [display, setDisplay] = useState(false);
+       const[isTurkish] = useGlobalState("isTurkish");
+       //  onClick={() =>  setGlobalState("isTurkish", false) }
+
+   
+      
+
       
 
   return (
@@ -30,7 +44,15 @@ const Navbar = () => {
  
 
      <Link to="/"> <img src={logom} className="logom" alt="logo"  /> </Link> 
+        
           <ul className="navbar-items">
+          <Link to="/"  style={{ 
+                 textDecoration: "none",
+                  color: "white",
+
+           }}>  <li className="navbar-li" id="first-li"> {isTurkish ? "Ana Sayfa" : "Home" }</li> </Link>
+            
+            
             <li 
             style={{
               position: "relative",
@@ -40,26 +62,22 @@ const Navbar = () => {
               top:"40px"
             }}
             onMouseMove={() => {setDisplay(true)  }   }
-            onMouseLeave={() =>  {setDisplay(false)  }  }
+          
           
             
-            >  COLLECTİON</li>
+            >   {isTurkish ? "KOLEKSİYONLAR" : "COLLECTİON" }</li>
             
             
-            <Link to="/features"  style={{ 
-                 textDecoration: "none",
-                  color: "white",
-
-           }}>  <li className="navbar-li"> product features</li> </Link>
+          
            
             <Link to="/about"  style={{ 
                  textDecoration: "none",
                   color: "white",
 
-           }}>   <li className="navbar-li"> about us</li> </Link>
+           }}>   <li className="navbar-li">  {isTurkish ? "HAKKIMIZDA" : "ABOUT US" }</li> </Link>
           
           
-            <li className="navbar-li"> Certificates</li>
+            <li className="navbar-li"> {isTurkish ? "ÜRÜN ÖZELLİKLERİ" : "PRODUCT FEATURES" }</li>
         
         
            <Link to="/contact"  style={{ 
@@ -67,20 +85,50 @@ const Navbar = () => {
 
                   color: "white",
 
-           }}>   <li className="navbar-li"> Contact Us</li> </Link> 
+           }}>   <li className="navbar-li"> {isTurkish ? "İLETİŞİM" : "CONTACT US" }</li> </Link> 
          
           </ul>
 
-      
-          <div className="navbar-button">  PORTFOLİO</div>
+    
+              
+
         
+          <div
+       
+          
+          className="navbar-button">  {isTurkish ? "PORTFOLYO" : "PORTFOLİO" }</div>,
+
+<div className ="navbar-all-flags"> 
+
+<div className="navbar-flags"      style={{
+        borderLeft: isClickFlag && "2px solid white",
+
+ }}>
+ <img src={tr} className="navbar-flag-tr" alt="turkish"  onClick={() => {setGlobalState("isTurkish", true); setİsClickFlag(true);  setİsClickFlag2(false)}} />
+ </div>
+
+
+ <div className="navbar-flags"
+ style={{
+borderLeft: isClickFlag2 && "2px solid white",
+
+}}>
+ 
+ <img src={eng} className="navbar-flag-eng" alt="english"  onClick={() => {setGlobalState("isTurkish", false); setİsClickFlag(false);  setİsClickFlag2(true)}} />
+ </div>
+
+ </div>
+
+           </div> 
+
+           
       
     
      
 
 
 
-   </div> 
+
 
 
   )

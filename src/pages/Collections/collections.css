@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;1,700&family=Quicksand:wght@300;400;500;600;700&family=Satisfy&display=swap');
+
+.collection-items{
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   background-color: var(--navyLight);
+   width: 100%;
+  
+   gap: 45px;
+   top: 250px;
+   padding-top: 60px ;
+   justify-content: center;
+ 
+
+
+
+}
+
+.collection-item{
+   
+    justify-content: center;
+  
+   border-radius: 15px;
+   
+   display: flex;
+   flex-direction: column;
+   width: 292px;
+   height: 375px;
+   background-color: rgb(255, 255, 255);
+   cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 8px 8px, rgba(0, 0, 0, 0.09) 0px 12px 1px;
+   
+}
+  
+.collection-item-image{
+   position: relative;
+   top: 28px;
+   transform: scale(0.9);
+  
+ 
+}
+   
+.collection-item-texts{
+  z-index: 5;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+    width: 280px;
+   align-items: center;
+}
+
+.collection-item-texts h2{
+   font-family: 'Quicksand', sans-serif;
+   color: #9e4b47;
+   font-size: 18px;
+}
+
+.collection-item-texts p {
+   text-align: center;
+   top: -17px;
+   position: relative;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 13px;
+   color: #000000;
+}
+  

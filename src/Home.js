@@ -6,12 +6,14 @@ import HeroFooter from "./components/3.HeroFooter/heroFooter";
 import Product from "./components/4.Product/product";
 import Cards from "./components/5.Cards/cards";
 
-import ImageSlider from "./components/6.ImageSlider/ImageSlider.js";
-import { SliderData } from "./components/6.ImageSlider/SliderData.js"; 
+
+
 import SideNavbar from "./components/SideNavbar/nav.js";
 
 
 import ContactUs from "./pages/Contact Us/contactUs";
+import Features from "./pages/Features/features";
+
 
 
 AOS.init();
@@ -20,29 +22,38 @@ AOS.init();
 function Home() {
   return (
     <div className="App">
-       
+       <SideNavbar/>
        <Navbar/>
+       <Features/>
        <Hero/>
        <HeroFooter/>
        <Product/>
-     
-       <SideNavbar/>
-   
-     
-     
-   
-       <div
-       style={{
-        height: "500px",
-       }}
-       > </div>
-       
-       
-    
-    
-    
-    </div>
-  );
-}
+<div className="footer">
+  <h2>COPYRIGHT SİMA PORSELEN ve MUTFAK EŞYALARI SAN. TİC. LTD. ŞTİ.</h2>
 
-export default Home;
+</div>
+
+       </div>
+       
+       
+        );
+      }
+      
+      export default Home;
+      
+      
+     
+
+   
+
+      
+     
+       
+   
+     
+     
+   
+       
+    
+    
+    

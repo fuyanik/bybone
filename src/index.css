@@ -8,11 +8,26 @@
   --navyLight: #0d2e51;
 
 }
+.footer{
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  border-top: 5px solid var(--navy);
+ font-family: 'Poppins', sans-serif;
+ text-align: center;
+  letter-spacing: 3px;
+  color: var(--navyLight);
+}
 
 
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  background-color: var(--navyLight);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,4 +35,23 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer{
+    font-size: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    border-top: 2px solid white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+  }
+  
+  
 }

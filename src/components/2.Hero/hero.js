@@ -1,3 +1,4 @@
+import YoutubeEmbed from "../3.HeroFooter/youtubeEmbed";
 import "./hero.css";
 
 // import illüst from './illüst.png';
@@ -5,7 +6,7 @@ import "./hero.css";
 
 const Hero = () => {
 
-
+  var mq = window.matchMedia( "(max-width: 768px)" );
     return (
        <div className="hero" id="header-route"> 
               
@@ -15,15 +16,15 @@ const Hero = () => {
                
              <div className="hero-main-text"> 
 
-                 <p  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="500"> We are byBone, </p>
-                 <h2  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="700">SIMA PORCELAIN AND KITCHENWARE..</h2>
-                 <p data-aos="fade-up"  data-aos-duration="600" data-aos-delay="900">Introduce the product here. A small description about what it is and how it helps the user. </p>
+                 <p  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="100"> We are byBone, </p>
+                 <h2  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="300">SIMA PORCELAIN AND KITCHENWARE..</h2>
+                 <p data-aos="fade-up"  data-aos-duration="600" data-aos-delay="500">Introduce the product here. A small description about what it is and how it helps the user. </p>
 
                  <div className="hero-main-text-buttons"> 
                      
-                         <div className="hero-button"  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="1050"> LET'S WORK </div>
+                         <div className="hero-button"  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="700"> LET'S WORK </div>
                         
-                         <button class="learn-more"   data-aos="fade-left"  data-aos-duration="600" data-aos-delay="1200"  >
+                    <a href="https://www.youtube.com/channel/UCjzVRJNLr13_u0sDH6OGFWw">      <button class="learn-more"   data-aos="fade-left"  data-aos-duration="600" data-aos-delay="900"  >
                                 
                                 <span class="circle" aria-hidden="true">
                                     <span class="icon arrow"></span>
@@ -31,7 +32,7 @@ const Hero = () => {
                                
                                 <span class="button-text">Learn More</span>
                           
-                          </button>
+                          </button> </a>
                           
                       
                         
@@ -41,7 +42,32 @@ const Hero = () => {
                </div> 
                  
             
-               <div className="hero-circle"></div>
+              <div className="hero-main-right">  
+              
+              {mq.matches ?   <iframe
+      
+      width="370"
+      height="240"
+      src={`https://www.youtube.com/embed/9mPA4fOHCqo`}
+      frameBorder="2"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen="true"
+      title="Embedded youtube"
+    />
+      
+    :  <iframe
+      
+    width="700"
+    height="400"
+    src={`https://www.youtube.com/embed/9mPA4fOHCqo`}
+    frameBorder="2"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen="true"
+    title="Embedded youtube"
+  />}
+    
+
+              </div>
 
 
           </div>
