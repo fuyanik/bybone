@@ -77,7 +77,11 @@ const Navbar = () => {
            }}>   <li className="navbar-li">  {isTurkish ? "HAKKIMIZDA" : "ABOUT US" }</li> </Link>
           
           
-            <li className="navbar-li"> {isTurkish ? "ÜRÜN ÖZELLİKLERİ" : "PRODUCT FEATURES" }</li>
+          <Link to="/product"  style={{ 
+                 textDecoration: "none",
+                  color: "white",
+
+           }}>   <li className="navbar-li"> {isTurkish ? "ÜRÜN ÖZELLİKLERİ" : "PRODUCT FEATURES" }</li></Link>
         
         
            <Link to="/contact"  style={{ 

@@ -12,6 +12,7 @@ import Elegance from './pages/Collections/MainItems/4.Elegance/elegance';
 
 import ContactUs from './pages/Contact Us/contactUs';
 import Features from './pages/Features/features';
+import ProductFeatures from './pages/ProductFeatures/productFeatures';
 // <Route path="/collections" element={<Collections/>} />
 
 
@@ -23,6 +24,9 @@ export default function App() {
            <Route path="/" element={<Home/>} />
            <Route path="/contact" element={<ContactUs/>} />
            <Route path="/about" element={<AboutUs/>} />
+           <Route path="/product" element={<ProductFeatures/>} />
+
+
            <Route path="/ardent" element={<Ardent/>} />
            <Route path="/blance" element={<Blance/>} />
            <Route path="/breeze" element={<Breeze/>} />

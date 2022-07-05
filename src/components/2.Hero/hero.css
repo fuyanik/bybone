@@ -279,17 +279,17 @@
 }
 
 .hero{
-  height: 70vh;
+  height: 85vh;
   background-color: #0d2e51;
 }
 .hero-main {
   align-items: center;
-  top: -310px;
+  top: -50.2px;
    flex-direction: column;
    position: relative;
    display: flex;
    padding: 0;
-   height: 500px;
+   height: 900px;
    width: 100%;
    background-color: #0d2e51;
     animation: app-main-anim 300ms ease 1 1700ms forwards;
