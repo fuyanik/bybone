@@ -329,8 +329,7 @@ width: 100%;
        align-items: center;
        background-color: #0d2e519a;
        
-       border-bottom-left-radius: 15px;
-       border-bottom-right-radius: 15px;
+    
      }
    
      .navbar-hover-help{
@@ -356,7 +355,7 @@ width: 100%;
        position: relative;
        justify-content: center;
        align-items: center;
-       left: -8%;
+       left: -12%;
        display: flex;
        list-style: none;
        color: rgba(255, 255, 255, 0.944);

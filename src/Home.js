@@ -28,10 +28,7 @@ function Home() {
        <Hero/>
        <HeroFooter/>
        <Product/>
-<div className="footer">
-  <h2>COPYRIGHT SİMA PORSELEN ve MUTFAK EŞYALARI SAN. TİC. LTD. ŞTİ.</h2>
 
-</div>
 
        </div>
        

@@ -38,20 +38,6 @@ html {
 }
 
 
-@media screen and (max-width: 768px) {
-  .footer{
-    font-size: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    width: 100%;
-    border-top: 2px solid white;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    letter-spacing: 3px;
-    color: white;
-  }
+
+
   
-  
-}

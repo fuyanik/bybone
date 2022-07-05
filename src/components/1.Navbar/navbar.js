@@ -4,7 +4,8 @@ import {Routes, Route, Link, NavLink} from 'react-router-dom';
 import { useState } from "react";
 import NavbarDropdown from "./navbarDropdown";
 import { setGlobalState, useGlobalState } from "../../hookState.js";
-
+//import { setGlobalState, useGlobalState } from "../../hookState.js";
+//const[isTurkish] = useGlobalState("isTurkish");
 import tr from './images/tr.png'
 import eng from './images/eng.png'
 
