@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;1,700&family=Quicksand:wght@300;400;500;600;700&family=Satisfy&display=swap');
 
+
+.collections{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 5px solid red;
+   width: 100%;
+   height: 100%;
+}
+
 .collection-items{
+   border: 5px solid blue;
    position: relative;
    display: flex;
    flex-wrap: wrap;
@@ -8,7 +20,7 @@
    width: 100%;
   
    gap: 45px;
-   top: 250px;
+   top: 150px;
    padding-top: 60px ;
    justify-content: center;
  
@@ -65,3 +77,29 @@
    color: #000000;
 }
   
+
+.add-collections{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.form-area{
+   flex-direction: column;
+   display: flex;
+   top: 100px;
+   position: relative;
+   width: 500px;
+   height: 370px;
+   background-color: rgba(198, 198, 205, 0.614);
+   gap: 8px;
+   border-radius: 10px;
+   padding: 15px 40px;
+}
+
+.form-area button{
+   position: relative;
+   left: 0px;
+   background-color: var(--purple);
+}

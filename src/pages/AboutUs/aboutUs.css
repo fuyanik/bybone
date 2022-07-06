@@ -144,20 +144,20 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
 .about-us-main-left h2{
     font-family: Sofia-Medium;
     letter-spacing: 2px;
-    display: none;
+    
 }
    
 .about-us-main-left p{
     font-family: Sofia-Light;
     text-align: center;
     position: relative;
-    display: none;
+   
 }
  
   
 .about-us-main-right{
     right: 25px;
-  display: none;
+ 
     position: relative;
     display: flex;
     height: 380px;
@@ -169,14 +169,14 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
 .about-us-main-right h2{
     font-family: Sofia-Medium;
     letter-spacing: 2px;
-    display: none;
+    
 }
    
 .about-us-main-right p{
     font-family: Sofia-Light;
     text-align: center;
     position: relative;
-    display: none;
+  
 }
  
 

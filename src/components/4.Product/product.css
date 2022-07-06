@@ -5,9 +5,9 @@
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(13,46,81,1) 69%);
    position: relative;
-   top:-5px;
+   top:-20px;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,7 +65,7 @@
   bottom: 185px;
   position: relative;
   z-index: 9999;
- color: rgb(152, 120, 120);
+ color: white;
 }
 
 
@@ -193,7 +193,19 @@
 }
 
 @media screen and (max-width: 768px) {
-  
+  .product{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(13,46,81,1) 69%);
+     position: relative;
+     top:-5px;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    
+  }
   
 .product h4{
   display: none;

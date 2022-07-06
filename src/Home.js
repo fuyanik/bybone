@@ -22,7 +22,7 @@ AOS.init();
 function Home() {
   return (
     <div className="App">
-       <SideNavbar/>
+    
        <Navbar/>
        <Features/>
        <Hero/>
