@@ -46,7 +46,7 @@ const [user] = useAuthState(auth);
         
         
      { user && <AddCollections/>  }  
-     <a href="/giris" style={{
+     <a href="/login" style={{
       cursor:"pointer", marginTop:"90px",
      }}>   <button className="login-button"> Giriş yap</button> </a>
           

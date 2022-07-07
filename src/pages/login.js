@@ -4,7 +4,9 @@ import { auth } from "../firebaseConfig";
 import { useNavigate } from "react-router-dom";
 
 import { ToastContainer, toast } from 'react-toastify';
-export default function Login() {
+
+
+const Login = () => {
   let navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -54,3 +56,5 @@ export default function Login() {
     </div>
   );
 }
+
+export default Login;
