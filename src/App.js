@@ -12,7 +12,9 @@ import Collections from './pages/Collections/collections';
 
 import ContactUs from './pages/Contact Us/contactUs';
 import Features from './pages/Features/features';
+import Login from './pages/login';
 import ProductFeatures from './pages/ProductFeatures/productFeatures';
+import Register from './pages/register';
 // <Route path="/collections" element={<Collections/>} />
 //<Route path="/ardent" element={<Ardent/>} />
 //<Route path="/blance" element={<Blance/>} />
@@ -28,6 +30,10 @@ export default function App() {
            <Route path="/contact" element={<ContactUs/>} />
            <Route path="/about" element={<AboutUs/>} />
            <Route path="/product" element={<ProductFeatures/>} />
+           <Route path="/signup" element={<Register/>} />
+           <Route path="/giris" element={<Login /> } />
+         
+         
            <Route path="/ardent" element={<Collections/>} />
 
          

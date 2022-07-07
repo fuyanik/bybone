@@ -1,11 +1,14 @@
 import './collections.css';
 import React, { useState, useEffect } from 'react';
 import { Timestamp,collection,addDocument, addDoc } from 'firebase/firestore';
+
+import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-import { storage,db } from '../../firebaseConfig';
+import { signOut } from "firebase/auth";
+import { storage,db,auth } from '../../firebaseConfig';
 import {getDownloadURL, ref, uploadBytesResumable} from 'firebase/storage';
 
-  import 'react-toastify/dist/ReactToastify.css';
+
 
 const AddCollections = () => { 
 
@@ -31,7 +34,7 @@ const AddCollections = () => {
 
      const handlePublish = () => { 
           if(formData.title === "" || formData.description === "" || formData.image === ""){
-         alert("Please fill all the fields");
+         alert("Lütfen Tüm Alanları Doldurunuz.");
          return;
 }
  const storageRef = ref(storage, `/images/${formData.image.name}` );
@@ -45,7 +48,7 @@ const AddCollections = () => {
       setProgress(progressPercent);
     },
     (err)=>{ 
-        console.log("asdsa")
+       
         console.log(err);
     },
     ()=> { 
@@ -65,7 +68,17 @@ const AddCollections = () => {
 
             })
             .then(()=>{
-        toast.success("Article added successfully");
+               
+        
+                toast.success('Dosya Başarıyla Yüklendi.', {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    });
            setProgress(0);
 
             }).catch((err)=>{
@@ -81,7 +94,7 @@ const AddCollections = () => {
     return (
 
         <div className='add-collections'>
-            
+           
               <div className='form-area'>
                
                 <span>Title</span>
@@ -114,17 +127,40 @@ const AddCollections = () => {
             {progress === 0 ? null : ( 
             
             <div className='progress'>
-                  <div className='progress-bar progress-bar-striped mt-0.5' style={{width:`${progress}%`}}>
+                  <div className='progress-bar' style={{width:`${progress}%`}}>
                     {`uploading image ${progress}%`}
                   </div>
             </div>)}
            
 
             <button
-             className='form-control btn-primary mt-2'
+             className='form-control-buttton btn-primary mt-2'
              onClick={handlePublish}
              
-             >Publish</button>
+             >Yükle</button>
+
+            <button
+            style={{
+                backgroundColor: "red"
+            }}
+             className='form-control-buttton btn-primary mt-2'
+             onClick={()=>{signOut(auth)}}
+             
+             >Çıkış Yap</button>
+
+
+
+<ToastContainer
+position="bottom-right"
+autoClose={3000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+/>
 
 
              

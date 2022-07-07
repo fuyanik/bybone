@@ -43,11 +43,11 @@ return (
 
     <PingButton
      top={
-      imageIndex === 0  ?  "80px" : 
-      imageIndex === 1  ?  "420px" :
+      imageIndex === 0  ?  "120px" : 
+      imageIndex === 1  ?  "480px" :
       imageIndex === 2  ?  "150px" :
       imageIndex === 3  ?  "430px" :
-      imageIndex === 4  ?  "489px" : "" } 
+      imageIndex === 4  ?  "589px" : "" } 
       
      left={ 
       imageIndex === 0  ?  "700px" : 
@@ -63,7 +63,7 @@ return (
       imageIndex === 1  ?  "370px" :
       imageIndex === 2  ?  "400px" :
       imageIndex === 3  ?  "400px" :
-      imageIndex === 4  ?  "200px" : "" } 
+      imageIndex === 4  ?  "250px" : "" } 
       
      left={ 
       imageIndex === 0  ?  "500px" : 
@@ -74,11 +74,11 @@ return (
 
 <PingButton
      top={
-      imageIndex === 0  ?  "470px" : 
-      imageIndex === 1  ?  "230px" :
+      imageIndex === 0  ?  "520px" : 
+      imageIndex === 1  ?  "290px" :
       imageIndex === 2  ?  "400px" :
-      imageIndex === 3  ?  "100px" :
-      imageIndex === 4  ?  "90px" : "" } 
+      imageIndex === 3  ?  "150px" :
+      imageIndex === 4  ?  "150px" : "" } 
       
      left={ 
       imageIndex === 0  ?  "950px" : 

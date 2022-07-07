@@ -10,9 +10,9 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import ContactUs from './pages/Contact Us/contactUs';
 import Home from './Home';
 
-import "bootstrap/dist/css/bootstrap.css";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
+
+
 // ..
 AOS.init();
 

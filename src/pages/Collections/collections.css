@@ -6,13 +6,13 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border: 5px solid red;
+ 
    width: 100%;
    height: 100%;
 }
 
 .collection-items{
-   border: 5px solid blue;
+
    position: relative;
    display: flex;
    flex-wrap: wrap;
@@ -29,10 +29,34 @@
 
 }
 
+.collection-item-selected{
+
+   transition: 400ms;
+   justify-content: center;
+  
+ 
+  border-radius: 15px;
+  position: fixed;
+  left: 10%;
+  top: 20%;
+ 
+  
+  z-index: 999999999999;
+  display: flex;
+  flex-direction: column;
+  width: 1292px;
+  height: 475px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border: 2px solid var(--navy);
+}
+
+
 .collection-item{
    
-    justify-content: center;
-  
+   justify-content: center;
+
    border-radius: 15px;
    
    display: flex;
@@ -42,16 +66,35 @@
    background-color: rgb(255, 255, 255);
    cursor: pointer;
    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 8px 8px, rgba(0, 0, 0, 0.09) 0px 12px 1px;
-   
+   animation: fadeInq 1s ease-in-out;
 }
+
+  @keyframes fadeInq { 
+   0% {
+      opacity: 0;
+  } 
+   100% {
+         opacity: 1;
+   }
+}
+
   
 .collection-item-image{
    position: relative;
    top: 28px;
-   transform: scale(0.9);
+   width: 270px;
+ 
+}
+.collection-item-image-selected{
+   transition: 500ms;
+   position: relative;
+   top: 28px;
+   width: 430px;
   
  
 }
+  
+ 
    
 .collection-item-texts{
   z-index: 5;
@@ -103,3 +146,112 @@
    left: 0px;
    background-color: var(--purple);
 }
+
+.collection-item button{
+   justify-self: self-start;
+   align-self: flex-start;
+   position: relative;
+   
+}
+
+
+/* BOOTSTRAP */
+
+.progress{
+   display:inline-block;
+ vertical-align:baseline
+}
+
+.progress-bar{
+   float:left;
+	width:0;
+	height:100%;
+	font-size:12px;
+	line-height:20px;
+	color:#fff;
+	text-align:center;
+	background-color:#428bca;
+	-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);
+	box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);
+	-webkit-transition:width .6s ease;
+	transition:width .6s ease;
+
+   background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent
+    );
+    background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent
+    );
+    background-size: 40px 40px;
+   
+}
+
+.form-control {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   display: block;
+   width: 100%;
+   height: 34px;
+   padding: 6px 12px;
+   font-size: 14px;
+   line-height: 1.42857143;
+   color: black;
+   background-color: #fff;
+   background-image: none;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+   -webkit-transition: border-color ease-in-out 0.15s,
+     box-shadow ease-in-out 0.15s;
+   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+ }
+
+ .form-control-buttton {
+   letter-spacing: 1px;
+     font-family: 'Poppins';
+   display: block;
+   width: 100%;
+   height: 34px;
+   padding: 6px 12px;
+   font-size: 15px;
+   line-height: 1.42857143;
+   color: white;
+   background-color: #fff;
+   background-image: none;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+   -webkit-transition: border-color ease-in-out 0.15s,
+     box-shadow ease-in-out 0.15s;
+   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+ }
+
+
+ .btn{
+   font-family: 'Poppins', sans-serif;
+   color: black;
+  width: 40px;
+  height: 85px;
+   background-color: rgba(255, 0, 0, 0.716);
+   border-radius: 6px;
+   position: relative;
+   top: 13px;
+   left: 9px;
+  
+ }
+
