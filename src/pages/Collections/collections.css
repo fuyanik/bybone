@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;1,700&family=Quicksand:wght@300;400;500;600;700&family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,600;0,700;0,800;1,700&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Flex:opsz@8..144&family=Satisfy&display=swap');
 
 .collections{
    display: flex;
@@ -16,7 +16,7 @@
    position: relative;
    display: flex;
    flex-wrap: wrap;
-   background-color: var(--navyLight);
+   background-color: rgba(0, 0, 0, 0.499);
    width: 100%;
   
    gap: 45px;
@@ -38,14 +38,14 @@
   border-radius: 15px;
   position: fixed;
   left: 10%;
-  top: 20%;
+  top: 17.5%;
  
   
   z-index: 999999999999;
   display: flex;
   flex-direction: column;
   width: 1292px;
-  height: 475px;
+  height: 575px;
   background-color: white;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -89,7 +89,7 @@
    transition: 500ms;
    position: relative;
    top: 28px;
-   width: 430px;
+   width: 530px;
   
  
 }
@@ -106,9 +106,12 @@
 }
 
 .collection-item-texts h2{
-   font-family: 'Quicksand', sans-serif;
-   color: #9e4b47;
+   position: relative;
+   left: 5px;
+   font-family: 'Roboto Flex', sans-serif;
+   color: rgba(0, 0, 0, 0.712);
    font-size: 18px;
+   text-align: center;
 }
 
 .collection-item-texts p {

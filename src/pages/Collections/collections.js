@@ -46,7 +46,10 @@ const [user] = useAuthState(auth);
         
         
      { user && <AddCollections/>  }  
-
+     <a href="/giris" style={{
+      cursor:"pointer", marginTop:"90px",
+     }}>   <button className="login-button"> Giriş yap</button> </a>
+          
               <div className="collection-items">
                   
                   {articles.map(({id,title,description,ImageUrl,createdAt}, idx) => {

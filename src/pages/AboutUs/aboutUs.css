@@ -75,7 +75,7 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
     width: 100%;
     height: 28vh;
     display: flex;
-    background-color: var(--navyLight);
+    background-color: rgba(0, 0, 0, 0.493);
     justify-content: space-around;
     align-items: center;
    
@@ -134,7 +134,7 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
  
      position: relative;
     display: flex;
-    height: 380px;
+    height: 350px;
     width: 356px;
    
     flex-direction: column;
@@ -157,10 +157,10 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
   
 .about-us-main-right{
     right: 25px;
- 
+ top: 8px;
     position: relative;
     display: flex;
-    height: 380px;
+    height: 340px;
     width: 356px;
     align-items: center;
     justify-content: space-around;

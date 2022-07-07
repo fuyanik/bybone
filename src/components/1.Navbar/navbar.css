@@ -9,7 +9,7 @@
     justify-content: space-between;
      position: fixed;
     align-items: center;
-    background-color: var(--navyLight);
+    background-color: rgba(0, 0, 0, 0.493);
   }
 
   .navbar-hover-help{
@@ -19,9 +19,9 @@
     height: 50px;
     background-color: rgba(255, 0, 0, 0);
     cursor: pointer;
-  
     position: absolute;
   }
+  
   
   .logom{
     left: 45px;
@@ -112,7 +112,7 @@
   position:  absolute;
   width: 1050px;
   height: 150px;
-  background-color: var(--navyLight);
+  background-color: rgba(0, 0, 0, 0.493);
   border-radius: 15px;
   display: flex;
   justify-content: center;
