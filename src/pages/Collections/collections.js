@@ -45,7 +45,7 @@ const [user] = useAuthState(auth);
         <div className="collections"> 
         
         
-     { user && <AddCollections/>  }  
+    <AddCollections/>  
      <a href="/login" style={{
       cursor:"pointer", marginTop:"90px",
      }}>   <button className="login-button"> Giriş yap</button> </a>
