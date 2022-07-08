@@ -213,6 +213,7 @@ collection-item-texts-right-selected{
    padding: 15px 800px;
    font-family: 'Poppins';
    font-size: 13px;
+   z-index: -1;
 }
 
 .form-area button{
