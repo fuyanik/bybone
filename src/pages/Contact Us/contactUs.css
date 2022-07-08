@@ -18,7 +18,7 @@ ContactUs{
 }
 
 .contact-card{
-    z-index: -1;
+    z-index: 1;
     border-radius: 15px;
     top: 95px;
     left: 110px;
@@ -30,7 +30,7 @@ ContactUs{
 
 }
 .contactUs-main-form{
-    z-index: -1;
+    z-index: 3;
     position: relative;
     bottom: 75px;
 }
