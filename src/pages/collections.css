@@ -20,7 +20,7 @@
    width: 100%;
   
    gap: 45px;
-   top: 150px;
+   top: 180px;
    padding-top: 60px ;
    justify-content: center;
  
@@ -33,23 +33,23 @@
 
    transition: 400ms;
    justify-content: center;
+   border-radius: 15px;
+   position: fixed;
+   left: 10%;
+   top: 17.5%;
+   z-index: 999999999999;
+   display: flex;
+   width: 1292px;
+   height: 525px;
+   background-color: white;
+   cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+   border: 3px solid var(--navy);
   
- 
-  border-radius: 15px;
-  position: fixed;
-  left: 10%;
-  top: 17.5%;
- 
+   
+   
   
-  z-index: 999999999999;
-  display: flex;
-  flex-direction: column;
-  width: 1292px;
-  height: 575px;
-  background-color: white;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  border: 2px solid var(--navy);
+
 }
 
 
@@ -88,8 +88,11 @@
 .collection-item-image-selected{
    transition: 500ms;
    position: relative;
-   top: 28px;
-   width: 530px;
+   top: 0px;
+   width: 510px;
+   margin-left: -500px;
+   border-bottom: 1px solid black;
+ 
   
  
 }
@@ -105,7 +108,17 @@
    align-items: center;
 }
 
-.collection-item-texts h2{
+.collection-item-texts-head{
+   display: flex;
+   flex-direction: column;
+}
+
+.collection-item-texts-head-selected{
+display: none;
+}
+
+
+.collection-item-texts-head h2{
    position: relative;
    left: 5px;
    font-family: 'Roboto Flex', sans-serif;
@@ -114,7 +127,7 @@
    text-align: center;
 }
 
-.collection-item-texts p {
+.collection-item-texts-head p {
    text-align: center;
    top: -17px;
    position: relative;
@@ -123,6 +136,60 @@
    color: #000000;
 }
   
+.collection-item-texts-right{
+   display: none;
+}
+
+collection-item-texts-right-selected{
+   display: flex;
+
+   width: 500px;
+ 
+}
+
+.collection-item-texts-right-items{
+   border-left: 3px solid black;
+   padding-left: 45px;
+   display: flex;
+   flex-direction: column;
+   width: 600px;
+   line-height: 8px;
+   font-size: 17px;
+   margin-top: 95px;
+   margin-left: 80px;
+  
+ 
+}
+
+.collection-item-texts-right-items h2{
+   font-size: 22.5px;
+   font-family: 'Roboto Flex', sans-serif;
+   letter-spacing: 0.7px;
+   color: #3f3838;
+}
+.collection-item-texts-right-items span{
+   color: #080606;
+   position: relative;
+   top: -15px;
+
+}
+
+
+.collection-item-texts-right-items p:nth-child(2){
+   color: #6f6f6f;
+}
+
+.collection-item-texts-right-items div{
+   letter-spacing: 1.4px;
+   font-family: 'Roboto Flex', sans-serif;
+ 
+   font-weight: 600;
+   display: flex;
+   gap: 20px;
+
+}
+
+
 
 .add-collections{
    display: flex;
@@ -137,16 +204,22 @@
    top: 100px;
    position: relative;
    width: 500px;
-   height: 370px;
-   background-color: rgba(198, 198, 205, 0.614);
+   height: 570px;
+   background-color: var(--navyLight);
+   color: #fff;
    gap: 8px;
    border-radius: 10px;
-   padding: 15px 40px;
+   padding: 15px 800px;
+   font-family: 'Poppins';
+   font-size: 13px;
 }
 
 .form-area button{
+   border-radius: 20px;
    position: relative;
-   left: 0px;
+   left: 10px;
+   width: 560px;
+   height: 80px;
    background-color: var(--purple);
 }
 
@@ -224,6 +297,8 @@
  }
 
  .form-control-buttton {
+   top: 5px;
+   position: relative;
    letter-spacing: 1px;
      font-family: 'Poppins';
    display: block;
@@ -253,7 +328,7 @@
    background-color: rgba(255, 0, 0, 0.716);
    border-radius: 6px;
    position: relative;
-   top: 13px;
+   top: -26px;
    left: 9px;
   
  }

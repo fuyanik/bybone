@@ -9,7 +9,7 @@ import {useAuthState} from "react-firebase-hooks/auth";
 
 
 
-const Collections = () => {
+const Blance = () => {
   
 
 const [user] = useAuthState(auth);
@@ -17,7 +17,7 @@ const [user] = useAuthState(auth);
  
  
   useEffect(() => {
-     const articleRef = collection(db, "Articles");
+     const articleRef = collection(db, "Blance");
      const q = query(articleRef, orderBy("createdAt", "desc"));
 
          // Listen for updates and set the state.
@@ -36,8 +36,6 @@ const [user] = useAuthState(auth);
                const [clicked, setClicked] = useState({total: 0});
                const getClass = idx => (`item ${clicked[idx] ? 'collection-item-selected' : 'collection-item'}`);
                const getClass2 = idx => (`item ${clicked[idx] ? 'collection-item-image-selected' : 'collection-item-image'}`);
-               const getClass3 = idx => (`item ${clicked[idx] ? ' collection-item-texts-head-selected' : ' collection-item-texts-head'}`);
-               const getClass4 = idx => (`item ${clicked[idx] ? ' collection-item-texts-right-selected' : ' collection-item-texts-right'}`);
 
                 console.log(user);
             
@@ -55,9 +53,8 @@ const [user] = useAuthState(auth);
           
               <div className="collection-items">
                   
-                  {articles.map(({id,title,description,ImageUrl,cbm,dimension,kg,pieces,createdAt}, idx) => {
+                  {articles.map(({id,title,description,ImageUrl,createdAt}, idx) => {
                      return (
-                      
                     <div   key={idx} 
                     onClick={() => setClicked(prev => ({
                       ...prev,
@@ -67,49 +64,38 @@ const [user] = useAuthState(auth);
                     className={getClass(idx)}
                     
                     >
-                     <DeleteCollections id={id} ImageUrl={ImageUrl}/> 
                     
-                       
+                    
+                        <DeleteCollections id={id} ImageUrl={ImageUrl}/> 
                          
                            <img  className={getClass2(idx)} src={ImageUrl} />
-                                      
-                           <div className="collection-item-texts"> 
-
-                                 <div className={getClass3(idx)}>
+          
+                                 <div className="collection-item-texts"> 
                                     <h2 >{title}</h2>
                                     <p>{description}</p>
-                                 </div> 
-                             
-
-                                  <div className={getClass4(idx)}>    
-
-                                    <div className="collection-item-texts-right-items">
-
-                                      <h2>{title}</h2>
-                                      <span>_____________</span>
                                    
-                                      <div > <p> Ürün Kodu: </p>  <p> {description} </p>  </div>
-                                      <div > <p> Brüt KG: </p>  <p> {kg} </p>  </div>
-                                      <div> <p> CBM(Metreküp): </p>  <p> {cbm} </p>  </div>
-                                      <div> <p> Koli İçi Adet: </p>  <p> {pieces} </p>  </div>
-                                      <div> <p> Ölçü: </p>  <p> {dimension} </p>  </div>
-                                      
-                                      
-                                 
-                                   
+
                                     
-
-                                    </div> 
-                                           
-                                  </div> 
                                     { /* <p>{createdAt.toDate().toDateString()}</p> */ }
-                             </div>
+                                  </div>
                     
                     </div>
           
           );
         })}
   
+                    
+              </div>
+
+        </div>
+    
+                   
+
+        </>
+    )
+}
+
+export default Blance;
           
 
     
@@ -129,15 +115,3 @@ const [user] = useAuthState(auth);
                     
                   
                     
-                    
-              </div>
-
-        </div>
-    
-                   
-
-        </>
-    )
-}
-
-export default Collections;

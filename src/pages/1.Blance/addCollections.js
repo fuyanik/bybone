@@ -16,10 +16,6 @@ const AddCollections = () => {
 
         title: "",
         description:"",
-        cbm:"",
-        dimension:"",
-        kg:"",
-        pieces:"",
         image: "",
         createdAt: Timestamp.now().toDate,
     })
@@ -63,14 +59,10 @@ const AddCollections = () => {
     }); 
         getDownloadURL(uploadImage.snapshot.ref)
         .then((url)=>{
-            const articleRef = collection(db,"Articles");
+            const articleRef = collection(db,"Blance");
             addDoc(articleRef,{
                 title: formData.title,
                 description: formData.description,
-                cbm: formData.cbm,
-                dimension: formData.dimension,
-                kg: formData.kg,
-                pieces: formData.pieces,
                 ImageUrl: url,
                 createdAt: Timestamp.now().toDate(),
 
@@ -105,7 +97,7 @@ const AddCollections = () => {
            
               <div className='form-area'>
                
-                <span>Ürün Adı:</span>
+                <span>Title</span>
                 <input 
                 type="text"
                 name="title"
@@ -115,7 +107,7 @@ const AddCollections = () => {
                 
                 />
                
-                <span>Ürün Kodu:</span>
+                <span>Description</span>
                 <input 
                  type="text"
                  name="description"
@@ -123,48 +115,8 @@ const AddCollections = () => {
                  value={formData.description} 
                  onChange={(e) => handleChange(e) }
                  />
-
-
-               <span>CBM (Metreküp):</span>
-                <input 
-                 type="text"
-                 name="cbm"
-                 className="form-control" 
-                 value={formData.cbm} 
-                 onChange={(e) => handleChange(e) }
-                 />
-
-                <span>Ölçü:</span>
-                <input 
-                 type="text"
-                 name="dimension"
-                 className="form-control" 
-                 value={formData.dimension} 
-                 onChange={(e) => handleChange(e) }
-                 />
-
-                <span>Brüt KG:</span>
-                <input 
-                 type="text"
-                 name="kg"
-                 className="form-control" 
-                 value={formData.kg} 
-                 onChange={(e) => handleChange(e) }
-                 />
-
-                <span>Koli İçi Adet:</span>
-                <input 
-                 type="text"
-                 name="pieces"
-                 className="form-control" 
-                 value={formData.pieces} 
-                 onChange={(e) => handleChange(e) }
-                 />
-
-
-
               
-                <span>Fotoğraf:</span>
+                <span>Image</span>
                 <input 
                 type="file" 
                 name="image" 
@@ -187,14 +139,14 @@ const AddCollections = () => {
              
              >Yükle</button>
 
-            { /*<button
+            <button
             style={{
                 backgroundColor: "red"
             }}
              className='form-control-buttton btn-primary mt-2'
              onClick={()=>{signOut(auth)}}
              
-        >Çıkış Yap</button>*/}
+             >Çıkış Yap</button>
 
 
 

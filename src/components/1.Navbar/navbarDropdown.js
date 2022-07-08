@@ -21,6 +21,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <h4 className="dropdown-head"> Harmony</h4>
                            
                            <ul className="dropdown-list">
+                       
                            <Link to="/ardent"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Ardent</li> </Link>
                            <Link to="/blance"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Blance</li> </Link>
                            <Link to="/breeze"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Breeze</li> </Link>

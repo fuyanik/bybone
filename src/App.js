@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter } from 'react-router-dom';
 import {Routes, Route, Link, NavLink} from 'react-router-dom';
 import Home from './Home';
+import Blance from './pages/1.Blance/collections';
 import AboutUs from './pages/AboutUs/aboutUs';
 import Collections from './pages/Collections/collections';
 //import Ardent from './pages/Collections/MainItems/1.Ardent/ardent';
@@ -35,6 +36,7 @@ export default function App() {
          
          
            <Route path="/ardent" element={<Collections/>} />
+           <Route path="/blance" element={<Blance/>} />
 
          
          
