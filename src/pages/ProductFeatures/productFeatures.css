@@ -20,7 +20,7 @@
 }
 .product-nav{
   
-  
+  z-index: -1;
    margin-top: -50px;
    width: 450px;
     cursor: pointer;

@@ -57,14 +57,15 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            >
 
                             
-                               <li>Ardent</li>
-                               <li>Blance</li>
-                               <li>Bleezze</li>
-                               <li>Elegance</li>
-                               <li>Enigme</li>
-                               <li>Gleam</li>
-                               <li>Infinity</li>
-                               <li>Laterite</li>
+                           <Link to="/armonia"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Armonia</li> </Link>
+                           <Link to="/edera"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Edera</li> </Link>
+                           <Link to="/ederacobalt"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Edera Cobalt</li> </Link>
+                           <Link to="/kolezyum"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Kolezyum</li> </Link>
+                           <Link to="/ardent"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Legna</li> </Link>
+                           <Link to="/rome"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Rome</li> </Link>
+                           <Link to="/spazio"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Spazio</li> </Link>
+                           <Link to="/tessera"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Tessera</li> </Link>
+                            
                               
                                
                            </ul>
@@ -79,13 +80,10 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                              style={{right: "90px"}}
                            
                            >
-                               <li>Ardent</li>
-                               <li>Blance</li>
-                               <li>Bleezze</li>
-                               <li>Elegance</li>
-                               <li>Enigme</li>
-                               <li>Gleam</li>
-                               <li>Infinity</li>
+                                <Link to="/ısland"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Island</li> </Link>
+                               <Link to="/ıslandombra"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Island Ombra</li> </Link>
+                               <Link to="/ıslandonix"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Island Onix</li> </Link>
+                              <Link to="/ıslandvelho"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Island Velho</li> </Link>
                             
                                
                            </ul>
@@ -99,10 +97,10 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                              style={{right: "91px"}}
                            
                            >
-                               <li>Ardent</li>
-                               <li>Blance</li>
-                               <li>Bleezze</li>
-                               <li>Elegance</li>
+                                <Link to="/cowryblack"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Black</li> </Link>
+                               <Link to="/cowrybrick"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Brick</li> </Link>
+                               <Link to="/cowrypurple"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Purple</li> </Link>
+                              <Link to="/cowryyellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Yellow</li> </Link>
                             
                                
                            </ul>
@@ -115,10 +113,10 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <ul className="dropdown-list"
                              style={{right: "103px"}}
                            >
-                               <li>Ardent</li>
-                               <li>Blance</li>
-                               <li>Bleezze</li>
-                               <li>Elegance</li>
+                                   <Link to="/smooth"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth</li> </Link>
+                               <Link to="/smoothblue"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Ambience Blue</li> </Link>
+                               <Link to="/smoothyellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Ambience Yellow</li> </Link>
+                              <Link to="/smoothreaction"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Reaction</li> </Link>
                             
                                
                            </ul>

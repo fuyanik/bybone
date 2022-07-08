@@ -252,7 +252,7 @@ cursor: pointer;
   list-style: none;
   transition: 300ms;
   cursor: pointer;
-
+  width: 120px;
   letter-spacing: 1px;
   
 }
