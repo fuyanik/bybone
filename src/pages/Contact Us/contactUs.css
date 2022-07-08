@@ -30,7 +30,7 @@ ContactUs{
 
 }
 .contactUs-main-form{
-    z-index: 3;
+    z-index: 1;
     position: relative;
     bottom: 75px;
 }
