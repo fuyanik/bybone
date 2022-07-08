@@ -193,6 +193,7 @@ collection-item-texts-right-selected{
 
 
 .add-collections{
+   z-index: 15;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -200,6 +201,7 @@ collection-item-texts-right-selected{
 }
 
 .form-area{
+   z-index: 15;
    flex-direction: column;
    display: flex;
    top: 100px;
@@ -217,6 +219,7 @@ collection-item-texts-right-selected{
 }
 
 .form-area button{
+   z-index: 15;
    border-radius: 20px;
    position: relative;
    left: 10px;
@@ -236,11 +239,13 @@ collection-item-texts-right-selected{
 /* BOOTSTRAP */
 
 .progress{
+     z-index: 15;
    display:inline-block;
  vertical-align:baseline
 }
 
 .progress-bar{
+   z-index: 15;
    float:left;
 	width:0;
 	height:100%;
@@ -279,6 +284,7 @@ collection-item-texts-right-selected{
 }
 
 .form-control {
+   z-index: 15;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    display: block;
    width: 100%;
@@ -299,6 +305,7 @@ collection-item-texts-right-selected{
  }
 
  .form-control-buttton {
+   z-index: 15;
    top: 5px;
    position: relative;
    letter-spacing: 1px;
@@ -323,6 +330,7 @@ collection-item-texts-right-selected{
 
 
  .btn{
+   z-index: 15;
    font-family: 'Poppins', sans-serif;
    color: black;
   width: 40px;
