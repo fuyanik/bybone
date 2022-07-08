@@ -26,17 +26,19 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <Link to="/blance"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Blance</li> </Link>
                            <Link to="/breeze"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Breeze</li> </Link>
                            <Link to="/elegance"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Elegance</li> </Link>
+                           <Link to="/enigma"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Enigma</li> </Link>
+                           <Link to="/gleam"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Gleam</li> </Link>
+                           <Link to="/Infinity"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Infinity</li> </Link>
+                           <Link to="/rose"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Rose</li> </Link>
+                           <Link to="/sun"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Sun</li> </Link>
+                           <Link to="/supreme"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Supreme</li> </Link>
+                           <Link to="/tropical"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Tropical</li> </Link>
                                
                               
                                
-                               <li>Enigme</li>
-                               <li>Gleam</li>
-                               <li>Infinity</li>
-                               <li>Laterite</li>
-                               <li>Rose</li>
-                               <li>Sun</li>
-                               <li>Supreme</li>
-                               <li>Tropical</li>
+                            
+                             
+                            
                
                            </ul>
                 

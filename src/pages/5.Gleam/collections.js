@@ -12,7 +12,7 @@ import { setGlobalState, useGlobalState } from "../../hookState.js";
 
 
 
-const Blance = () => {
+const Gleam = () => {
   
   //leangue control
   const[isTurkish] = useGlobalState("isTurkish");
@@ -25,7 +25,7 @@ const Blance = () => {
  
  
   useEffect(() => {
-     const articleRef = collection(db, "Blance");
+     const articleRef = collection(db, "Gleam");
      const q = query(articleRef, orderBy("createdAt", "desc"));
 
          // Listen for updates and set the state.
@@ -130,14 +130,6 @@ const Blance = () => {
 
 
 
-            
-     
-   
-
-                    
-                  
-                    
-                    
               </div>
 
         </div>
@@ -148,4 +140,12 @@ const Blance = () => {
     )
 }
 
-export default Blance;
+export default Gleam;
+            
+     
+   
+
+                    
+                  
+                    
+                    

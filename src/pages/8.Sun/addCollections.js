@@ -64,7 +64,7 @@ const AddCollections = () => {
     }); 
         getDownloadURL(uploadImage.snapshot.ref)
         .then((url)=>{
-            const articleRef = collection(db,"Articles");
+            const articleRef = collection(db,"Sun");
             addDoc(articleRef,{
                 titleENG: formData.titleENG,
                 title: formData.title,

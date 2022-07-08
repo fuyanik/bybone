@@ -7,12 +7,20 @@ import AddCollections from "./addCollections";
 import DeleteCollections from "./deleteCollections";
 import {useAuthState} from "react-firebase-hooks/auth";
 
+import { setGlobalState, useGlobalState } from "../../hookState.js";
+
+
 
 
 const Collections = () => {
   
+  //leangue control
+  const[isTurkish] = useGlobalState("isTurkish");
 
-const [user] = useAuthState(auth);
+  // user status control
+  const [user] = useAuthState(auth);
+  
+  // all user data array
   const [articles, setArticles] = useState([]);
  
  
@@ -55,7 +63,7 @@ const [user] = useAuthState(auth);
           
               <div className="collection-items">
                   
-                  {articles.map(({id,title,description,ImageUrl,cbm,dimension,kg,pieces,createdAt}, idx) => {
+                  {articles.map(({id,title,titleENG,description,ImageUrl,cbm,dimension,kg,pieces,createdAt}, idx) => {
                      return (
                       
                     <div   key={idx} 
@@ -76,7 +84,7 @@ const [user] = useAuthState(auth);
                            <div className="collection-item-texts"> 
 
                                  <div className={getClass3(idx)}>
-                                    <h2 >{title}</h2>
+                                  { isTurkish ? <h2 >{title}</h2> : <h2 >{titleENG}</h2>}  
                                     <p>{description}</p>
                                  </div> 
                              
@@ -85,14 +93,14 @@ const [user] = useAuthState(auth);
 
                                     <div className="collection-item-texts-right-items">
 
-                                      <h2>{title}</h2>
+                                    { isTurkish ? <h2 >{title}</h2> : <h2 >{titleENG}</h2>}  
                                       <span>_____________</span>
                                    
-                                      <div > <p> Ürün Kodu: </p>  <p> {description} </p>  </div>
-                                      <div > <p> Brüt KG: </p>  <p> {kg} </p>  </div>
-                                      <div> <p> CBM(Metreküp): </p>  <p> {cbm} </p>  </div>
-                                      <div> <p> Koli İçi Adet: </p>  <p> {pieces} </p>  </div>
-                                      <div> <p> Ölçü: </p>  <p> {dimension} </p>  </div>
+                                      <div >   { isTurkish ? <p> Ürün Kodu: </p> : <p> Product Code: </p>  }  <p> {description} </p>  </div>
+                                      <div >  { isTurkish ?  <p> Brüt KG: </p> : <p> Gross KG: </p> }   <p> {kg} </p>  </div>
+                                      <div>   { isTurkish ? <p> CBM(Metreküp): </p> :  <p> CBM: </p> }  <p> {cbm} </p>  </div>
+                                      <div>  { isTurkish ? <p> Koli İçi Adet: </p> : <p> Pieces in Box </p>  }  <p> {pieces} </p>  </div>
+                                      <div>  { isTurkish ? <p> Ölçü: </p> :  <p> Dimension: </p>}   <p> {dimension} </p>  </div>
                                       
                                       
                                  

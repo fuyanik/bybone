@@ -13,9 +13,14 @@ import {getDownloadURL, ref, uploadBytesResumable} from 'firebase/storage';
 const AddCollections = () => { 
 
     const [formData, setFormData] = useState({
-
+        
+        titleENG:"",
         title: "",
         description:"",
+        cbm:"",
+        dimension:"",
+        kg:"",
+        pieces:"",
         image: "",
         createdAt: Timestamp.now().toDate,
     })
@@ -61,8 +66,13 @@ const AddCollections = () => {
         .then((url)=>{
             const articleRef = collection(db,"Blance");
             addDoc(articleRef,{
+                titleENG: formData.titleENG,
                 title: formData.title,
                 description: formData.description,
+                cbm: formData.cbm,
+                dimension: formData.dimension,
+                kg: formData.kg,
+                pieces: formData.pieces,
                 ImageUrl: url,
                 createdAt: Timestamp.now().toDate(),
 
@@ -97,7 +107,8 @@ const AddCollections = () => {
            
               <div className='form-area'>
                
-                <span>Title</span>
+
+                <span>Ürün Adı:</span>
                 <input 
                 type="text"
                 name="title"
@@ -106,8 +117,19 @@ const AddCollections = () => {
                 onChange={(e) => handleChange(e) }
                 
                 />
+             
+                <span>Ürün Adı(İNGİLİZCE):</span>
+                <input 
+                type="text"
+                name="titleENG"
+                className="form-control" 
+                value={formData.titleENG} 
+                onChange={(e) => handleChange(e) }
+                
+                />
+                   
                
-                <span>Description</span>
+                <span>Ürün Kodu:</span>
                 <input 
                  type="text"
                  name="description"
@@ -115,8 +137,48 @@ const AddCollections = () => {
                  value={formData.description} 
                  onChange={(e) => handleChange(e) }
                  />
+
+
+               <span>CBM (Metreküp):</span>
+                <input 
+                 type="text"
+                 name="cbm"
+                 className="form-control" 
+                 value={formData.cbm} 
+                 onChange={(e) => handleChange(e) }
+                 />
+
+                <span>Ölçü:</span>
+                <input 
+                 type="text"
+                 name="dimension"
+                 className="form-control" 
+                 value={formData.dimension} 
+                 onChange={(e) => handleChange(e) }
+                 />
+
+                <span>Brüt KG:</span>
+                <input 
+                 type="text"
+                 name="kg"
+                 className="form-control" 
+                 value={formData.kg} 
+                 onChange={(e) => handleChange(e) }
+                 />
+
+                <span>Koli İçi Adet:</span>
+                <input 
+                 type="text"
+                 name="pieces"
+                 className="form-control" 
+                 value={formData.pieces} 
+                 onChange={(e) => handleChange(e) }
+                 />
+
+
+
               
-                <span>Image</span>
+                <span>Fotoğraf:</span>
                 <input 
                 type="file" 
                 name="image" 
@@ -139,14 +201,14 @@ const AddCollections = () => {
              
              >Yükle</button>
 
-            <button
+            { /*<button
             style={{
                 backgroundColor: "red"
             }}
              className='form-control-buttton btn-primary mt-2'
              onClick={()=>{signOut(auth)}}
              
-             >Çıkış Yap</button>
+        >Çıkış Yap</button>*/}
 
 
 

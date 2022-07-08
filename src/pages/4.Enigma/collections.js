@@ -12,7 +12,7 @@ import { setGlobalState, useGlobalState } from "../../hookState.js";
 
 
 
-const Blance = () => {
+const Enigma = () => {
   
   //leangue control
   const[isTurkish] = useGlobalState("isTurkish");
@@ -25,7 +25,7 @@ const Blance = () => {
  
  
   useEffect(() => {
-     const articleRef = collection(db, "Blance");
+     const articleRef = collection(db, "Enigma");
      const q = query(articleRef, orderBy("createdAt", "desc"));
 
          // Listen for updates and set the state.
@@ -148,4 +148,4 @@ const Blance = () => {
     )
 }
 
-export default Blance;
+export default Enigma;
