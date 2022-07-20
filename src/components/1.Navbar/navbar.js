@@ -66,7 +66,7 @@ const Navbar = () => {
           
           
             
-            >   {isTurkish ? "KOLEKSİYONLAR" : "COLLECTİON" }</li>
+            >   {isTurkish ? "KOLEKSİYONLAR" : "COLLECTION" }</li>
             
             
           

@@ -9,7 +9,7 @@
     justify-content: space-between;
      position: fixed;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: #2b3034;
   }
 
   .navbar-hover-help{
@@ -25,7 +25,7 @@
   
   .logom{
     left: 45px;
-   top: 2px;
+    top: 2px;
     position: relative;
     display: flex;
     width: 120px;
@@ -61,7 +61,7 @@
   .navbar-li::after{
     content: "";
     position: absolute;
-    background-color: #ec7b7b;
+    background-color: white;
     height: 0.1rem;
     width: 0;
     left: 0;
@@ -85,7 +85,7 @@
  display: flex;
  height: 42px;
  width: 152px;
- background-color: #8976f7;
+ background-color: #f14545;
  align-self: center;
  justify-self: flex-end;
  border-radius: 35px;
@@ -336,7 +336,7 @@ width: 100%;
        justify-content: space-between;
         position: fixed;
        align-items: center;
-       background-color: #0d2e519a;
+       background-color: #2b3034;
        
     
      }

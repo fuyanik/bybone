@@ -15,8 +15,8 @@ const Features = () => {
   
 console.log(imageIndex);
 return (
-  <div className="product-features">
-    <Navbar/>
+  <div className="product-featuress">
+   
     <img src = {imageIndex == 0 ? require('./images/logo.png') :
                 imageIndex == 1 ? require('./images/logo1.png') :
                 imageIndex == 2 ? require('./images/logo2.png') :

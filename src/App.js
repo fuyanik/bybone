@@ -24,8 +24,9 @@ import Collections from './pages/Collections/collections';
 import ContactUs from './pages/Contact Us/contactUs';
 import Features from './pages/Features/features';
 import Login from './pages/login';
-import ProductFeatures from './pages/ProductFeatures/productFeatures';
+
 import Register from './pages/register';
+import ProductFeaturesTest from './pages/ProductFeaturesTest/productFeaturesTest';
 
 
 export default function App() {
@@ -36,7 +37,7 @@ export default function App() {
            <Route path="/" element={<Home/>} />
            <Route path="/contact" element={<ContactUs/>} />
            <Route path="/about" element={<AboutUs/>} />
-           <Route path="/product" element={<ProductFeatures/>} />
+           <Route path="/product" element={<ProductFeaturesTest/>} />
            <Route path="/signup" element={<Register/>} />
            <Route path="/login" element={<Login /> } />
          

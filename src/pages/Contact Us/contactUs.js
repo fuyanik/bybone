@@ -127,14 +127,7 @@ const ContactUs = () => {
         </div>
        
        
-        <div
-          style={{
-            height: "500px",
-            backgroundColor: "#eee",
-          }}
-        >
-          {" "}
-        </div>
+     
      
      
      

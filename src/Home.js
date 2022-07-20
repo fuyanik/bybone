@@ -1,4 +1,5 @@
 import Navbar from "./components/1.Navbar/navbar";
+
 import Hero from "./components/2.Hero/hero";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -15,6 +16,10 @@ import ContactUs from "./pages/Contact Us/contactUs";
 import Features from "./pages/Features/features";
 
 
+//import Header from "./components/-1.Header/header";
+//import TopNavbar from "./components/0.Navbar/navbar";
+
+
 
 AOS.init();
 
@@ -22,8 +27,8 @@ AOS.init();
 function Home() {
   return (
     <div className="App">
-    
-       <Navbar/>
+   
+        <Navbar />
        <Features/>
        <Hero/>
        <HeroFooter/>

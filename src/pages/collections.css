@@ -16,7 +16,7 @@
    position: relative;
    display: flex;
    flex-wrap: wrap;
-   background-color: rgba(0, 0, 0, 0.499);
+   background-color: #2b3034;
    width: 100%;
   
    gap: 45px;
@@ -41,7 +41,7 @@
    display: flex;
    width: 1292px;
    height: 525px;
-   background-color: white;
+   background-color: rgb(255, 255, 255);
    cursor: pointer;
    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
    border: 3px solid var(--navy);
@@ -208,7 +208,8 @@ collection-item-texts-right-selected{
    position: relative;
    width: 500px;
    height: 600px;
-   background-color: var(--navyLight);
+   background: rgb(87,91,94);
+  background: linear-gradient(0deg, rgba(87,91,94,1) 26%, rgba(43,48,52,1) 67%);
    color: #fff;
    gap: 8px;
    border-radius: 10px;

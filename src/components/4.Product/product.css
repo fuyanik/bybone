@@ -2,8 +2,8 @@
 
 
 .product{
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(13,46,81,1) 69%);
+  background: rgb(87,91,94);
+  background: linear-gradient(0deg, rgba(87,91,94,1) 26%, rgba(43,48,52,1) 67%);
    position: relative;
    top:-20px;
     width: 100%;
@@ -194,8 +194,8 @@
 
 @media screen and (max-width: 768px) {
   .product{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(13,46,81,1) 69%);
+    background: rgb(87,91,94);
+  background: linear-gradient(0deg, rgba(87,91,94,1) 26%, rgba(43,48,52,1) 67%);
      position: relative;
      top:-5px;
       width: 100%;
