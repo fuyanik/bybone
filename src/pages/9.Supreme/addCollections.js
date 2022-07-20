@@ -148,14 +148,6 @@ const AddCollections = () => {
                  onChange={(e) => handleChange(e) }
                  />
 
-                <span>Ölçü:</span>
-                <input 
-                 type="text"
-                 name="dimension"
-                 className="form-control" 
-                 value={formData.dimension} 
-                 onChange={(e) => handleChange(e) }
-                 />
 
                 <span>Brüt KG:</span>
                 <input 
