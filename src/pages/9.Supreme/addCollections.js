@@ -37,11 +37,13 @@ const AddCollections = () => {
         setFormData({...formData, image: e.target.files[0]})
      }
 
-     const handlePublish = () => { 
-          if(formData.title === "" || formData.description === "" || formData.image === ""){
-         alert("Lütfen Tüm Alanları Doldurunuz.");
-         return;
-}
+     const handlePublish = () => {
+       
+     { /*   if(formData.title === "" || formData.description === "" || formData.image === ""){
+         alert("Lütfen Tüm  Alanları Doldurunuz.");
+     return;   } */ }
+
+
  const storageRef = ref(storage, `/images/${formData.image.name}` );
    const uploadImage =  uploadBytesResumable(storageRef, formData.image)
    
