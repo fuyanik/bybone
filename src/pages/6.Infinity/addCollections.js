@@ -38,10 +38,9 @@ const AddCollections = () => {
      }
 
      const handlePublish = () => { 
-          if(formData.title === "" || formData.description === "" || formData.image === ""){
-         alert("Lütfen Tüm Alanları Doldurunuz.");
-         return;
-}
+        { /*   if(formData.title === "" || formData.description === "" || formData.image === ""){
+            alert("Lütfen Tüm Alanları Doldurunuz.");
+       return;}  */  } 
  const storageRef = ref(storage, `/images/${formData.image.name}` );
    const uploadImage =  uploadBytesResumable(storageRef, formData.image)
    

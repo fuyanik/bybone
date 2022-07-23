@@ -45,7 +45,8 @@ const AddCollections = () => {
 
 
  const storageRef = ref(storage, `/images/${formData.image.name}` );
-   const uploadImage =  uploadBytesResumable(storageRef, formData.image)
+  
+ const uploadImage =  uploadBytesResumable(storageRef, formData.image)
    
    uploadImage.on("state_changed", 
     (snapshot)=>{ 
@@ -54,6 +55,8 @@ const AddCollections = () => {
         );
       setProgress(progressPercent);
     },
+
+
     (err)=>{ 
        
         console.log(err);
@@ -64,6 +67,9 @@ const AddCollections = () => {
         description:"",
         image: "",
     }); 
+
+
+
         getDownloadURL(uploadImage.snapshot.ref)
         .then((url)=>{
             const articleRef = collection(db,"Supreme");
