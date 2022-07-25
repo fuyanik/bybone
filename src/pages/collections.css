@@ -99,14 +99,6 @@
   
  
    
-.collection-item-texts{
-  z-index: 5;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-    width: 280px;
-   align-items: center;
-}
 
 .collection-item-texts-head{
    display: flex;

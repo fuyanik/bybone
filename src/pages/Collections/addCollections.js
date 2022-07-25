@@ -12,6 +12,9 @@ import {getDownloadURL, ref, uploadBytesResumable} from 'firebase/storage';
 
 const AddCollections = () => { 
 
+    const Datew = Date.now();
+    console.log(Datew);
+
     const [formData, setFormData] = useState({
         
         titleENG:"",
@@ -30,23 +33,21 @@ const AddCollections = () => {
     const handleChange = (e) => { 
 
         setFormData({...formData, [e.target.name]: e.target.value})
+     
     }
 
     const handleImageChange = (e) => { 
-
+       
         setFormData({...formData, image: e.target.files[0]})
+        
      }
 
      const handlePublish = () => { 
-        
-    { /*   if(formData.title === "" || formData.description === "" || formData.image === ""){
-         alert("Lütfen Tüm Alanları Doldurunuz.");
-    return;}  */  } 
-
-
-
-
- const storageRef = ref(storage, `/images/${formData.image.name}` );
+       
+        { /*   if(formData.title === "" || formData.description === "" || formData.image === ""){
+            alert("Lütfen Tüm Alanları Doldurunuz.");
+       return;}  */  } 
+ const storageRef = ref(storage, `/images/${Datew}${formData.image.name}` );
    const uploadImage =  uploadBytesResumable(storageRef, formData.image)
    
    uploadImage.on("state_changed", 
@@ -62,9 +63,14 @@ const AddCollections = () => {
     },
     ()=> { 
         setFormData({
-        title: "",
-        description:"",
-        image: "",
+            titleENG:"",
+            title: "",
+            description:"",
+            cbm:"",
+            dimension:"",
+            kg:"",
+            pieces:"",
+           
     }); 
         getDownloadURL(uploadImage.snapshot.ref)
         .then((url)=>{
@@ -83,7 +89,8 @@ const AddCollections = () => {
             })
             .then(()=>{
                
-        
+                setFormData({...formData, image: ""});
+                
                 toast.success('Dosya Başarıyla Yüklendi.', {
                     position: "bottom-right",
                     autoClose: 3000,
@@ -94,6 +101,7 @@ const AddCollections = () => {
                     progress: undefined,
                     });
            setProgress(0);
+           console.log(formData.image);
 
             }).catch((err)=>{
                 toast("Error adding article", {type: "error"});
