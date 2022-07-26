@@ -12,6 +12,10 @@ import {getDownloadURL, ref, uploadBytesResumable} from 'firebase/storage';
 
 const AddCollections = () => { 
 
+
+
+    const refo = React.useRef();
+
     const Datew = Date.now();
     console.log(Datew);
 
@@ -90,7 +94,7 @@ const AddCollections = () => {
             .then(()=>{
                
                 setFormData({...formData, image: ""});
-                
+                refo.current.value = ""
                 toast.success('Dosya Başarıyla Yüklendi.', {
                     position: "bottom-right",
                     autoClose: 3000,
@@ -102,6 +106,7 @@ const AddCollections = () => {
                     });
            setProgress(0);
            console.log(formData.image);
+           
 
             }).catch((err)=>{
                 toast("Error adding article", {type: "error"});
@@ -185,7 +190,9 @@ const AddCollections = () => {
               
                 <span>Fotoğraf:</span>
                 <input 
+                
                 type="file" 
+                ref={refo}
                 name="image" 
                 accept="image/*" 
                 className="form-control" 
