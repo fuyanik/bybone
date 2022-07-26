@@ -94,7 +94,7 @@ const Gleam = () => {
                                     <div className="collection-item-texts-right-items">
 
                                     { isTurkish ? <h2 >{title}</h2> : <h2 >{titleENG}</h2>}  
-                                      <span>_____________</span>
+                                      
                                    
                                       <div >   { isTurkish ? <p> Ürün Kodu: </p> : <p> Product Code: </p>  }  <p> {description} </p>  </div>
                                       <div >  { isTurkish ?  <p> Brüt KG: </p> : <p> Gross KG: </p> }   <p> {kg} </p>  </div>
