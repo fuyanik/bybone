@@ -218,9 +218,29 @@ collection-item-texts-right-selected{
    border-radius: 20px;
    position: relative;
    left: 10px;
-   width: 560px;
+   width: 200%;
    height: 80px;
-   background-color: var(--purple);
+   background-color: rgba(0, 0, 0, 0.529);
+   color:rgba(5, 238, 238, 0.805);
+   font-size: 19px;
+   margin-bottom: 29px;
+   border: 1px solid rgb(5, 238, 238);
+   transition: 500ms;
+}
+
+.form-area button:hover{
+   z-index: 15;
+   border-radius: 20px;
+   position: relative;
+   left: 10px;
+   width: 200%;
+   height: 80px;
+   background-color: rgba(0, 0, 0, 0.529);
+   color:rgb(7, 254, 254);
+   font-size: 19px;
+   margin-bottom: 29px;
+   border: 3px solid rgb(5, 238, 238);
+   transition: 100ms;
 }
 
 .collection-item button{
