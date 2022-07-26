@@ -99,8 +99,8 @@ const Blance = () => {
                                       <div >   { isTurkish ? <p> Ürün Kodu: </p> : <p> Product Code: </p>  }  <p> {description} </p>  </div>
                                       <div >  { isTurkish ?  <p> Brüt KG: </p> : <p> Gross KG: </p> }   <p> {kg} </p>  </div>
                                       <div>   { isTurkish ? <p> CBM(Metreküp): </p> :  <p> CBM: </p> }  <p> {cbm} </p>  </div>
-                                      <div>  { isTurkish ? <p> Koli İçi Adet: </p> : <p> Pieces in Box </p>  }  <p> {pieces} </p>  </div>
-                                      <div>  { isTurkish ? <p> Ölçü: </p> :  <p> Dimension: </p>}   <p> {dimension} </p>  </div>
+                                      <div>  { isTurkish ? <p> Koli İçi Adet: </p> : <p> Pieces in Box:</p>  }  <p> {pieces} </p>  </div>
+                                      
                                       
                                       
                                  
