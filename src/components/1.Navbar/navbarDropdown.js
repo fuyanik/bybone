@@ -23,7 +23,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <ul className="dropdown-list">
                        
                            <Link to="/ardent"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Ardent</li> </Link>
-                           <Link to="/blance"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Blance</li> </Link>
+                           <Link to="/blance"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Balance</li> </Link>
                            <Link to="/breeze"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Breeze</li> </Link>
                            <Link to="/elegance"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Elegance</li> </Link>
                            <Link to="/enigma"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Enigma</li> </Link>
