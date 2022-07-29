@@ -27,6 +27,7 @@ import Login from './pages/login';
 
 import Register from './pages/register';
 import ProductFeaturesTest from './pages/ProductFeaturesTest/productFeaturesTest';
+import Vintage from './pages/11.Vintage/collections';
 
 
 export default function App() {
@@ -54,6 +55,7 @@ export default function App() {
             <Route path="/sun" element={<Sun/>} />
             <Route path="/supreme" element={<Supreme/>} />
             <Route path="/tropical" element={<Tropical/>} />
+            <Route path="/vintage" element={<Vintage/>} />
 
 
          

@@ -33,6 +33,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <Link to="/sun"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Sun</li> </Link>
                            <Link to="/supreme"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Supreme</li> </Link>
                            <Link to="/tropical"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Tropical</li> </Link>
+                           <Link to="/vintage"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Vintage</li> </Link>
                                
                               
                                
