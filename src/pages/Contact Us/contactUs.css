@@ -41,14 +41,14 @@ ContactUs{
     left: 190px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    color: #8976f7;
+    color: rgb(225, 88, 88);
     font-size: 20px;
 }
 
 .contactUs-main-form h1::before{
     content: "";
     position: absolute;
-    background-color: var(--purple);
+    background-color: rgb(227, 88, 88);
     height: 0.8px;
     width: 210px;
     left: 0;
@@ -130,9 +130,9 @@ ContactUs{
    .form-name-input:focus ~ label, form-name-input:valid ~ label {
  
     transform: translateY(-50%) scale(0.8);
-    background-color: #092542;
+    background-color: rgb(220, 58, 58);;
     padding: 0 .2em;
-    color: #2f96e4;
+    color: white;
 
    }
    .form-name-input:focus {
@@ -169,7 +169,7 @@ ContactUs{
 .submit-button-new  {
     font-family: "Poppins", sans-serif;
     font-size: 17.66px;
-    background: var(--purple);
+    background: rgba(220, 58, 58, 0.701);
     color: white;
     padding: 0.5em 9em;
     padding-left: 1.9em;
@@ -211,6 +211,10 @@ ContactUs{
    
    .submit-button-new:active {
     transform: scale(0.95);
+    
+   }
+   .submit-button-new:hover{
+    background-color: rgb(220, 58, 58);;
    }
    
    @keyframes fly-1 {

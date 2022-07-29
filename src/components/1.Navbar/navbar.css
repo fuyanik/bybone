@@ -61,8 +61,8 @@
   .navbar-li::after{
     content: "";
     position: absolute;
-    background-color: white;
-    height: 0.1rem;
+    background-color: rgb(220, 58, 58);
+    height: 1.8px;
     width: 0;
     left: 0;
     bottom: -5px;
