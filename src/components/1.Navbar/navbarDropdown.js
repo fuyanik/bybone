@@ -1,6 +1,8 @@
 import dropdownİmage from './images/dropdown.png'
 import dropdownİmage2 from './images/dropdownİmage2.png'
 import {Routes, Route, Link, NavLink} from 'react-router-dom';
+import newImage from "./images/newImage.png";
+
 //<img src={dropdownİmage} className ="dropdown-image" />
 
 const NavbarDropdown = ({onMouse,onLeave,display}) => {
@@ -16,7 +18,34 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
       
                   <img src={dropdownİmage2} className ="dropdown-image" />
                       <span className='dropdown-divider'>___________________________,___</span>
-                      
+
+       {/* Dekorsuz*/}
+                      <div className="dropdown-item-line"> 
+                           <h4 className="dropdown-head"> Dekorsuz</h4>
+                           
+                           <ul className="dropdown-list">
+                       
+                           <Link to="/isimsiz"  style={{   textDecoration: "none",  color: "white",   }}>   <li>İsimsiz</li> </Link>
+                           <Link to="/Island"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area7'> <li>Island</li> <img src={newImage}/> </div> </Link>
+                           <Link to="/Smooth"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area8'> <li>Smooth</li> <img src={newImage}/> </div> </Link>
+                           <Link to="/Gastro"  style={{   textDecoration: "none",  color: "white",   }}>   <div className='image-area9'> <li>Gastro</li> <img src={newImage}/> </div> </Link>
+                          
+                               
+                              
+                               
+                            
+                             
+                            
+               
+                           </ul>
+                
+
+         
+                               
+
+                      </div>
+
+      {/* Harmony*/}
                       <div className="dropdown-item-line"> 
                            <h4 className="dropdown-head"> Harmony</h4>
                            
@@ -29,10 +58,10 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <Link to="/enigma"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Enigma</li> </Link>
                            <Link to="/gleam"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Gleam</li> </Link>
                            <Link to="/Infinity"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Infinity</li> </Link>
-                           <Link to="/rose"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Rose</li> </Link>
+                           <Link to="/rose"  style={{   textDecoration: "none",  color: "white",   }}>    <div className='image-area5'> <li>Rose</li> <img src={newImage}/> </div>  </Link>
                            <Link to="/sun"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Sun</li> </Link>
                            <Link to="/supreme"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Supreme</li> </Link>
-                           <Link to="/tropical"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Tropical</li> </Link>
+                           <Link to="/tropical"  style={{   textDecoration: "none",  color: "white",   }}>   <div className='image-area6'> <li>Tropical</li> <img src={newImage}/> </div>  </Link>
                            <Link to="/vintage"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Vintage</li> </Link>
                            <Link to="/laterite"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Laterite</li> </Link>
                                
@@ -50,6 +79,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
 
                       </div>
                         
+      {/* Tinta*/}
                       <div className="dropdown-item-line"> 
                            <h4 className="dropdown-head"> Tinta</h4>
                            
@@ -63,7 +93,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <Link to="/edera"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Edera</li> </Link>
                            <Link to="/ederacobalt"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Edera Cobalt</li> </Link>
                            <Link to="/kolezyum"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Kolezyum</li> </Link>
-                           <Link to="/ardent"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Legna</li> </Link>
+                           <Link to="/legna"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Legna</li> </Link>
                            <Link to="/rome"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Rome</li> </Link>
                            <Link to="/spazio"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Spazio</li> </Link>
                            <Link to="/tessera"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Tessera</li> </Link>
@@ -74,25 +104,8 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
 
                       </div>
 
-
-                      <div className="dropdown-item-line"> 
-                           <h4 className="dropdown-head"> Island</h4>
-                           
-                           <ul className="dropdown-list"
-                             style={{right: "90px"}}
-                           
-                           >
-                                <Link to="/ısland"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Island</li> </Link>
-                               <Link to="/ıslandombra"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Island Ombra</li> </Link>
-                               <Link to="/ıslandonix"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Island Onix</li> </Link>
-                              <Link to="/ıslandvelho"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Island Velho</li> </Link>
-                            
-                               
-                           </ul>
-
-                      </div>
-
-                      <div className="dropdown-item-line"> 
+  {/* Cowry*/}
+  <div className="dropdown-item-line"> 
                            <h4 className="dropdown-head"> Cowry</h4>
                            
                            <ul className="dropdown-list"
@@ -100,8 +113,8 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            
                            >
                                 <Link to="/cowryblack"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Black</li> </Link>
-                               <Link to="/cowrybrick"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Brick</li> </Link>
-                               <Link to="/cowrypurple"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Purple</li> </Link>
+                               <Link to="/cowrybrick"  style={{   textDecoration: "none",  color: "white",   }}>      <div className='image-area3'> <li>Cowry Brick</li> <img src={newImage}/> </div>   </Link>
+                               <Link to="/cowrypurple"  style={{   textDecoration: "none",  color: "white",   }}>       <div className='image-area4'> <li>Cowry Purple</li> <img src={newImage}/> </div> </Link>
                               <Link to="/cowryyellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Yellow</li> </Link>
                             
                                
@@ -109,13 +122,32 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
 
                       </div>
 
+     {/* Island*/}
                       <div className="dropdown-item-line"> 
-                           <h4 className="dropdown-head"> Smooth</h4>
+                      <div className='image-area2'> <h4 className="dropdown-head"> Island</h4> <img src={newImage}/> </div>  
+                           
+                           <ul className="dropdown-list"
+                             style={{right: "90px"}}
+                           
+                           >
+                                
+                               <Link to="/ombra"  style={{   textDecoration: "none",  color: "white",   }}>   <li> Onix</li> </Link>
+                               <Link to="/onix"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Ombra</li> </Link>
+                              <Link to="/velho"  style={{   textDecoration: "none",  color: "white",   }}>   <li> Velho</li> </Link>
+                            
+                               
+                           </ul>
+
+                      </div>
+  
+    {/* Smooth*/}
+                      <div className="dropdown-item-line"> 
+                        <div className='image-area'> <h4 className="dropdown-head"> Smooth</h4> <img src={newImage}/> </div>  
                            
                            <ul className="dropdown-list"
                              style={{right: "103px"}}
                            >
-                                   <Link to="/smooth"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth</li> </Link>
+                                  
                                <Link to="/smoothblue"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Ambience Blue</li> </Link>
                                <Link to="/smoothyellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Ambience Yellow</li> </Link>
                               <Link to="/smoothreaction"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Reaction</li> </Link>
@@ -124,6 +156,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            </ul>
 
                       </div>
+                      
 
 
 

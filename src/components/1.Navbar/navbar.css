@@ -110,7 +110,7 @@
   top:  72%;
   left: 160px;
   position:  absolute;
-  width: 1250px;
+  width: 1295px;
   height: 150px;
   background-color: rgba(0, 0, 0, 0.493);
   border-radius: 15px;
@@ -248,7 +248,7 @@ opacity: 0;
   text-decoration: none;
   list-style: none;
   gap: 1px;
-  
+  text-align: start;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -260,22 +260,42 @@ cursor: pointer;
 
 
 .dropdown-item-line li {
-  font-weight: 300;
   color: white;
   position: relative;
   display: flex;
   list-style: none;
   transition: 300ms;
   cursor: pointer;
-  width: 120px;
+  width: 210px;
   letter-spacing: 1px;
+  text-align: start;
   
 }
 
 .dropdown-item-line li:hover{
   color:rgb(255, 0, 0);
-  font-weight: 500;
+  font-weight: 700;
 }
+
+/* .dropdown-item-line li::after{
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 0, 0);
+  height: 0.1rem;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  transition: 0.4s;
+  
+}
+
+
+.dropdown-item-line li:hover::after{
+width: 100%;
+
+
+
+} */
 
 .navbar-all-flags{
   position: relative;
@@ -305,10 +325,125 @@ cursor: pointer;
   cursor: pointer;}
 
 
+.image-area{
+  display: flex;
+
+  
+}
+
+.image-area img{
+  top: 1%;
+  left: 45%;
+  position: absolute;
+  width: 60px;
+  height: 31px;
+}
+
+.image-area2{
+  display: flex;
+
+  
+}
+.image-area2 img{
+  top: 1%;
+  left: 35%;
+  position: absolute;
+  width: 60px;
+  height: 31px;
+}
+
+.image-area3{
+  display: flex;
+
+  
+}
+.image-area3 img{
+  top: 5%;
+  left: 53%;
+  position: absolute;
+  width: 55px;
+  height: 31px;
+}
+.image-area4{
+  display: flex;
+
+  
+}
+.image-area4 img{
+  top: 13%;
+  left: 57%;
+  position: absolute;
+  width: 55px;
+  height: 31px;
+}
 
 
+.image-area5{
+  display: flex;
+
+  
+}
+
+.image-area5 img{
+  top: 52%;
+  left: 33%;
+  position: absolute;
+  width: 55px;
+  height: 31px;
+}
+.image-area6{
+  display: flex;
+
+  
+}
+.image-area6 img{
+  top: 74%;
+  left: 43%;
+  position: absolute;
+  width: 55px;
+  height: 31px;
+}
 
 
+.image-area8{
+  display: flex;
+
+  
+}
+.image-area7{
+  display: flex;
+
+  
+}
+.image-area9{
+  display: flex;
+
+  
+}
+
+.image-area7 img{
+  top: 3%;
+  left: 36%;
+  position: absolute;
+  width: 55px;
+  height: 31px;
+}
+
+.image-area8 img{
+  top: 11%;
+  left: 41%;
+  position: absolute;
+  width: 55px;
+  height: 31px;
+}
+
+.image-area9 img{
+  top: 21%;
+  left: 38%;
+  position: absolute;
+  width: 55px;
+  height: 31px;
+}
 
 
 

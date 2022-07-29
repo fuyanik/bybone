@@ -39,6 +39,11 @@ import Rome from './pages/15.Rome/collections';
 import Spazio from './pages/16.Spazio/collections';
 import Tessera from './pages/17.Tessera/collections';
 
+import İsimsiz from './pages/21.İsimsiz/collections';
+import Island from './pages/18.Island/collections';
+import Smooth from './pages/19.Smooth/collections';
+import Gastro from './pages/20.Gastro/collections';
+
 
 
 export default function App() {
@@ -73,10 +78,16 @@ export default function App() {
             <Route path="/edera" element={<Edera/>} />
             <Route path="/ederacobalt" element={<EderaCobalt/>} />
             <Route path="/kolezyum" element={<Kolezyum/>} />
-            <Route path="/ardent" element={<Legna/>} />
+            <Route path="/legna" element={<Legna/>} />
             <Route path="/rome" element={<Rome/>} />
             <Route path="/spazio" element={<Spazio/>} />
             <Route path="/tessera" element={<Tessera/>} />
+
+
+            <Route path="/isimsiz" element={<İsimsiz/>} />
+            <Route path="/Island" element={<Island/>} />
+            <Route path="/Smooth" element={<Smooth/>} />
+            <Route path="/Gastro" element={<Gastro/>} />
 
 
          
