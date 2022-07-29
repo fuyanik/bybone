@@ -107,10 +107,10 @@
 }
 
 .navbar-dropdown-hover{
-  top:  63px;
+  top:  72%;
   left: 160px;
   position:  absolute;
-  width: 1050px;
+  width: 1250px;
   height: 150px;
   background-color: rgba(0, 0, 0, 0.493);
   border-radius: 15px;
@@ -135,7 +135,7 @@
   100%{
     z-index: 9999;
   visibility: visible;
-    height: 300px;
+    height: 330px;
   }
   
 }
@@ -174,7 +174,7 @@ opacity: 0;
 .dropdown-image{
   z-index: 9999;
   left: 12px;
-  bottom: -2px;
+  top: 12px;
   position: relative;
   height: 286px;
   width: 240px;
@@ -221,18 +221,22 @@ opacity: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
+
+
 }
+
 
 .dropdown-head::before{
   content: "";
   position: absolute;
-  background-color: var(--purple);
-  height: 1.2px;
-  width: 90px;
+  background-color: rgb(218, 9, 9);
+  height: 1.8px;
+  width: 100px;
   left: 0;
-  bottom: 220px;
+  bottom: 90%;
   transition: 0.4s;
 }
+
 
 .dropdown-item-line ul {
   z-index: 9999;
@@ -244,7 +248,7 @@ opacity: 0;
   text-decoration: none;
   list-style: none;
   gap: 1px;
-  color: white;
+  
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -256,6 +260,8 @@ cursor: pointer;
 
 
 .dropdown-item-line li {
+  font-weight: 300;
+  color: white;
   position: relative;
   display: flex;
   list-style: none;
@@ -266,24 +272,9 @@ cursor: pointer;
   
 }
 
-
-.dropdown-item-line li::after{
-  content: "";
-  position: absolute;
-  background-color: #ec7b7b;
-  height: 0.1rem;
-  width: 0;
-  left: 0;
-  bottom: -1px;
-  transition: 0.4s;
-  
-}
-
-
-.dropdown-item-line li:hover::after{
-width: 100%;
-
-
+.dropdown-item-line li:hover{
+  color:rgb(255, 0, 0);
+  font-weight: 500;
 }
 
 .navbar-all-flags{

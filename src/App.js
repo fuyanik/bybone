@@ -28,6 +28,17 @@ import Login from './pages/login';
 import Register from './pages/register';
 import ProductFeaturesTest from './pages/ProductFeaturesTest/productFeaturesTest';
 import Vintage from './pages/11.Vintage/collections';
+import Laterite from './pages/11.Laterite/collections';
+import Armonia from './pages/12.Armonia/collections';
+import Edera from './pages/13.Edera/collections';
+
+import EderaCobalt from './pages/14.EderaCobalt/collections';
+import Kolezyum from './pages/13.Kolezyum/collections';
+import Legna from './pages/14.Legna/collections';
+import Rome from './pages/15.Rome/collections';
+import Spazio from './pages/16.Spazio/collections';
+import Tessera from './pages/17.Tessera/collections';
+
 
 
 export default function App() {
@@ -55,7 +66,17 @@ export default function App() {
             <Route path="/sun" element={<Sun/>} />
             <Route path="/supreme" element={<Supreme/>} />
             <Route path="/tropical" element={<Tropical/>} />
-            <Route path="/vintage" element={<Vintage/>} />
+            <Route path="/laterite" element={<Laterite/>} />
+
+
+            <Route path="/armonia" element={<Armonia/>} />
+            <Route path="/edera" element={<Edera/>} />
+            <Route path="/ederacobalt" element={<EderaCobalt/>} />
+            <Route path="/kolezyum" element={<Kolezyum/>} />
+            <Route path="/ardent" element={<Legna/>} />
+            <Route path="/rome" element={<Rome/>} />
+            <Route path="/spazio" element={<Spazio/>} />
+            <Route path="/tessera" element={<Tessera/>} />
 
 
          
