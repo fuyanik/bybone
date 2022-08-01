@@ -99,9 +99,11 @@ const Navbar = () => {
 
         
           <div
+          className="navbar-button">  {isTurkish ? "Giriş Yap" : "Sign In" }</div>
+
+          
        
           
-          className="navbar-button">  {isTurkish ? "PORTFOLYO" : "PORTFOLİO" }</div>,
 
 <div className ="navbar-all-flags"> 
 
