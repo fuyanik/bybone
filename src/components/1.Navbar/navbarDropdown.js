@@ -2,10 +2,16 @@ import dropdownİmage from './images/dropdown.png'
 import dropdownİmage2 from './images/dropdownİmage2.png'
 import {Routes, Route, Link, NavLink} from 'react-router-dom';
 import newImage from "./images/newImage.png";
+import newImage2 from "./images/newImage2.png";
+import { setGlobalState, useGlobalState } from "../../hookState.js";
+
+
 
 //<img src={dropdownİmage} className ="dropdown-image" />
 
 const NavbarDropdown = ({onMouse,onLeave,display}) => {
+
+     const[isTurkish] = useGlobalState("isTurkish");
 
     return (
 
@@ -26,9 +32,9 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <ul className="dropdown-list">
                        
                            <Link to="/isimsiz"  style={{   textDecoration: "none",  color: "white",   }}>   <li>İsimsiz</li> </Link>
-                           <Link to="/Island"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area7'> <li>Island</li> <img src={newImage}/> </div> </Link>
-                           <Link to="/Smooth"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area8'> <li>Smooth</li> <img src={newImage}/> </div> </Link>
-                           <Link to="/Gastro"  style={{   textDecoration: "none",  color: "white",   }}>   <div className='image-area9'> <li>Gastro</li> <img src={newImage}/> </div> </Link>
+                           <Link to="/Island"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area7'> <li>Island</li>  {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }    </div> </Link>
+                           <Link to="/Smooth"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area8'> <li>Smooth</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
+                           <Link to="/Gastro"  style={{   textDecoration: "none",  color: "white",   }}>   <div className='image-area9'> <li>Gastro</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
                           
                                
                               
@@ -58,10 +64,10 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <Link to="/enigma"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Enigma</li> </Link>
                            <Link to="/gleam"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Gleam</li> </Link>
                            <Link to="/Infinity"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Infinity</li> </Link>
-                           <Link to="/rose"  style={{   textDecoration: "none",  color: "white",   }}>    <div className='image-area5'> <li>Rose</li> <img src={newImage}/> </div>  </Link>
+                           <Link to="/rose"  style={{   textDecoration: "none",  color: "white",   }}>    <div className='image-area5'> <li>Rose</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div>  </Link>
                            <Link to="/sun"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Sun</li> </Link>
                            <Link to="/supreme"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Supreme</li> </Link>
-                           <Link to="/tropical"  style={{   textDecoration: "none",  color: "white",   }}>   <div className='image-area6'> <li>Tropical</li> <img src={newImage}/> </div>  </Link>
+                           <Link to="/tropical"  style={{   textDecoration: "none",  color: "white",   }}>   <div className='image-area6'> <li>Tropical</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div>  </Link>
                            <Link to="/vintage"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Vintage</li> </Link>
                            <Link to="/laterite"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Laterite</li> </Link>
                                
@@ -112,10 +118,10 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                              style={{right: "91px"}}
                            
                            >
-                                <Link to="/cowryblack"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Black</li> </Link>
-                               <Link to="/cowrybrick"  style={{   textDecoration: "none",  color: "white",   }}>      <div className='image-area3'> <li>Cowry Brick</li> <img src={newImage}/> </div>   </Link>
-                               <Link to="/cowrypurple"  style={{   textDecoration: "none",  color: "white",   }}>       <div className='image-area4'> <li>Cowry Purple</li> <img src={newImage}/> </div> </Link>
-                              <Link to="/cowryyellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Yellow</li> </Link>
+                                <Link to="/CowryBlack"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Black</li> </Link>
+                               <Link to="/CowryBrick"  style={{   textDecoration: "none",  color: "white",   }}>      <div className='image-area3'> <li>Cowry Brick</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div>   </Link>
+                               <Link to="/CowryPurple"  style={{   textDecoration: "none",  color: "white",   }}>       <div className='image-area4'> <li>Cowry Purple</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
+                              <Link to="/CowryYellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Yellow</li> </Link>
                             
                                
                            </ul>
@@ -124,16 +130,16 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
 
      {/* Island*/}
                       <div className="dropdown-item-line"> 
-                      <div className='image-area2'> <h4 className="dropdown-head"> Island</h4> <img src={newImage}/> </div>  
+                      <div className='image-area2'> <h4 className="dropdown-head"> Island</h4> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div>  
                            
                            <ul className="dropdown-list"
                              style={{right: "90px"}}
                            
                            >
                                 
-                               <Link to="/ombra"  style={{   textDecoration: "none",  color: "white",   }}>   <li> Onix</li> </Link>
-                               <Link to="/onix"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Ombra</li> </Link>
-                              <Link to="/velho"  style={{   textDecoration: "none",  color: "white",   }}>   <li> Velho</li> </Link>
+                               <Link to="/IslandOnix"  style={{   textDecoration: "none",  color: "white",   }}>   <li> Island Onix</li> </Link>
+                               <Link to="/IslandOmbra"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Island Ombra</li> </Link>
+                              <Link to="/IslandVelho"  style={{   textDecoration: "none",  color: "white",   }}>   <li> Island Velho</li> </Link>
                             
                                
                            </ul>
@@ -142,15 +148,15 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
   
     {/* Smooth*/}
                       <div className="dropdown-item-line"> 
-                        <div className='image-area'> <h4 className="dropdown-head"> Smooth</h4> <img src={newImage}/> </div>  
+                        <div className='image-area'> <h4 className="dropdown-head"> Smooth</h4> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div>  
                            
                            <ul className="dropdown-list"
                              style={{right: "103px"}}
                            >
                                   
-                               <Link to="/smoothblue"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Ambience Blue</li> </Link>
-                               <Link to="/smoothyellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Ambience Yellow</li> </Link>
-                              <Link to="/smoothreaction"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Reaction</li> </Link>
+                               <Link to="/SmoothBlue"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Ambience Blue</li> </Link>
+                               <Link to="/SmoothYellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Ambience Yellow</li> </Link>
+                              <Link to="/SmoothReaction"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Smooth Reaction</li> </Link>
                             
                                
                            </ul>

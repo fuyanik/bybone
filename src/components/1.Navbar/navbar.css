@@ -107,10 +107,10 @@
 }
 
 .navbar-dropdown-hover{
-  top:  72%;
-  left: 160px;
+  top:  75%;
+  left: 10%;
   position:  absolute;
-  width: 1295px;
+  width: 88.5%;
   height: 150px;
   background-color: rgba(0, 0, 0, 0.493);
   border-radius: 15px;
@@ -335,8 +335,8 @@ width: 100%;
   top: 1%;
   left: 45%;
   position: absolute;
-  width: 60px;
-  height: 31px;
+  width: 40px;
+   height: 25px;
 }
 
 .image-area2{
@@ -348,8 +348,8 @@ width: 100%;
   top: 1%;
   left: 35%;
   position: absolute;
-  width: 60px;
-  height: 31px;
+  width: 40px;
+   height: 25px;
 }
 
 .image-area3{
@@ -361,8 +361,8 @@ width: 100%;
   top: 5%;
   left: 53%;
   position: absolute;
-  width: 55px;
-  height: 31px;
+  width: 40px;
+   height: 25px;
 }
 .image-area4{
   display: flex;
@@ -373,8 +373,8 @@ width: 100%;
   top: 13%;
   left: 57%;
   position: absolute;
-  width: 55px;
-  height: 31px;
+  width: 40px;
+   height: 25px;
 }
 
 
@@ -388,8 +388,8 @@ width: 100%;
   top: 52%;
   left: 33%;
   position: absolute;
-  width: 55px;
-  height: 31px;
+  width: 40px;
+   height: 25px;
 }
 .image-area6{
   display: flex;
@@ -400,8 +400,8 @@ width: 100%;
   top: 74%;
   left: 43%;
   position: absolute;
-  width: 55px;
-  height: 31px;
+  width: 40px;
+   height: 25px;
 }
 
 
@@ -425,24 +425,24 @@ width: 100%;
   top: 3%;
   left: 36%;
   position: absolute;
-  width: 55px;
-  height: 31px;
+  width: 40px;
+   height: 25px;
 }
 
 .image-area8 img{
   top: 11%;
   left: 41%;
   position: absolute;
-  width: 55px;
-  height: 31px;
+  width: 40px;
+   height: 25px;
 }
 
 .image-area9 img{
   top: 21%;
   left: 38%;
   position: absolute;
-  width: 55px;
-  height: 31px;
+  width: 40px;
+   height: 25px;
 }
 
 

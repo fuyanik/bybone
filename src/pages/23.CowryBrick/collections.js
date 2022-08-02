@@ -12,7 +12,7 @@ import { setGlobalState, useGlobalState } from "../../hookState.js";
 
 
 
-const İsimsiz = () => {
+const CowryBrick = () => {
   
   //leangue control
   const[isTurkish] = useGlobalState("isTurkish");
@@ -25,7 +25,7 @@ const İsimsiz = () => {
  
  
   useEffect(() => {
-     const articleRef = collection(db, "İsimsiz");
+     const articleRef = collection(db, "CowryBrick");
      const q = query(articleRef, orderBy("createdAt", "desc"));
 
          // Listen for updates and set the state.
@@ -128,4 +128,4 @@ const İsimsiz = () => {
     )
 }
 
-export default İsimsiz;
+export default CowryBrick;

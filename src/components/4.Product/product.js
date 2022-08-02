@@ -1,5 +1,5 @@
 import "./product.css"
-import logos from './logos.png';
+import logos from './logos9.png';
 
 import ProductButton from "./productButton";
 import {useState, } from 'react';
@@ -27,25 +27,27 @@ const [isClick, setIsClick] = useState(false);
           
              <div className={`target-line ${isClick ? 'target-line-click' : 'target-line-click-back'}`}> </div>
            
-             <ProductButton
+           { /* <ProductButton
               top = {"62%"}
               left = {"861px"}
               
-             />
+    />  */ } 
 
-             <ProductButton
+           {  /*  <ProductButton
               top = {"47%"}
               left = {"630px"}
               onClick = {()=> {
                 setIsClick(!isClick);
                
                              }}
-              />
+                            />  */}
 
-             <ProductButton
+            {/* <ProductButton
               top = {"76%"}
               left = {"580px"}
-              />
+                          />  */ } 
+
+              
              
             <h4>____________________________________________________________________________________</h4>
             

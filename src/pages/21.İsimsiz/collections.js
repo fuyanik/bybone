@@ -12,7 +12,7 @@ import { setGlobalState, useGlobalState } from "../../hookState.js";
 
 
 
-const Tropical = () => {
+const İsimsiz = () => {
   
   //leangue control
   const[isTurkish] = useGlobalState("isTurkish");
@@ -128,4 +128,4 @@ const Tropical = () => {
     )
 }
 
-export default Tropical;
+export default İsimsiz;

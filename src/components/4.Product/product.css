@@ -7,7 +7,7 @@
    position: relative;
    top:-20px;
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,11 +52,12 @@
 }
 
 .product-logo{
-    margin-top: -139px;
+  width: 600px;
+  height: 350px;
+   
     background-position: center;
     background-size: cover;
-    width: auto;
-    height: auto;
+   border: 1px solid rgba(0, 0, 0, 0.184);
     background-repeat: no-repeat;
 }
 
@@ -66,6 +67,7 @@
   position: relative;
   z-index: 9999;
  color: white;
+ display: none;
 }
 
 

@@ -44,6 +44,21 @@ import Island from './pages/18.Island/collections';
 import Smooth from './pages/19.Smooth/collections';
 import Gastro from './pages/20.Gastro/collections';
 
+import CowryBlack from './pages/22.CowryBlack/collections';
+import CowryBrick from './pages/23.CowryBrick/collections';
+import CowryPurple from './pages/24.CowryPurple/collections';
+import CowryYellow from './pages/25.CowryYellow/collections';
+
+import IslandOmbra from './pages/26.IslandOmbra/collections';
+import IslandOnix from './pages/27.IslandOnix/collections';
+import IslandVelho from './pages/28.IslandVelho/collections';
+
+import SmoothBlue from './pages/29.SmoothBlue/collections';
+import SmoothYellow from './pages/30.SmoothYellow/collections';
+import SmoothReaction from './pages/31.SmoothReaction/collections';
+
+
+
 
 
 export default function App() {
@@ -88,6 +103,20 @@ export default function App() {
             <Route path="/Island" element={<Island/>} />
             <Route path="/Smooth" element={<Smooth/>} />
             <Route path="/Gastro" element={<Gastro/>} />
+
+            <Route path="/CowryBlack" element={<CowryBlack/>} />
+            <Route path="/CowryBrick" element={<CowryBrick/>} />
+            <Route path="/CowryPurple" element={<CowryPurple/>} />
+            <Route path="/CowryYellow" element={<CowryYellow/>} />
+
+            <Route path="/IslandOmbra" element={<IslandOmbra/>} />
+            <Route path="/IslandOnix" element={<IslandOnix/>} />
+            <Route path="/IslandVelho" element={<IslandVelho/>} />
+
+            <Route path="/SmoothBlue" element={<SmoothBlue/>} />
+            <Route path="/SmoothYellow" element={<SmoothYellow/>} />
+            <Route path="/SmoothReaction" element={<SmoothReaction/>} />
+           
 
 
          
