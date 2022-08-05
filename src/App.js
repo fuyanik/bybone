@@ -87,6 +87,7 @@ export default function App() {
             <Route path="/supreme" element={<Supreme/>} />
             <Route path="/tropical" element={<Tropical/>} />
             <Route path="/laterite" element={<Laterite/>} />
+            <Route path="/vintage" element={<Vintage/>} />
 
 
             <Route path="/armonia" element={<Armonia/>} />
