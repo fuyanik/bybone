@@ -12,16 +12,7 @@
     background-color: #2b3034;
   }
 
-  .navbar-hover-help{
-    left: 250px;
-    top: 30px;
-    width: 80px;
-    height: 50px;
-    background-color: rgba(255, 0, 0, 0);
-    cursor: pointer;
-    position: absolute;
-  }
-  
+
   
   .logom{
     left: 45px;
@@ -112,7 +103,8 @@
   position:  absolute;
   width: 88.5%;
   height: 150px;
-  background-color: rgba(0, 0, 0, 0.493);
+  background-color: rgba(0, 0, 0, 0.432);
+  
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -134,7 +126,7 @@
   }
   100%{
     z-index: 9999;
-  visibility: visible;
+    visibility: visible;
     height: 330px;
   }
   
@@ -142,14 +134,14 @@
 
 .dropdown-items{
   z-index: 9999;
- opacity: 0;
+  opacity: 0;
  
 
 }
 .dropdown-item-hover{
   z-index: 9999;
-animation: dropdown-hovero 150ms ease-in 300ms forwards;
-opacity: 0;
+ animation: dropdown-hovero 150ms ease-in 300ms forwards;
+ opacity: 0;
 
 }
 
@@ -252,7 +244,7 @@ opacity: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 14px;
-cursor: pointer;
+  cursor: pointer;
 
 }
 

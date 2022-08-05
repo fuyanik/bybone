@@ -29,10 +29,7 @@ const Navbar = () => {
 
    <div className="Navbar"  data-aos="fade-down"  data-aos-duration="700">
 
-   <div className="navbar-hover-help"
-   onMouseMove={() => setDisplay(true)}
-   onMouseLeave={() =>  {setDisplay(false)  }  }
-   > </div>
+
     
      <NavbarDropdown
     display={display}
