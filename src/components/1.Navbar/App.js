@@ -57,12 +57,6 @@ import SmoothBlue from './pages/29.SmoothBlue/collections';
 import SmoothYellow from './pages/30.SmoothYellow/collections';
 import SmoothReaction from './pages/31.SmoothReaction/collections';
 
-import Helix from './pages/32.Helix/collections';
-import Zest from './pages/33.Zest/collections';
-import Arel from './pages/34.Arel/collections';
-import Gabbro from './pages/35.Gabbro/collections';
-import Flavor from './pages/36.Flavor/collections';
-
 
 
 
@@ -80,19 +74,6 @@ export default function App() {
            <Route path="/login" element={<Login /> } />
          
          
-
-
-            <Route path="/gastroFlate" element={<İsimsiz/>} />
-            <Route path="/Island" element={<Island/>} />
-            <Route path="/Smooth" element={<Smooth/>} />
-
-            <Route path="/Helix" element={<Helix/>} />
-            <Route path="/Zest" element={<Zest/>} />
-            <Route path="/Arel" element={<Arel/>} />
-            <Route path="/Gastro" element={<Gastro/>} />
-            <Route path="/Gabbro" element={<Gabbro/>} />
-            <Route path="/Flavor" element={<Flavor/>} />
-
          
             <Route path="/ardent" element={<Collections/>} />
             <Route path="/blance" element={<Blance/>} />
@@ -119,7 +100,10 @@ export default function App() {
             <Route path="/tessera" element={<Tessera/>} />
 
 
-           
+            <Route path="/gastroFlate" element={<İsimsiz/>} />
+            <Route path="/Island" element={<Island/>} />
+            <Route path="/Smooth" element={<Smooth/>} />
+            <Route path="/Gastro" element={<Gastro/>} />
 
             <Route path="/CowryBlack" element={<CowryBlack/>} />
             <Route path="/CowryBrick" element={<CowryBrick/>} />

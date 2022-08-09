@@ -10,9 +10,12 @@
      position: fixed;
     align-items: center;
     background-color: #2b3034;
+  
   }
 
-
+.navbar-side-menu-icon{
+  display: none;
+}
   
   .logom{
     left: 45px;
@@ -34,6 +37,8 @@
     font-size: 13px;
     gap: 25px;
     top: 4px;
+  
+  
    
   }
 
@@ -458,6 +463,9 @@ width: 100%;
        
     
      }
+
+
+  
    
      .navbar-hover-help{
      
@@ -478,7 +486,7 @@ width: 100%;
        justify-content: center;
        align-items: center;
        left: -12%;
-       display: flex;
+       display: none;
        list-style: none;
        color: rgba(255, 255, 255, 0.944);
        font-family: "Poppins", sans-serif;
@@ -566,6 +574,20 @@ width: 100%;
    .navbar-flag-eng{width: 28px;
      cursor: pointer;}
 
+
+     .navbar-side-menu-icon{
+      display: flex;
+      position: relative;
+      margin-left: 85vw;
+      z-index: 9999999999999999999999999;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 10%;
+      height: 10%;
+      color: white;
+    }
+      
 
   
 }

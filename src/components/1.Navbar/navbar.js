@@ -1,14 +1,18 @@
 import "./navbar.css"
 import logom from './images/logom.png'
 import {Routes, Route, Link, NavLink} from 'react-router-dom';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavbarDropdown from "./navbarDropdown";
 import { setGlobalState, useGlobalState } from "../../hookState.js";
 //import { setGlobalState, useGlobalState } from "../../hookState.js";
 //const[isTurkish] = useGlobalState("isTurkish");
 import tr from './images/tr.png'
 import eng from './images/eng.png'
+import NavbarSide from "./components/navbarSide";
 
+
+import { MdOutlineMenu } from "react-icons/md";
+import { MdOutlineClose } from "react-icons/md";
 
 
 
@@ -19,9 +23,11 @@ const Navbar = () => {
        const [display, setDisplay] = useState(false);
        const[isTurkish] = useGlobalState("isTurkish");
        //  onClick={() =>  setGlobalState("isTurkish", false) }
-
+       const[isDisplaySideNavbar] = useGlobalState("isDisplaySideNavbar");
    
-      
+    
+
+    
 
       
 
@@ -29,21 +35,47 @@ const Navbar = () => {
 
    <div className="Navbar"  data-aos="fade-down"  data-aos-duration="700">
 
-
-    
+ 
+   <NavbarSide/>
+   
      <NavbarDropdown
     display={display}
     onMouse={() =>  {  setDisplay(true) }   }
     onLeave={() => {  setDisplay(false)  }  }
-    />  
-   
+    />      
 
     
  
 
      <Link to="/"> <img src={logom} className="logom" alt="logo"  /> </Link> 
+    
+     { isDisplaySideNavbar 
+     
+     ? 
+     
+     <MdOutlineClose 
+     onClick={() => { 
+      setGlobalState("isDisplaySideNavbar", !isDisplaySideNavbar);
+     } } 
+     className="navbar-side-menu-icon"/>
+     
+     :
+      
+
+      <MdOutlineMenu 
+      onClick={() => { 
+       setGlobalState("isDisplaySideNavbar", !isDisplaySideNavbar);
+      } } 
+      className="navbar-side-menu-icon"/>  
+      
+      
+      } 
         
-          <ul className="navbar-items">
+      
+        
+          <ul  
+          
+          className="navbar-items">
           <Link to="/"  style={{ 
                  textDecoration: "none",
                   color: "white",

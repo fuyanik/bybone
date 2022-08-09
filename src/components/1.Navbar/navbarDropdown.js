@@ -31,19 +31,26 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            
                            <ul className="dropdown-list">
                        
-                           <Link to="/isimsiz"  style={{   textDecoration: "none",  color: "white",   }}>   <li>İsimsiz</li> </Link>
+                           <Link to="/gastroFlate"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Gastro Flate Plate</li> </Link>
                            <Link to="/Island"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area7'> <li>Island</li>  {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }    </div> </Link>
                            <Link to="/Smooth"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area8'> <li>Smooth</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
-                           <Link to="/Gastro"  style={{   textDecoration: "none",  color: "white",   }}>   <div className='image-area9'> <li>Gastro</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
+                         
                           
+                          
+                           <Link to="/Helix"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Helix</li> </Link>
+                           <Link to="/Zest"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Zest</li> </Link>
+                           <Link to="/Arel"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Arel</li> </Link>
+                           <Link to="/Gastro"  style={{   textDecoration: "none",  color: "white",   }}>   <div className='image-area9'> <li>Gastro</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
+                           <Link to="/Gabbro"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Gabbro</li> </Link>
+                           <Link to="/Flavor"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Flavor</li> </Link>
                                
                               
                                
+                           </ul>
                             
                              
                             
                
-                           </ul>
                 
 
          

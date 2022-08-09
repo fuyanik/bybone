@@ -6,6 +6,7 @@ const {setGlobalState, useGlobalState} = createGlobalState({
    
     
     isTurkish: false,
+    isDisplaySideNavbar: false,
   
 
 });

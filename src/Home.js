@@ -14,21 +14,27 @@ import SideNavbar from "./components/SideNavbar/nav.js";
 
 import ContactUs from "./pages/Contact Us/contactUs";
 import Features from "./pages/Features/features";
+import NavbarSide from "./components/1.Navbar/components/navbarSide";
 
 
 //import Header from "./components/-1.Header/header";
 //import TopNavbar from "./components/0.Navbar/navbar";
 
-
+import { setGlobalState, useGlobalState } from "./hookState.js";
 
 AOS.init();
 
 
 function Home() {
+  var mq = window.matchMedia( "(max-width: 768px)" );
+  const[isDisplaySideNavbar] = useGlobalState("isDisplaySideNavbar");
+
   return (
     <div className="App">
+
+        { isDisplaySideNavbar && <NavbarSide/> }    
    
-        <Navbar />
+       <Navbar />
        <Features/>
        <Hero/>
        <HeroFooter/>

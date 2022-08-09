@@ -1,0 +1,89 @@
+.NavbarSide {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .NavbarSide {
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    left: 25vw;
+    height: 100vh;
+    width: 75vw;
+    background-color: rgba(43, 48, 52, 0.9725490196);
+    justify-content: center;
+    -webkit-animation: sideAnim 500ms ease-in-out;
+            animation: sideAnim 500ms ease-in-out;
+    z-index: 9;
+  }
+  @-webkit-keyframes sideAnim {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes sideAnim {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .NavbarSide h2:nth-child(1) {
+    left: 3vw;
+    font-family: "Poppins";
+    color: rgb(222, 217, 217);
+    font-weight: 300;
+    position: absolute;
+    top: 7.5vh;
+    font-size: 29px;
+    z-index: 999999999;
+    border-bottom: 1px solid white;
+  }
+  .NavbarSide h2:nth-child(3) {
+    left: 3vw;
+    font-family: "Poppins";
+    color: rgb(222, 217, 217);
+    font-weight: 300;
+    position: relative;
+    top: 60.5vh;
+    font-size: 29px;
+    z-index: 999999999;
+  }
+  .NavbarSide h2:nth-child(4) {
+    left: 3vw;
+    font-family: "Poppins";
+    color: rgb(222, 217, 217);
+    font-weight: 300;
+    position: absolute;
+    top: 70.5vh;
+    font-size: 29px;
+    z-index: 999999999;
+  }
+  .NavbarSide h2:nth-child(5) {
+    left: 3vw;
+    font-family: "Poppins";
+    color: rgb(222, 217, 217);
+    font-weight: 300;
+    position: absolute;
+    top: 80.5vh;
+    font-size: 29px;
+    z-index: 999999999;
+  }
+  .NavbarSide .navbar-side-accordion {
+    position: absolute;
+    top: 19vh;
+    width: 70vw;
+  }
+  .NavbarSide .navbar-side-accordion .navbar-side-accordion-items {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=navbarSide.css.map */
