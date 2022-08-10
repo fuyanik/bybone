@@ -1,8 +1,13 @@
-const SwipeableTextMobileStepper = () => { 
+import "./reactImageSlider.css";
+
+
+const ReactImageSlider = () => { 
 
   return(
-    <div>ah1 hola</div>
+     
+  <div></div>
+    
   )
 }
 
-export default SwipeableTextMobileStepper;
+export default ReactImageSlider;

@@ -1,6 +1,7 @@
-.react-image-slidero{
+.react-image-slider{
     display: flex;
     width: 100vw;
     height: 110vh;
+    background-color: gainsboro;
   
 }

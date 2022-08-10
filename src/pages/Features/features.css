@@ -40,7 +40,20 @@ margin-top: 85px;
   height: 96vh;
   width: 100%;
   position: relative;
+  animation: image-slide-anim 2s forwards
+  ;
+
   
+}
+
+@keyframes image-slide-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
   
 }
 
