@@ -1,6 +1,6 @@
 import "./footerImages.css";
 import footerImagesImage from "./images/footerImagesImage.jpg";
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import p1 from "./images/1.jpg";
 import p2 from "./images/2.jpg";
 import p3 from "./images/3.jpg";
@@ -46,50 +46,50 @@ const FooterImages = () => {
 
           <h1 className="footer-images-header">KOLEKSYİON FOTOĞRAFLARI</h1>
            <div className="footer-images-main">
-              <img src={footerImagesImage} className="footer-images-main-left"/>
+              <LazyLoadImage src={footerImagesImage} className="footer-images-main-left"/>
               <div className="footer-images-main-right">
 
                  <div onClick={()=>{
                     window.open("/IslandVelho");
-                 }} className="footer-images-main-right-items">   <img src={p1} alt="image"  />  <p>Island Velho</p>  </div>
-                 <div className="footer-images-main-right-items">  <img src={p2} alt="image"  /> <p>Island Ombra</p> </div>
-                 <div className="footer-images-main-right-items">  <img src={p3} alt="image"  /> <p>Island onix</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p4} alt="image"  /> <p>Island</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p5} alt="image"  /> <p>Smooth and Yellow</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p6} alt="image" /> <p>Smooth and Blue</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p7} alt="image" /> <p>Smooth Reaction</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p8} alt="image" /> <p>Smooth</p> </div>
+                 }} className="footer-images-main-right-items">   <LazyLoadImage  src={p1}  alt="image"  />  <p>Island Velho</p>  </div>
+                 <div className="footer-images-main-right-items">  <LazyLoadImage src={p2} alt="image"  /> <p>Island Ombra</p> </div>
+                 <div className="footer-images-main-right-items">  <LazyLoadImage src={p3} alt="image"  /> <p>Island onix</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p4} alt="image"  /> <p>Island</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p5} alt="image"  /> <p>Smooth and Yellow</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p6} alt="image" /> <p>Smooth and Blue</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p7} alt="image" /> <p>Smooth Reaction</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p8} alt="image" /> <p>Smooth</p> </div>
 
-                 <div className="footer-images-main-right-items"> <img src={p9} alt="image" /><p>Gastro Plate</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p10} alt="image" /> <p>Cowry Purple</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p11} alt="image" /> <p>Cowry Yellow</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p12} alt="image" /> <p>Cowry Brick</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p13} alt="image" /> <p>Cowery Black</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p14} alt="image" /> <p>Rome</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p15} alt="image" /> <p>Tessera</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p9} alt="image" /><p>Gastro Plate</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p10} alt="image" /> <p>Cowry Purple</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p11} alt="image" /> <p>Cowry Yellow</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p12} alt="image" /> <p>Cowry Brick</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p13} alt="image" /> <p>Cowery Black</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p14} alt="image" /> <p>Rome</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p15} alt="image" /> <p>Tessera</p> </div>
 
-                 <div className="footer-images-main-right-items"> <img src={p16} alt="image" /><p>Edera</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p17} alt="image" /><p>Edera Cobalt</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p18} alt="image" /><p>Armonia</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p19} alt="image" /><p>Spazio</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p20} alt="image" /><p>Legna</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p21} alt="image" /><p>Kolezyum</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p22} alt="image" /><p>Infinity</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p16} alt="image" /><p>Edera</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p17} alt="image" /><p>Edera Cobalt</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p18} alt="image" /><p>Armonia</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p19} alt="image" /><p>Spazio</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p20} alt="image" /><p>Legna</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p21} alt="image" /><p>Kolezyum</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p22} alt="image" /><p>Infinity</p></div>
 
-                 <div className="footer-images-main-right-items"> <img src={p23} alt="image" />  <p>Elegance</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p24} alt="image" /> <p>Supreme</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p25} alt="image" /> <p>Rose</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p26} alt="image" /> <p>Tropical</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p27} alt="image" /> <p>Ardent</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p28} alt="image" /> <p>Enigma</p> </div>
-                 <div className="footer-images-main-right-items"> <img src={p29} alt="image" /> <p>Vintage</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p23} alt="image" />  <p>Elegance</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p24} alt="image" /> <p>Supreme</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p25} alt="image" /> <p>Rose</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p26} alt="image" /> <p>Tropical</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p27} alt="image" /> <p>Ardent</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p28} alt="image" /> <p>Enigma</p> </div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p29} alt="image" /> <p>Vintage</p> </div>
 
-                 <div className="footer-images-main-right-items"> <img src={p30} alt="image"  /><p>Breeze</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p31} alt="image" /><p>Balance</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p32} alt="image"  /><p>Laterite</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p33} alt="image" /><p>Sun</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p34} alt="image" /><p>Gleam</p></div>
-                 <div className="footer-images-main-right-items"> <img src={p35} alt="image" /><p>Dekorsuz</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p30} alt="image"  /><p>Breeze</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p31} alt="image" /><p>Balance</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p32} alt="image"  /><p>Laterite</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p33} alt="image" /><p>Sun</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p34} alt="image" /><p>Gleam</p></div>
+                 <div className="footer-images-main-right-items"> <LazyLoadImage src={p35} alt="image" /><p>Dekorsuz</p></div>
               
 
 
