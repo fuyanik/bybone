@@ -37,6 +37,7 @@ function Home() {
    
        <Navbar />
        <SwipeableTextMobileStepper/>
+       
        <Hero/>
        <HeroFooter/>
        <Product/>
