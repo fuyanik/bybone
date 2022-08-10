@@ -23,6 +23,7 @@ import NavbarSide from "./components/1.Navbar/components/navbarSide";
 import { setGlobalState, useGlobalState } from "./hookState.js";
 import SwipeableTextMobileStepper from "./pages/ReactImageSlider/reactImageSlider";
 import ReactImageSlider from "./pages/ReactImageSlider/reactImageSlider";
+import FooterImages from "./pages/FooterImages/footerImages";
 
 AOS.init();
 
@@ -42,6 +43,7 @@ function Home() {
        <Hero/>
        <HeroFooter/>
        <Product/>
+       <FooterImages/>
 
 
        </div>

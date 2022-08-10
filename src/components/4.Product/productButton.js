@@ -1,4 +1,4 @@
-const ProductButton = ({top,left,onClick}) => { 
+/* const ProductButton = ({top,left,onClick}) => { 
 
     return(
 
@@ -32,4 +32,4 @@ onClick={onClick}
     )
 }
 
-export default ProductButton;
+export default ProductButton; */

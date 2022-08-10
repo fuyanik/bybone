@@ -6,7 +6,7 @@ import {useState, } from 'react';
 const Product = () => { 
 
 
-const [isClick, setIsClick] = useState(false);
+
     return(
 <div id="product-href"> 
         <div className="product">
@@ -25,7 +25,7 @@ const [isClick, setIsClick] = useState(false);
             
              <img src={logos} className="product-logo" alt="logo" data-aos="fade-up"  data-aos-duration="1500" />
           
-             <div className={`target-line ${isClick ? 'target-line-click' : 'target-line-click-back'}`}> </div>
+            
            
            { /* <ProductButton
               top = {"62%"}
