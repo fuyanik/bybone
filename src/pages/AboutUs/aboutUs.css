@@ -6,7 +6,7 @@
     font-family: Sofia-Light;
     src: url(https://static1.squarespace.com/static/5ffcb5ab91eb492f96d336f9/t/623b8110c38c234c268b5098/1648066832999/Sofia+Pro+Light+Az.otf);
 }
-sass source/stylesheets/index.scss build/stylesheets/index.css
+
 
 
 .AboutUs{
@@ -14,7 +14,8 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
    justify-content: center;
    align-items: center;
    width: 100%;
-   background-color: white;
+   height: 100vh;
+    background: linear-gradient(0deg, rgb(25, 27, 29) 26%, rgba(43,48,52,1) 67%);
   
     display: flex;
     flex-direction: column;
@@ -48,13 +49,13 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
 
 .about-us-main-center h2 {
     z-index: 2;
-    top: 50px;
-    left: 165px;
+    bottom: 23vh;
+    border-bottom: 2px solid rgb(151, 44, 44);
     position: relative;
     font-size: 49px;
     letter-spacing: 4px;
     font-family: Sofia-Medium;
-    color:  #065ED7;
+    color:  white;
 }
 .about-us-image{
     top: -25px;
@@ -63,6 +64,7 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
     background-size: cover;
     height: 356px;
     width: 620px;
+    display: none;
 }
 
 
@@ -75,7 +77,7 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
     width: 100%;
     height: 28vh;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.493);
+   
     justify-content: space-around;
     align-items: center;
    
@@ -144,6 +146,7 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
 .about-us-main-left h2{
     font-family: Sofia-Medium;
     letter-spacing: 2px;
+    color: white;
     
 }
    
@@ -151,6 +154,7 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
     font-family: Sofia-Light;
     text-align: center;
     position: relative;
+    color: rgba(255, 255, 255, 0.644);
    
 }
  
@@ -169,6 +173,7 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
 .about-us-main-right h2{
     font-family: Sofia-Medium;
     letter-spacing: 2px;
+    color: white;
     
 }
    
@@ -176,6 +181,7 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
     font-family: Sofia-Light;
     text-align: center;
     position: relative;
+    color: rgba(255, 255, 255, 0.644);
   
 }
  
@@ -287,6 +293,7 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
          background-size: cover;
          height: 356px;
          width: 620px;
+         display: flex;
      }
      
      

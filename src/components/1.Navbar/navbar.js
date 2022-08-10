@@ -36,7 +36,7 @@ const Navbar = () => {
    <div className="Navbar"  data-aos="fade-down"  data-aos-duration="700">
 
  
-   <NavbarSide/>
+   
    
      <NavbarDropdown
     display={display}
@@ -93,7 +93,7 @@ const Navbar = () => {
             }}
             onMouseMove={() => {setDisplay(true)  }   }
           
-          
+          id="second-li"
             
             >   {isTurkish ? "KOLEKSİYONLAR" : "COLLECTION" }</li>
             

@@ -16,7 +16,7 @@
     
         justify-content: center;
         animation: sideAnim 500ms ease-in-out;
-        z-index: 9;
+        z-index: 999999;
   
     
         @keyframes sideAnim{

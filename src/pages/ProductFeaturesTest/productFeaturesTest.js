@@ -9,8 +9,12 @@ import p6 from "./images/p6.jpeg"
 import p7 from "./images/p7.jpeg"
 import productNav from "./images/productNav.png"
 
+import { setGlobalState, useGlobalState } from "../../hookState.js";
+
 
 const ProductFeaturesTest = () => {
+
+    const[isTurkish] = useGlobalState("isTurkish");
 
     return (
 <> 
@@ -28,8 +32,8 @@ const ProductFeaturesTest = () => {
 
                    <img src={p1}  className="product-features-test-item-image" />
                     <div className="product-features-test-item-texts">
-                        <h2>available ın mıcrowave</h2>
-                        <p>Provide quick service with products that are resistant to high tempature and do not attract elecktromagnetic waves.</p>
+                        <h2>{isTurkish ?"Mikrodalgada Kullanılabilir"  : "available ın mıcrowave"}</h2>
+                        <p> {isTurkish ?"Yüksek sıcaklığa dayanıklı ve elektromanyetik dalgaları çekmeyen ürünlerle hızlı servis sağlayın."  : "Provide quick service with products that are resistant to high tempature and do not attract elecktromagnetic waves."} </p>
                      </div>
 
              </div>
@@ -41,10 +45,10 @@ const ProductFeaturesTest = () => {
 
              <div  className="product-features-test-item2">
 
-
+             
              <div className="product-features-test-item-texts2">
-                      <h2>EDGE CHİP WARRANTY </h2>
-                      <p>Hard Materials save you on renewing Chipped plates each year.</p>
+                      <h2>{isTurkish ? "KENAR ÇİP GARANTİSİ" : "EDGE CHIP WARRANTY "}  </h2>
+                      <p> {isTurkish ? "Sert Malzemeler sizi her yıl Yontma plakaları yenilemekten kurtarır." : "Hard Materials save you on renewing Chipped plates each year."} </p>
              </div>
                  
             <img src={p2}  className="product-features-test-item-image" />
@@ -58,13 +62,13 @@ const ProductFeaturesTest = () => {
 
 
 
-
+            {isTurkish ? "" : ""} 
  
 <div  className="product-features-test-item3">
 
 <img src={p3}  className="product-features-test-item-image" />
  <div className="product-features-test-item-texts3">
-     <h2>Dishwasher safe</h2>
+     <h2>{isTurkish ? "Bulaşık makinesinde yıkanabilir" : "Dishwasher safe"} </h2>
      <p>Underglaze design do not lose their vitality for years</p>
   </div>
 

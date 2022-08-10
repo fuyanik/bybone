@@ -31,10 +31,10 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            
                            <ul className="dropdown-list">
                        
-                           <Link to="/gastroFlate"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Gastro Flate Plate</li> </Link>
+                          
                            <Link to="/Island"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area7'> <li>Island</li>  {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }    </div> </Link>
                            <Link to="/Smooth"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area8'> <li>Smooth</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
-                         
+                           <Link to="/gastroFlate"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Gastro Flate Plate</li> </Link>
                           
                           
                            <Link to="/Helix"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Helix</li> </Link>

@@ -21,6 +21,7 @@ import NavbarSide from "./components/1.Navbar/components/navbarSide";
 //import TopNavbar from "./components/0.Navbar/navbar";
 
 import { setGlobalState, useGlobalState } from "./hookState.js";
+import SwipeableTextMobileStepper from "./pages/ReactImageSlider/reactImageSlider";
 
 AOS.init();
 
@@ -35,7 +36,7 @@ function Home() {
         { isDisplaySideNavbar && <NavbarSide/> }    
    
        <Navbar />
-       <Features/>
+       <SwipeableTextMobileStepper/>
        <Hero/>
        <HeroFooter/>
        <Product/>

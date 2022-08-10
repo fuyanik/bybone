@@ -14,7 +14,7 @@
     justify-content: center;
     -webkit-animation: sideAnim 500ms ease-in-out;
             animation: sideAnim 500ms ease-in-out;
-    z-index: 9;
+    z-index: 999999;
   }
   @-webkit-keyframes sideAnim {
     0% {
