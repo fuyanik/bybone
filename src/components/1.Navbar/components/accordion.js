@@ -20,7 +20,7 @@ export default function SimpleAccordion() {
         <AccordionDetails>
              <div className="navbar-side-accordion-items">
 
-             <Link to="/ gastroFlate"  style={{   textDecoration: "none",  color: "black",   }}> <Typography  style={{fontFamily: "Poppins",fontSize:"14px",  }}> İsimiz</Typography> </Link>
+             <Link to="/gastroFlate"  style={{   textDecoration: "none",  color: "black",   }}> <Typography  style={{fontFamily: "Poppins",fontSize:"14px",  }}> Gastro Flate Plate</Typography> </Link>
              <Link to="/Island"  style={{   textDecoration: "none",  color: "black",   }}> <Typography  style={{fontFamily: "Poppins",fontSize:"14px",  }}> Island</Typography> </Link>
              <Link to="/Smooth"  style={{   textDecoration: "none",  color: "black",   }}> <Typography  style={{fontFamily: "Poppins",fontSize:"14px",  }}> Smooth</Typography> </Link>
              <Link to="/Gastro"  style={{   textDecoration: "none",  color: "black",   }}> <Typography  style={{fontFamily: "Poppins",fontSize:"14px",  }}> Gastro</Typography> </Link>
