@@ -11,6 +11,7 @@
     height: 100vh;
     width: 75vw;
     background-color: rgba(43, 48, 52, 0.9725490196);
+    top: 0;
     justify-content: center;
     -webkit-animation: sideAnim 500ms ease-in-out;
             animation: sideAnim 500ms ease-in-out;

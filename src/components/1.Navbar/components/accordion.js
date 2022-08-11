@@ -125,7 +125,7 @@ export default function SimpleAccordion() {
              <Link to="/IslandOnix"  style={{  textDecoration: "none",  color: "black",   }}> <Typography  style={{fontFamily: "Poppins",fontSize:"14px",  }}> Island Onix</Typography> </Link>
              <Link to="/IslandOmbra"  style={{   textDecoration: "none",  color: "black",   }}> <Typography  style={{fontFamily: "Poppins",fontSize:"14px",  }}> Island Ombra</Typography> </Link>
              <Link to="/IslandVelho"  style={{   textDecoration: "none",  color: "black",   }}> <Typography  style={{fontFamily: "Poppins",fontSize:"14px",  }}>Island Velho</Typography> </Link>
-             
+              
          </div>
         </AccordionDetails>
       </Accordion>

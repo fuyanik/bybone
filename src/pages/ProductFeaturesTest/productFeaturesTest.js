@@ -14,11 +14,121 @@ import { setGlobalState, useGlobalState } from "../../hookState.js";
 
 const ProductFeaturesTest = () => {
 
+    const mq = window.matchMedia( "(max-width: 768px)" );
+    
     const[isTurkish] = useGlobalState("isTurkish");
 
     return (
 <> 
+       
    <Navbar/>
+      { mq.matches ? 
+       /*MOBİLE*/
+          <div className="mob-product-features-test">
+             
+                 <div  className="mob-product-features-test-item2">
+
+                  
+                    <div className="mob-product-features-test-item-texts2">
+                        <h2>{isTurkish ?"Mikrodalgada Kullanılabilir"  : "available ın mıcrowave"}</h2>
+                        <p> {isTurkish ?"Yüksek sıcaklığa dayanıklı ve elektromanyetik dalgaları çekmeyen ürünlerle hızlı servis sağlayın."  : "Provide quick service with products that are resistant to high tempature and do not attract elecktromagnetic waves."} </p>
+                     </div>
+                     <img src={p1}  className="mob-product-features-test-item-image" />
+
+             </div>
+
+
+             <div  className="mob-product-features-test-item2">
+
+             
+             <div className="mob-product-features-test-item-texts2">
+                      <h2>{isTurkish ? "KENAR ÇİP GARANTİSİ" : "EDGE CHIP WARRANTY "}  </h2>
+                      <p> {isTurkish ? "Sert Malzemeler sizi her yıl Yontma plakaları yenilemekten kurtarır." : "Hard Materials save you on renewing Chipped plates each year."} </p>
+             </div>
+                 
+            <img src={p2}  className="mob-product-features-test-item-image" />
+
+            </div>
+
+
+            <div  className="mob-product-features-test-item2">
+
+
+ <div className="mob-product-features-test-item-texts2">
+     <h2>{isTurkish ? "Bulaşık makinesinde yıkanabilir" : "Dishwasher safe"} </h2>
+     <p>Underglaze design do not lose their vitality for years</p>
+  </div>
+  <img src={p3}  className="mob-product-features-test-item-image" />
+
+             </div>
+
+             <div  className="mob-product-features-test-item2">
+
+
+<div className="mob-product-features-test-item-texts2">
+         <h2>Stackable</h2>
+         <p>It saves on storage space and shelf space.</p>
+</div>
+    
+<img src={p7}  className="product-features-test-item-image" />
+
+             </div>
+
+
+
+
+
+
+<div  className="mob-product-features-test-item2">
+
+
+ <div className="mob-product-features-test-item-texts2">
+     <h2>translucency</h2>
+     <p>Stunning products with quality ingredients.</p>
+  </div>
+  <img src={p5}  className="mob-product-features-test-item-image" />
+
+</div>
+
+
+<div  className="mob-product-features-test-item2">
+
+
+<div className="mob-product-features-test-item-texts2">
+         <h2>our glaze</h2>
+         <p>Our hard glaze coastings surface shows high resistance to wear everyday use.
+</p>
+</div>
+    
+<img src={p6}  className="product-features-test-item-image" />
+
+</div>
+
+
+
+<div  className="mob-product-features-test-item2">
+
+
+ <div className="mob-product-features-test-item-texts2">
+     <h2>thermal shock resıstance</h2>
+     <p>It is not affected by sudden temperature changes.</p>
+  </div>
+  <img src={p4}  className="mob-product-features-test-item-image" />
+
+</div>
+
+
+
+
+
+
+            
+         </div> : 
+
+
+
+
+     /* WEB */
         <div className="product-features-test">
 
         <div className='product-header'>  
@@ -62,7 +172,7 @@ const ProductFeaturesTest = () => {
 
 
 
-            {isTurkish ? "" : ""} 
+            
  
 <div  className="product-features-test-item3">
 
@@ -132,6 +242,7 @@ const ProductFeaturesTest = () => {
 
 
         </div>
+        }
  </>
 
     )

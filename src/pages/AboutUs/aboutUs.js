@@ -9,14 +9,22 @@ import illüs3 from './images/illüs3.png'
 import left from './images/left.png'
 
 import { setGlobalState, useGlobalState } from "../../hookState.js";
+import NavbarSide from "../../components/1.Navbar/components/navbarSide";
+
+//const[isDisplaySideNavbar] = useGlobalState("isDisplaySideNavbar");
+//const[isTurkish] = useGlobalState("isTurkish");
+
+//{ isDisplaySideNavbar && <NavbarSide/>}    
 
 
 const AboutUs = () => {  
-
+  const[isDisplaySideNavbar] = useGlobalState("isDisplaySideNavbar");
   const[isTurkish] = useGlobalState("isTurkish");
+
      return (
         <div className="AboutUs"> 
             
+           { isDisplaySideNavbar && <NavbarSide/>}    
             <Navbar/>
             <div className="about-us-main"> 
 
