@@ -1,7 +1,23 @@
-.react-image-slider{
-    display: flex;
-    width: 100vw;
-    height: 110vh;
-    background-color: gainsboro;
-  
+.react-slick {
+  width: 100vw;
+  z-index: 999999;
+  background-color: aliceblue;
+  margin-top: 0vh;
+  background: rgb(87, 91, 94);
+  background: linear-gradient(0deg, rgb(87, 91, 94) 26%, rgb(43, 48, 52) 67%);
 }
+.react-slick .react-slick-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.react-slick .react-slick-item img {
+  margin-left: 5vw;
+  width: 90vw;
+  height: 110vh;
+  border-bottom-left-radius: 369px;
+  border-bottom-right-radius: 369px;
+}/*# sourceMappingURL=reactImageSlider.css.map */

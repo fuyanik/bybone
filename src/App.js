@@ -62,6 +62,7 @@ import Zest from './pages/33.Zest/collections';
 import Arel from './pages/34.Arel/collections';
 import Gabbro from './pages/35.Gabbro/collections';
 import Flavor from './pages/36.Flavor/collections';
+import SimpleSlider from './pages/ReactImageSlider/reactImageSlider';
 
 
 
@@ -133,6 +134,12 @@ export default function App() {
             <Route path="/SmoothBlue" element={<SmoothBlue/>} />
             <Route path="/SmoothYellow" element={<SmoothYellow/>} />
             <Route path="/SmoothReaction" element={<SmoothReaction/>} />
+
+
+
+            <Route path="/slider" element={<SimpleSlider/>} />
+
+            
            
 
 
