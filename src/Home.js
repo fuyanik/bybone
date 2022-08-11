@@ -9,7 +9,6 @@ import Cards from "./components/5.Cards/cards";
 
 
 
-import SideNavbar from "./components/SideNavbar/nav.js";
 
 
 import ContactUs from "./pages/Contact Us/contactUs";
@@ -38,7 +37,7 @@ function Home() {
         { isDisplaySideNavbar && <NavbarSide/> }    
    
        <Navbar />
-       <ReactImageSlider/>
+       <Features/>
        
        <Hero/>
        <HeroFooter/>

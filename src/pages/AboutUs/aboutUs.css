@@ -186,37 +186,6 @@
 }
  
 
-.main-cards{
-    display: flex;
-    
-    height: 100px;
-}
-
-.main-cards-texts{
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    max-width: 313px;
-}
-
-.main-cards-texts h4 {
-    left: 10px;
-    top: -25px;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    color: #374048;
-    font-size: 18px;
-
-}
-.main-cards-texts p {
-    top: -65px;
-    left: 10px;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    color:  #82898F;
-    font-size: 14px;
-    font-weight: 200;
-}
 
 
 
@@ -243,72 +212,69 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        background-color: white;
-       justify-content: baseline;
+        height: auto;
+         background: linear-gradient(0deg, rgb(25, 27, 29) 26%, rgba(43,48,52,1) 67%);
+         margin-top: 7vh;
          display: flex;
          flex-direction: column;
+         gap: 80px;
      
      }
      .about-us-main{
-         top: 45px;
+        justify-content: none;
          position: relative;
          display: flex;
-         flex-direction: column;
-         justify-content: space-evenly;
-         align-items: center;
+         gap: 40px;
+    
+      
            width: 100%;
-          height: 100vh;
-          display: flex;
-          animation: aboutPage 700ms ease 1 100ms forwards;
+          height: 100%;
+          flex-direction: column;
+          animation: none;
           overflow: hidden;
      }
-     
-     @keyframes aboutPage {
-         to {
-           height: 67vh;
-         }
-       } 
+   
      
      .left-image{
          background-position: center;
          background-size: cover;
          width: auto;
          height: 430px;
+         display: none;
      }
      
      .about-us-main-center h2 {
          z-index: 2;
-         top: 50px;
-         left: 165px;
+         bottom: 0vh;
+         border-bottom: 2px solid rgb(151, 44, 44);
          position: relative;
          font-size: 49px;
          letter-spacing: 4px;
          font-family: Sofia-Medium;
-         color:  #065ED7;
+         color:  white;
+         display: none;
      }
      .about-us-image{
-         top: -25px;
+       
          position: relative;
          background-position: center;
          background-size: cover;
          height: 356px;
          width: 620px;
-         display: flex;
+         display: none;
      }
      
      
      
      
      .about-us-footer{
-        
+         top: 0px;
          position: relative;
-        display: flex;
-        flex-direction: column;
-         width: 100%;
-         height: 140vh;
          display: flex;
-         background-color: var(--navyLight);
-        
+         width: 100%;
+         height: auto;
+         flex-direction: column;
+         justify-content: space-around;
          align-items: center;
         
      }
@@ -316,7 +282,6 @@
      .about-us-footer-arrow{
          background-position: center;
          background-size: cover;
-         transform: rotate(90deg);
         
          height: 50px;
      }
@@ -346,9 +311,9 @@
      .footer-card p {
          font-family: Sofia-Light;
          color: rgba(255, 255, 255, 0.784);
-         font-size: 19px;
+         font-size: 15px;
          font-weight: 200;
-         max-width: 430px;
+         max-width: 300px;
          text-align: center;
          position: relative;
          top: -21px;
@@ -363,14 +328,12 @@
      
      
      .about-us-main-left{
-        display: none;
-         left: 25px;
-      
+        
+        left: 0px;
           position: relative;
          display: flex;
-         height: 380px;
-         width: 356px;
         
+         width: 80%;
          flex-direction: column;
          align-items: center;
      }
@@ -378,23 +341,27 @@
      .about-us-main-left h2{
          font-family: Sofia-Medium;
          letter-spacing: 2px;
+         color: white;
+         
      }
         
      .about-us-main-left p{
          font-family: Sofia-Light;
          text-align: center;
          position: relative;
+         color: rgba(255, 255, 255, 0.644);
+        
      }
       
        
      .about-us-main-right{
-        display: none;
-         right: 25px;
-       
+        right: 0px;
+         border-bottom: 1px solid rgba(255, 255, 255, 0.728);
+         top: 0px;
          position: relative;
          display: flex;
-         height: 380px;
-         width: 356px;
+         height: auto;
+         width: 80%;
          align-items: center;
          justify-content: space-around;
          flex-direction: column;
@@ -402,14 +369,18 @@
      .about-us-main-right h2{
          font-family: Sofia-Medium;
          letter-spacing: 2px;
+         color: white;
+         
      }
         
      .about-us-main-right p{
          font-family: Sofia-Light;
          text-align: center;
          position: relative;
+         color: rgba(255, 255, 255, 0.644);
+       
      }
       
-
-    
+     
+ 
 }

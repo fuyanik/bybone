@@ -74,7 +74,9 @@ const Navbar = () => {
       
         
           <ul  
-          
+          style={{
+                display: isDisplaySideNavbar ? "none" : "flex"
+          }}
           className="navbar-items">
           <Link to="/"  style={{ 
                  textDecoration: "none",

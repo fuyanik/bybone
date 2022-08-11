@@ -7,7 +7,7 @@ import illüs1 from './images/illüs1.png'
 import illüs2 from './images/illüs2.png'
 import illüs3 from './images/illüs3.png'
 import left from './images/left.png'
-import MainCards from "./mainCards";
+
 import { setGlobalState, useGlobalState } from "../../hookState.js";
 
 

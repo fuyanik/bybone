@@ -15,7 +15,7 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-           <Typography  style={{fontFamily: "Poppins", }}>Dekorsuz</Typography>
+           <Typography  style={{fontFamily: "Poppins", color:"rgb(220, 58, 58)" }}>Dekorsuz</Typography>
         </AccordionSummary>
         <AccordionDetails>
              <div className="navbar-side-accordion-items">
@@ -37,7 +37,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography  style={{fontFamily: "Poppins", }}> Harmony</Typography>
+          <Typography  style={{fontFamily: "Poppins", color:"rgb(220, 58, 58)" }}> Harmony</Typography>
          
         </AccordionSummary>
         <AccordionDetails>
@@ -66,7 +66,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-         <Typography  style={{fontFamily: "Poppins", }}> Tinta</Typography>
+         <Typography  style={{fontFamily: "Poppins", color:"rgb(220, 58, 58)" }}> Tinta</Typography>
         </AccordionSummary>
         <AccordionDetails>
                
@@ -94,7 +94,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-        <Typography  style={{fontFamily: "Poppins", }}> Cowry</Typography>
+        <Typography  style={{fontFamily: "Poppins", color:"rgb(220, 58, 58)"  }}> Cowry</Typography>
         </AccordionSummary>
         <AccordionDetails>
                 
@@ -116,7 +116,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-        <Typography  style={{fontFamily: "Poppins", }}> Island</Typography>
+        <Typography  style={{fontFamily: "Poppins", color:"rgb(220, 58, 58)" }}> Island</Typography>
         </AccordionSummary>
         <AccordionDetails>
                
@@ -133,11 +133,12 @@ export default function SimpleAccordion() {
 
       <Accordion>
         <AccordionSummary
+        
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-        <Typography  style={{fontFamily: "Poppins", }}> Smooth</Typography>
+        <Typography  style={{fontFamily: "Poppins", color:"rgb(220, 58, 58)"  }}> Smooth</Typography>
         </AccordionSummary>
         <AccordionDetails>
              

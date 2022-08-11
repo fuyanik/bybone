@@ -6,7 +6,7 @@
   .NavbarSide {
     display: flex;
     align-self: flex-end;
-    position: absolute;
+    position: fixed;
     left: 25vw;
     height: 100vh;
     width: 75vw;
@@ -14,7 +14,7 @@
     justify-content: center;
     -webkit-animation: sideAnim 500ms ease-in-out;
             animation: sideAnim 500ms ease-in-out;
-    z-index: 999999;
+    z-index: 100;
   }
   @-webkit-keyframes sideAnim {
     0% {
@@ -33,15 +33,16 @@
     }
   }
   .NavbarSide h2:nth-child(1) {
-    left: 3vw;
+    left: 4vw;
     font-family: "Poppins";
-    color: rgb(222, 217, 217);
-    font-weight: 300;
+    color: rgb(220, 38, 38);
+    font-weight: 600;
     position: absolute;
-    top: 7.5vh;
-    font-size: 29px;
+    top: 8.5vh;
+    font-size: 27px;
     z-index: 999999999;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(211, 36, 36);
+    letter-spacing: 0.8px;
   }
   .NavbarSide h2:nth-child(3) {
     left: 3vw;
@@ -71,12 +72,12 @@
     position: absolute;
     top: 80.5vh;
     font-size: 29px;
-    z-index: 999999999;
+    z-index: 99999;
   }
   .NavbarSide .navbar-side-accordion {
     position: absolute;
-    top: 19vh;
-    width: 70vw;
+    top: 21vh;
+    width: 68vw;
   }
   .NavbarSide .navbar-side-accordion .navbar-side-accordion-items {
     width: 100%;
