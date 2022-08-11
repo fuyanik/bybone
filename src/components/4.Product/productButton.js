@@ -1,4 +1,7 @@
-/* const ProductButton = ({top,left,onClick}) => { 
+import arrow from './images/arrow.png';
+
+ 
+ const ProductButton = ({top,left,onClick}) => { 
 
     return(
 
@@ -18,8 +21,9 @@ onClick={onClick}
 
     <div className="product-box"></div>
     <div className="product-box2">
+    <img className='product-arrow' src={arrow}/>
         
-        <span> + </span>
+        <span>  </span>
         
         </div>
 
@@ -32,4 +36,4 @@ onClick={onClick}
     )
 }
 
-export default ProductButton; */
+export default ProductButton; 

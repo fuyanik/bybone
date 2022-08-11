@@ -51,13 +51,13 @@
     background-color: #EEEEEE
 }
 
-.product-logo{
+.product-image{
   width: 600px;
   height: 350px;
    
     background-position: center;
     background-size: cover;
-   border: 2px solid rgba(0, 0, 0, 0.48);
+   border: 1px solid rgba(0, 0, 0, 0.133);
     background-repeat: no-repeat;
 }
 
@@ -92,8 +92,8 @@
   z-index: 99999;
   position: relative;
   background-color: red;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
   border-radius: 50px;
   animation: ping 1000ms cubic-bezier(0, 0, 0.2, 1) infinite;
@@ -102,12 +102,12 @@
 .product-box2 {
   z-index: 999999999;
   display: flex;
-  right: 1.5px;
-  bottom: 28.5px;
+  right: 2px;
+  bottom: 25.5px;
   position: relative;
-  background-color: rgba(255, 0, 0, 0.836);
-  width: 32px;
-  height: 32px;
+  background-color: #ff1616;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
   border-radius: 50px;
   color: white;
@@ -121,59 +121,16 @@
   margin-bottom: 0px;
 }
 
-.target-line{
-  z-index: 9999999999999999999999999;
-  position: absolute;
-  height: 4px;
-  width: 4px;
-  background-color: red;
-  
- 
-  border-radius: 15px;
-  right: 0;
-  top: 151.6%;
-  margin-right: 850px;
-  opacity: 0;
-
-   
- }
-
- .target-line-click{
-  transition: 1s;
-  animation: tt-expand  1s ease forwards;
-  opacity: 1;
-  
- }
-
- .target-line-click-back{
-  transition: 1s;
-  animation: tt-expand-back  1s ease forwards;
-  opacity: 1;
- }
-
-
- @keyframes tt-expand {
-  0% {
-    width: 5px;
-    
-  }
-  100% {
-    width: 200px;
-  
-  }
+.product-arrow{
+  width: 650px;
+  fill: red;
+  position: relative;
+  right: 19vw;
+  bottom: 7.5vh;
 }
 
 
-@keyframes tt-expand-back {
-  0% {
-    width: 200px;
-    
-  }
-  100% {
-    width: 0px;
-  
-  }
-}
+
 
 
 
@@ -212,6 +169,18 @@
 .product h4{
   display: none;
 }
+
+.product-image{
+  width: 95%;
+  height: 270px;
+   
+    background-position: center;
+    background-size: cover;
+   border: 2px solid rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+}
+
+
 }
 
 

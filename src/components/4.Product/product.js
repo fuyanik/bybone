@@ -1,5 +1,6 @@
 import "./product.css"
-import logos from './logos9.png';
+import logos from './images/logos9.png';
+import arrow from './images/arrow.png';
 
 import ProductButton from "./productButton";
 import {useState, } from 'react';
@@ -23,15 +24,15 @@ const Product = () => {
            
             
             
-             <img src={logos} className="product-logo" alt="logo" data-aos="fade-up"  data-aos-duration="1500" />
+             <img src={logos} className="product-image" alt="logo" data-aos="fade-up"  data-aos-duration="1500" />
           
             
            
-           { /* <ProductButton
-              top = {"62%"}
-              left = {"861px"}
+             <ProductButton
+              top = {"86%"}
+              left = {"50%"}
               
-    />  */ } 
+    />  
 
            {  /*  <ProductButton
               top = {"47%"}
