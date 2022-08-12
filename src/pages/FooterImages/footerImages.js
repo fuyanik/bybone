@@ -53,47 +53,47 @@ const FooterImages = () => {
               <div className="footer-images-main-right">
 
                   <Link style={{ textDecoration: "none"  }}   to="/IslandVelho" className="footer-images-main-right-items">   <LazyLoadImage  src="https://i.im.ge/2022/08/12/OMJLL0.1.md.jpg"  alt="image"  />  <p>Island Velho</p>  </Link>
-                  <a style={{ textDecoration: "none"  }}   href="/IslandOmbra" className="footer-images-main-right-items">  <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJ5PG.2.md.jpg" alt="image"  /> <p>Island Ombra</p> </a>
-                  <a style={{ textDecoration: "none"  }}   href="IslandOnix" className="footer-images-main-right-items">  <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJ0qL.3.md.jpg" alt="image"  /> <p>Island onix</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/Island" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJhnc.4.md.jpg" alt="image"  /> <p>Island</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/SmoothYellow" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJU3T.5.md.jpg" alt="image"  /> <p>Smooth Amb. Yellow</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/SmoothBlue" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJtLz.6.md.jpg" alt="image" /> <p>Smooth Amb. Blue</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/SmoothReaction" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJA4F.7-smooth-reaction.md.jpg" alt="image" /> <p>Smooth Reaction</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/Smooth" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJEqK.8.md.jpg" alt="image" /> <p>Smooth</p> </a>
+                  <Link style={{ textDecoration: "none"  }}   to="/IslandOmbra" className="footer-images-main-right-items">  <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJ5PG.2.md.jpg" alt="image"  /> <p>Island Ombra</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}   to="IslandOnix" className="footer-images-main-right-items">  <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJ0qL.3.md.jpg" alt="image"  /> <p>Island onix</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/Island" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJhnc.4.md.jpg" alt="image"  /> <p>Island</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/SmoothYellow" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJU3T.5.md.jpg" alt="image"  /> <p>Smooth Amb. Yellow</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/SmoothBlue" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJtLz.6.md.jpg" alt="image" /> <p>Smooth Amb. Blue</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/SmoothReaction" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJA4F.7-smooth-reaction.md.jpg" alt="image" /> <p>Smooth Reaction</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/Smooth" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJEqK.8.md.jpg" alt="image" /> <p>Smooth</p> </Link>
 
-                  <a style={{ textDecoration: "none"  }}   href="/GastroPlate" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJy36.9.md.jpg" alt="image" /><p>Gastro Plate</p></a>
+                  <Link style={{ textDecoration: "none"  }}   to="/GastroPlate" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJy36.9.md.jpg" alt="image" /><p>Gastro Plate</p></Link>
 
 
                      
-                  <a style={{ textDecoration: "none"  }}  href="/CowryPurple" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJ3zX.10.md.jpg" alt="image" /> <p>Cowry Purple</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/CowryYellow" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJZ34.11.md.jpg" alt="image" /> <p>Cowry Yellow</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/CowryBrick" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJbF8.12.md.jpg" alt="image" /> <p>Cowry Brick</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/CowryBlack" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJK4C.13.md.jpg" alt="image" /> <p>Cowery Black</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/rome" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJWUD.14.md.jpg" alt="image" /> <p>Rome</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/tessera" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJgWM.15.md.jpg" alt="image" /> <p>Tessera</p> </a>
+                  <Link style={{ textDecoration: "none"  }}  to="/CowryPurple" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJ3zX.10.md.jpg" alt="image" /> <p>Cowry Purple</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/CowryYellow" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJZ34.11.md.jpg" alt="image" /> <p>Cowry Yellow</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/CowryBrick" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJbF8.12.md.jpg" alt="image" /> <p>Cowry Brick</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/CowryBlack" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJK4C.13.md.jpg" alt="image" /> <p>Cowery Black</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/rome" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJWUD.14.md.jpg" alt="image" /> <p>Rome</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/tessera" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJgWM.15.md.jpg" alt="image" /> <p>Tessera</p> </Link>
 
-                  <a style={{ textDecoration: "none"  }}   href="/edera" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJzzP.16.md.jpg" alt="image" /><p>Edera</p></a>
-                  <a style={{ textDecoration: "none"  }}  href="/ederacobalt" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJGY0.17.md.jpg" alt="image" /><p>Edera Cobalt</p></a>
-                  <a style={{ textDecoration: "none"  }}  href="/armonia" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJpO1.18.md.jpg" alt="image" /><p>Armonia</p></a>
-                  <a style={{ textDecoration: "none"  }}  href="/spazio" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJJWm.19.md.jpg" alt="image" /><p>Spazio</p></a>
-                  <a style={{ textDecoration: "none"  }}  href="/legna"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJvjf.20.md.jpg" alt="image" /><p>Legna</p></a>
-                  <a style={{ textDecoration: "none"  }}  href="/kolezyum" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJBUW.21.md.jpg" alt="image" /><p>Kolezyum</p></a>
-                  <a style={{ textDecoration: "none"  }}  href="/infinity" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJ4or.22.md.jpg" alt="image" /><p>Infinity</p></a>
+                  <Link style={{ textDecoration: "none"  }}   to="/edera" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJzzP.16.md.jpg" alt="image" /><p>Edera</p></Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/ederacobalt" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJGY0.17.md.jpg" alt="image" /><p>Edera Cobalt</p></Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/armonia" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJpO1.18.md.jpg" alt="image" /><p>Armonia</p></Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/spazio" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJJWm.19.md.jpg" alt="image" /><p>Spazio</p></Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/legna"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJvjf.20.md.jpg" alt="image" /><p>Legna</p></Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/kolezyum" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJBUW.21.md.jpg" alt="image" /><p>Kolezyum</p></Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/infinity" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJ4or.22.md.jpg" alt="image" /><p>Infinity</p></Link>
 
-                  <a style={{ textDecoration: "none"  }}  href="/elegance" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJeBT.23.md.jpg" alt="image" />  <p>Elegance</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/supreme" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnQsc.24.md.jpg" alt="image" /> <p>Supreme</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/rose" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnrma.25.md.jpg" alt="image" /> <p>Rose</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/tropical" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnozG.26.md.jpg" alt="image" /> <p>Tropical</p> </a>
-                  <a style={{ textDecoration: "none"  }}   href="/ardent"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnlOx.27.md.jpg" alt="image" /> <p>Ardent</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/enigma" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnuWJ.28.md.jpg" alt="image" /> <p>Enigma</p> </a>
-                  <a style={{ textDecoration: "none"  }}   href="/vintage"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMn1hS.29.md.jpg" alt="image" /> <p>Vintage</p> </a>
+                  <Link style={{ textDecoration: "none"  }}  to="/elegance" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJeBT.23.md.jpg" alt="image" />  <p>Elegance</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/supreme" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnQsc.24.md.jpg" alt="image" /> <p>Supreme</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/rose" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnrma.25.md.jpg" alt="image" /> <p>Rose</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/tropical" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnozG.26.md.jpg" alt="image" /> <p>Tropical</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}   to="/ardent"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnlOx.27.md.jpg" alt="image" /> <p>Ardent</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}  to="/enigma" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnuWJ.28.md.jpg" alt="image" /> <p>Enigma</p> </Link>
+                  <Link style={{ textDecoration: "none"  }}   to="/vintage"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMn1hS.29.md.jpg" alt="image" /> <p>Vintage</p> </Link>
 
-                  <a style={{ textDecoration: "none"  }}   href="/breeze"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnD1X.30.md.jpg" alt="image"  /><p>Breeze</p></a>
-                  <a style={{ textDecoration: "none"  }}   href="/blance"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnOoy.31.md.jpg" alt="image" /><p>Balance</p></a>
-                  <a style={{ textDecoration: "none"  }}   href="/laterite"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnaH9.32.md.jpg" alt="image"  /><p>Laterite</p></a>
-                  <a style={{ textDecoration: "none"  }}   href="/sun"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnLZh.33.md.jpg" alt="image" /><p>Sun</p></a>
-                  <a style={{ textDecoration: "none"  }}   href="/gleam"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMn2Yz.34.md.jpg" alt="image" /><p>Gleam</p></a>
-                  <a style={{ textDecoration: "none"  }}   href="/dekorsuz"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnIm8.35.md.jpg" alt="image" /><p>{ isTurkish ?"Dekorsuz" : "Undecorated"}</p></a>
+                  <Link style={{ textDecoration: "none"  }}   to="/breeze"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnD1X.30.md.jpg" alt="image"  /><p>Breeze</p></Link>
+                  <Link style={{ textDecoration: "none"  }}   to="/blance"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnOoy.31.md.jpg" alt="image" /><p>Balance</p></Link>
+                  <Link style={{ textDecoration: "none"  }}   to="/laterite"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnaH9.32.md.jpg" alt="image"  /><p>Laterite</p></Link>
+                  <Link style={{ textDecoration: "none"  }}   to="/sun"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnLZh.33.md.jpg" alt="image" /><p>Sun</p></Link>
+                  <Link style={{ textDecoration: "none"  }}   to="/gleam"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMn2Yz.34.md.jpg" alt="image" /><p>Gleam</p></Link>
+                  <Link style={{ textDecoration: "none"  }}   to="/dekorsuz"className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMnIm8.35.md.jpg" alt="image" /><p>{ isTurkish ?"Dekorsuz" : "Undecorated"}</p></Link>
               
 
 
