@@ -385,6 +385,21 @@ collection-item-texts-right-selected{
  }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  @media screen and (max-width: 600px) {
 
    .collection-items{
@@ -440,7 +455,7 @@ collection-item-texts-right-selected{
       border-radius: 35px;
       position: fixed;
       left: 10%;
-      top: 17.5%;
+      top: 12.5%;
       z-index: 999999999999;
       display: flex;
       flex-direction: column;
@@ -460,9 +475,9 @@ collection-item-texts-right-selected{
      
    .collection-item-image{
       position: relative;
-     
-      width: 98%;
-      height: 65%;
+      margin-top: 17px;
+      width: 93%;
+      height: 69%;
       object-fit: scale-down; 
    }
    .collection-item-image-selected{
@@ -523,6 +538,7 @@ ollection-item-texts-right-selected{
 }
 
 .collection-item-texts-right-items h2{
+   margin-top: -29px;
    font-size: 22.5px;
    font-family: 'Roboto Flex', sans-serif;
    letter-spacing: 1.4px;
