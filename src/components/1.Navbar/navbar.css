@@ -85,7 +85,6 @@
  align-self: center;
  justify-self: flex-end;
  border-radius: 35px;
-
  color: white;
  justify-content: center;
  align-items: center;
@@ -93,9 +92,10 @@
  letter-spacing: 2PX;
  font-weight: 600;
  font-size: 13px;
+
 }
  
- 
+
 
 .navbar-dropdown{
  
@@ -204,9 +204,11 @@
   display: flex;
   width: 160px;
   height: auto;
-
+  
   position: relative;
 }
+
+
 
 
 

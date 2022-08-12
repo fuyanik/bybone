@@ -33,7 +33,12 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                       <div className="dropdown-item-line"> 
                            <h4 className="dropdown-head"> {isTurkish ? "Dekorsuz" : "Undecorated"}</h4>
                            
-                           <ul className="dropdown-list">
+                           <ul 
+                           style={{
+                              position:"relative",
+                              right:"9.8vw"
+                           }}
+                           className="dropdown-list">
                        
                           
                            <Link to="/Island"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area7'> <li>Island</li>  {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }    </div> </Link>
