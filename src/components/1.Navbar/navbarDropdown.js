@@ -31,7 +31,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
 
        {/* Dekorsuz*/}
                       <div className="dropdown-item-line"> 
-                           <h4 className="dropdown-head"> Dekorsuz</h4>
+                           <h4 className="dropdown-head"> {isTurkish ? "Dekorsuz" : "Undecorated"}</h4>
                            
                            <ul className="dropdown-list">
                        
@@ -136,7 +136,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                                <Link to="/CowryBlack"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Black</li> </Link>
                               <Link to="/CowryYellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Yellow</li> </Link>
                               <Link to="/fincantabak"  style={{   textDecoration: "none",  color: "white", position:"relative",
-                         top:"20px"  }}>   <li >{`Fincanlar&Tabaklar ➔`}</li></Link>
+                         top:"20px"  }}>   <li > {isTurkish ? `Cups&Places ➔` : `Fincanlar&Tabaklar ➔`}</li></Link>
                                
                            </ul>
 

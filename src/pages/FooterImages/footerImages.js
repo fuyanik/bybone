@@ -37,14 +37,17 @@ import p33 from "./images/33.jpg";
 import p34 from "./images/34.jpg";
 import p35 from "./images/35.jpg";
 
+import { setGlobalState, useGlobalState } from "../../hookState.js";
+
+
 
 const FooterImages = () => { 
-
+    const[isTurkish] = useGlobalState("isTurkish");
     return(
 
         <div className="Footer-Images">
 
-          <h1 className="footer-images-header">KOLEKSYİON FOTOĞRAFLARI</h1>
+          <h1 className="footer-images-header">{isTurkish ? "COLLECTİON IMAGES" : "KOLEKSİYON FOTOĞRAFLARI"}</h1>
            <div className="footer-images-main">
               <LazyLoadImage src={footerImagesImage} className="footer-images-main-left"/>
               <div className="footer-images-main-right">
