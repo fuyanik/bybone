@@ -455,7 +455,11 @@ width: 100%;
 .fincan-text{
   font-family: "Poppins";
   position: absolute;
-
+  left: 58.4%;
+  top: 44%;
+  font-size: 23px;
+  color: white;
+  font-weight: 400;
   
 }
 
@@ -469,7 +473,7 @@ width: 100%;
 .youtube-logo{
   position: absolute;
   left: 77%;
-  bottom: 1%;
+  bottom: 18%;
   width: 50px;
   cursor: pointer;
 }
