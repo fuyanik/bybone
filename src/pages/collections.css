@@ -84,7 +84,7 @@
   
 .collection-item-image{
    position: relative;
-   border: 1px solid red;
+  
    width: 98%;
    height: 70%;
    object-fit: cover;
