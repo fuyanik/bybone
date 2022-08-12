@@ -28,11 +28,11 @@ const Product = () => {
           
             
            
-             <ProductButton
+             { /*<ProductButton
               top = {"86%"}
-              left = {"50%"}
+    left = {"50%"} /> */ }
               
-    />  
+   
 
            {  /*  <ProductButton
               top = {"47%"}

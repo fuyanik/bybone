@@ -22,9 +22,11 @@ const Hero = () => {
 
                  <div className="hero-main-text-buttons"> 
                      
-                         <div className="hero-button"  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="700"> LET'S WORK </div>
+                         <a style={
+                          {textDecoration: "none",}
+                         }  href="/contact" className="hero-button"  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="700"> LET'S WORK </a>
                         
-                    <a href="https://www.youtube.com/channel/UCjzVRJNLr13_u0sDH6OGFWw">      <button class="learn-more"   data-aos="fade-left"  data-aos-duration="600" data-aos-delay="900"  >
+                    <a href="/about">      <button class="learn-more"   data-aos="fade-left"  data-aos-duration="600" data-aos-delay="900"  >
                                 
                                 <span class="circle" aria-hidden="true">
                                     <span class="icon arrow"></span>

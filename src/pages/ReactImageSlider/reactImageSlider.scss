@@ -15,16 +15,55 @@
          overflow: hidden;
 
          img{
-                
+              
                 margin-left: 5vw;
                 width: 90vw;
-                height: 110vh;
+                height: 114vh;
                 
                 border-bottom-left-radius: 369px;
                 border-bottom-right-radius: 369px;
          }
 
         }
+    }
+
+
+    @media screen and (max-width: 768px) {
+
+      .react-slick{
+        width: 100vw;
+       z-index: 999999;
+       height: 60vh;
+        background-color: aliceblue;
+        margin-top: 0vh;
+        background: rgb(87,91,94);
+      background: linear-gradient(0deg, rgba(87,91,94,1) 26%, rgba(43,48,52,1) 67%);
+    
+        .react-slick-item{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             width: 100vw;
+             height: 60vh;
+             overflow: hidden;
+    
+             img{
+                  
+                    margin-left: 0vw;
+                    width: 100vw;
+                    height: 60vh;
+                    
+                    border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;
+             }
+    
+            }
+        }
+    
+     
+            
+       
+      
     }
 
  

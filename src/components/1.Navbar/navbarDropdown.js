@@ -17,13 +17,17 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
 
         <div className= { display ? "navbar-dropdown-hover"  :"navbar-dropdown"}onMouseMove={onMouse}  onMouseLeave={onLeave}>
             <div className={ display ? "dropdown-item-hover" : "dropdown-items"}> 
+           
+      
 
         
                   <div className="dropdown-main-items"> 
      
       
                   <img src={dropdownİmage2} className ="dropdown-image" />
-                      <span className='dropdown-divider'>___________________________,___</span>
+                      <span className='dropdown-divider'>______________________________</span>
+                      <div className='fincan-line'></div>
+                      <div className='fincan-text'>{`Fincanlar&Tabaklar ➔`}</div>
 
        {/* Dekorsuz*/}
                       <div className="dropdown-item-line"> 
@@ -34,7 +38,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                           
                            <Link to="/Island"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area7'> <li>Island</li>  {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }    </div> </Link>
                            <Link to="/Smooth"  style={{   textDecoration: "none",  color: "white",   }}>  <div className='image-area8'> <li>Smooth</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
-                           <Link to="/gastroFlate"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Gastro Flate Plate</li> </Link>
+                           <Link to="/gastroFlate"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Gastro Flate P.</li> </Link>
                           
                           
                            <Link to="/Helix"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Helix</li> </Link>
@@ -63,7 +67,8 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <h4 className="dropdown-head"> Harmony</h4>
                            
                            <ul className="dropdown-list">
-                       
+                           <Link to="/rose"  style={{   textDecoration: "none",  color: "white",   }}>    <div className='image-area5'> <li>Rose</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div>  </Link>
+                           <Link to="/tropical"  style={{   textDecoration: "none",  color: "white",   }}>   <div className='image-area6'> <li>Tropical</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div>  </Link>
                            <Link to="/ardent"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Ardent</li> </Link>
                            <Link to="/blance"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Balance</li> </Link>
                            <Link to="/breeze"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Breeze</li> </Link>
@@ -71,10 +76,10 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                            <Link to="/enigma"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Enigma</li> </Link>
                            <Link to="/gleam"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Gleam</li> </Link>
                            <Link to="/Infinity"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Infinity</li> </Link>
-                           <Link to="/rose"  style={{   textDecoration: "none",  color: "white",   }}>    <div className='image-area5'> <li>Rose</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div>  </Link>
+
                            <Link to="/sun"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Sun</li> </Link>
                            <Link to="/supreme"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Supreme</li> </Link>
-                           <Link to="/tropical"  style={{   textDecoration: "none",  color: "white",   }}>   <div className='image-area6'> <li>Tropical</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div>  </Link>
+
                            <Link to="/vintage"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Vintage</li> </Link>
                            <Link to="/laterite"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Laterite</li> </Link>
                                
@@ -125,9 +130,10 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                              style={{right: "91px"}}
                            
                            >
-                                <Link to="/CowryBlack"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Black</li> </Link>
+                               
                                <Link to="/CowryBrick"  style={{   textDecoration: "none",  color: "white",   }}>      <div className='image-area3'> <li>Cowry Brick</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div>   </Link>
                                <Link to="/CowryPurple"  style={{   textDecoration: "none",  color: "white",   }}>       <div className='image-area4'> <li>Cowry Purple</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
+                               <Link to="/CowryBlack"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Black</li> </Link>
                               <Link to="/CowryYellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Yellow</li> </Link>
                             
                                

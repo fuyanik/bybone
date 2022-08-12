@@ -20,7 +20,7 @@ const Navbar = () => {
        const [isClickFlag,setİsClickFlag] = useState(false);
        const [isClickFlag2,setİsClickFlag2] = useState(true);
        
-       const [display, setDisplay] = useState(false);
+       const [display, setDisplay] = useState(true);
        const[isTurkish] = useGlobalState("isTurkish");
        //  onClick={() =>  setGlobalState("isTurkish", false) }
        const[isDisplaySideNavbar] = useGlobalState("isDisplaySideNavbar");

@@ -355,7 +355,7 @@ width: 100%;
   
 }
 .image-area3 img{
-  top: 5%;
+  top: -1.6%;
   left: 53%;
   position: absolute;
   width: 40px;
@@ -367,7 +367,7 @@ width: 100%;
   
 }
 .image-area4 img{
-  top: 13%;
+  top: 6.3%;
   left: 57%;
   position: absolute;
   width: 40px;
@@ -382,8 +382,8 @@ width: 100%;
 }
 
 .image-area5 img{
-  top: 52%;
-  left: 33%;
+  top: -1.6%;
+  left: 32%;
   position: absolute;
   width: 40px;
    height: 25px;
@@ -394,8 +394,8 @@ width: 100%;
   
 }
 .image-area6 img{
-  top: 74%;
-  left: 43%;
+  top: 6.3%;
+  left: 42%;
   position: absolute;
   width: 40px;
    height: 25px;
@@ -419,7 +419,7 @@ width: 100%;
 }
 
 .image-area7 img{
-  top: 3%;
+  top: -1.6%;
   left: 36%;
   position: absolute;
   width: 40px;
@@ -427,7 +427,7 @@ width: 100%;
 }
 
 .image-area8 img{
-  top: 11%;
+  top: 6.3%;
   left: 41%;
   position: absolute;
   width: 40px;
@@ -435,11 +435,32 @@ width: 100%;
 }
 
 .image-area9 img{
-  top: 21%;
-  left: 38%;
+  top: 14.2%;
+  left: 61.7%;
   position: absolute;
   width: 40px;
    height: 25px;
+}
+
+.fincan-line{
+  background-color: red;
+  position: absolute;
+  left: 58.4%;
+  top: 42%;
+  width: 30%;
+  height: 2px;
+
+}
+
+.fincan-text{
+  font-family: "Poppins";
+  position: absolute;
+  left: 58.4%;
+  top: 44%;
+  font-size: 23px;
+  color: white;
+  font-weight: 400;
+  
 }
 
 

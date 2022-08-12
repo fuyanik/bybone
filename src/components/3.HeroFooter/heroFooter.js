@@ -18,9 +18,9 @@ const HeroFooter = () => {
                 
                   <div className="app-footer-left-text" > 
                       
-                       <h2 > Connect With Us</h2>
-                    
-                       <button class="learn-more"   >
+                       <h2 style={{top:"8px", position: "relative"}} > Connect With Us</h2>
+                    <a href="https://www.youtube.com/channel/UCjzVRJNLr13_u0sDH6OGFWw" target={"_blank"} > 
+                       <button  class="learn-more"   >
                                 
                                 <span class="circle" aria-hidden="true">
                                     <span class="icon arrow"></span>
@@ -29,6 +29,7 @@ const HeroFooter = () => {
                                 <span class="button-text">Explore Now</span>
                           
                         </button>
+                        </a>
                    
                    </div>
 
