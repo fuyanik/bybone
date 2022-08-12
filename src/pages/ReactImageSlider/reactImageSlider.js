@@ -32,8 +32,8 @@ export default class SimpleSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 1000,
-      autoplaySpeed: 800,
+      speed: 1800,
+      autoplaySpeed: 2800,
       arrows: false,
       pauseOnHover: false
     };
@@ -51,9 +51,10 @@ export default class SimpleSlider extends Component {
           </div>
         
           <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r4} />
+            <LazyLoadImage className="react-slick-image" src={r13} />
           </div>
-          
+
+         
           <div className="react-slick-item">
             <LazyLoadImage className="react-slick-image" src={r5} />
           </div>
@@ -67,17 +68,12 @@ export default class SimpleSlider extends Component {
           </div>
          
          
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r10} />
-          </div>
+          
          
          
          
          
-         
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r13} />
-          </div>
+      
          
         
          
@@ -93,7 +89,8 @@ export default class SimpleSlider extends Component {
           <div className="react-slick-item">
             <LazyLoadImage  className="react-slick-image"src={r18} />
           </div>
-         
+       
+          
          
 
         </Slider>

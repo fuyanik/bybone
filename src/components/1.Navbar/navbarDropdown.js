@@ -27,7 +27,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                   <img src={dropdownİmage2} className ="dropdown-image" />
                       <span className='dropdown-divider'>______________________________</span>
                       <div className='fincan-line'></div>
-                      <a href='/fincantabak' className='fincan-text'>{`Fincanlar&Tabaklar ➔`}</a>
+                     
 
        {/* Dekorsuz*/}
                       <div className="dropdown-item-line"> 
@@ -135,7 +135,8 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                                <Link to="/CowryPurple"  style={{   textDecoration: "none",  color: "white",   }}>       <div className='image-area4'> <li>Cowry Purple</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
                                <Link to="/CowryBlack"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Black</li> </Link>
                               <Link to="/CowryYellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Yellow</li> </Link>
-                            
+                              <Link to="/fincantabak"  style={{   textDecoration: "none",  color: "white", position:"relative",
+                         top:"20px"  }}>   <li >{`Fincanlar&Tabaklar ➔`}</li></Link>
                                
                            </ul>
 
