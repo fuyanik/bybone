@@ -3,7 +3,7 @@ import {db, auth} from "../../firebaseConfig";
 import { useEffect,useState } from "react";
 import Navbar from "../../components/1.Navbar/navbar";
 import "../collections.css";
-import AddCollections from "./addCollections";
+import CollectionsHeader from "../collectionsHeader";
 import DeleteCollections from "./deleteCollections";
 import {useAuthState} from "react-firebase-hooks/auth";
 
@@ -55,7 +55,7 @@ const SmoothYellow = () => {
         <div className="collections"> 
         
         
-    <AddCollections/>  
+     <CollectionsHeader  title={"Smooth Yellow"} />  
   
   { /*  <a href="/login" style={{
       cursor:"pointer", marginTop:"90px",

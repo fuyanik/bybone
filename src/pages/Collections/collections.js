@@ -3,17 +3,18 @@ import {db, auth} from "../../firebaseConfig";
 import { useEffect,useState } from "react";
 import Navbar from "../../components/1.Navbar/navbar";
 import "../collections.css";
-import AddCollections from "./addCollections";
+
 import DeleteCollections from "./deleteCollections";
 import {useAuthState} from "react-firebase-hooks/auth";
 
 import { setGlobalState, useGlobalState } from "../../hookState.js";
+import  CollectionsHeader from "../collectionsHeader";
 
 
 
 
 const Collections = () => {
-  
+
   //leangue control
   const[isTurkish] = useGlobalState("isTurkish");
 
@@ -54,8 +55,9 @@ const Collections = () => {
       <Navbar/>
         <div className="collections"> 
         
-        
-    <AddCollections/>  
+           <CollectionsHeader  title={"Ardent"} />
+          
+          
   
   { /*  <a href="/login" style={{
       cursor:"pointer", marginTop:"90px",

@@ -10,16 +10,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90vw;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 .react-slick .react-slick-item img {
-  margin-left: 5vw;
-  width: 90vw;
+  margin-left: 0vw;
+  width: 100vw;
   height: 114vh;
-  border-bottom-left-radius: 369px;
-  border-bottom-right-radius: 369px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 @media screen and (max-width: 768px) {

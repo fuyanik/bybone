@@ -3,8 +3,12 @@ import laptop from './laptop.png';
 import icon1 from './icon1.png';
 import icon2 from './icon2.png';
 import YoutubeEmbed from "./youtubeEmbed";
+
+import { setGlobalState, useGlobalState } from "../../hookState.js";
+
 const HeroFooter = () => { 
 
+  const[isTurkish] = useGlobalState("isTurkish");
  return (
 
    <div className="HeroFooter"> 
@@ -18,7 +22,7 @@ const HeroFooter = () => {
                 
                   <div className="app-footer-left-text" > 
                       
-                       <h2 style={{top:"8px", position: "relative"}} > Connect With Us</h2>
+                       <h2 style={{top:"8px", position: "relative"}} >  {isTurkish ? "ByBone Youtube" :"Connect With Us"}</h2>
                     <a href="https://www.youtube.com/channel/UCjzVRJNLr13_u0sDH6OGFWw" target={"_blank"} > 
                        <button  class="learn-more"   >
                                 
@@ -26,7 +30,7 @@ const HeroFooter = () => {
                                     <span class="icon arrow"></span>
                                 </span>
                                
-                                <span class="button-text">Explore Now</span>
+                                <span class="button-text"> {isTurkish ? "Şimdi Keşfet" :"Explore Now"}</span>
                           
                         </button>
                         </a>

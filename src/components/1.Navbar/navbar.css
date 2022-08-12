@@ -318,7 +318,7 @@ width: 100%;
   cursor: pointer;
 
 }
-.navbar-flag-eng{width: 37px;
+.navbar-flag-eng{width: 23px;
   cursor: pointer;}
 
 
@@ -461,6 +461,19 @@ width: 100%;
   color: white;
   font-weight: 400;
   
+}
+
+.instagram-logo{
+  position: absolute;
+  left: 79%;
+  width: 40px;
+  cursor: pointer;
+}
+.youtube-logo{
+  position: absolute;
+  left: 75.5%;
+  width: 50px;
+  cursor: pointer;
 }
 
 

@@ -64,10 +64,10 @@ const ProductFeaturesTest = () => {
 
              <div  className="mob-product-features-test-item2">
 
-
+             
 <div className="mob-product-features-test-item-texts2">
-         <h2>Stackable</h2>
-         <p>It saves on storage space and shelf space.</p>
+         <h2>{isTurkish ? "İstiflenebilir": "Stackable"}</h2>
+         <p> {isTurkish ? "Depolama alanından ve raf alanından tasarruf sağlar." :"It saves on storage space and shelf space."}</p>
 </div>
     
 <img src={p7}  className="product-features-test-item-image" />
@@ -83,8 +83,8 @@ const ProductFeaturesTest = () => {
 
 
  <div className="mob-product-features-test-item-texts2">
-     <h2>translucency</h2>
-     <p>Stunning products with quality ingredients.</p>
+     <h2>{isTurkish ? "Yarı Saydamlık": "translucency"}</h2>
+     <p>{isTurkish ? "Kaliteli malzemelerle muhteşem ürünler.": "Stunning products with quality ingredients."}</p>
   </div>
   <img src={p5}  className="mob-product-features-test-item-image" />
 
@@ -95,8 +95,8 @@ const ProductFeaturesTest = () => {
 
 
 <div className="mob-product-features-test-item-texts2">
-         <h2>our glaze</h2>
-         <p>Our hard glaze coastings surface shows high resistance to wear everyday use.
+         <h2>{isTurkish ? "Bizim Sırrımız": "our glaze"}</h2>
+         <p>{isTurkish ? "Sert sır kaplama yüzeyimiz günlük kullanımda aşınmaya karşı yüksek direnç gösterir.": "Our hard glaze coastings surface shows high resistance to wear everyday use."}
 </p>
 </div>
     
@@ -110,8 +110,8 @@ const ProductFeaturesTest = () => {
 
 
  <div className="mob-product-features-test-item-texts2">
-     <h2>thermal shock resıstance</h2>
-     <p>It is not affected by sudden temperature changes.</p>
+     <h2>{isTurkish ? "Termal şok direnci": "Thermal Shock Resıstance"}</h2>
+     <p>{isTurkish ? "Termal şok direnci": "It is not affected by sudden temperature changes."}</p>
   </div>
   <img src={p4}  className="mob-product-features-test-item-image" />
 
@@ -192,8 +192,8 @@ const ProductFeaturesTest = () => {
 
 
 <div className="product-features-test-item-texts2">
-         <h2>Stackable</h2>
-         <p>It saves on storage space and shelf space.</p>
+         <h2>{isTurkish ? "İstiflenebilir": "Stackable"}</h2>
+         <p> {isTurkish ? "Depolama alanından ve raf alanından tasarruf sağlar." :"It saves on storage space and shelf space."}</p>
 </div>
     
 <img src={p7}  className="product-features-test-item-image" />
@@ -206,8 +206,8 @@ const ProductFeaturesTest = () => {
 
 <img src={p5}  className="product-features-test-item-image" />
  <div className="product-features-test-item-texts3">
-     <h2>translucency</h2>
-     <p>Stunning products with quality ingredients.</p>
+ <h2>{isTurkish ? "Yarı Saydamlık": "translucency"}</h2>
+     <p>{isTurkish ? "Kaliteli malzemelerle muhteşem ürünler.": "Stunning products with quality ingredients."}</p>
   </div>
 
 </div>
@@ -217,8 +217,8 @@ const ProductFeaturesTest = () => {
 
 
 <div className="product-features-test-item-texts2">
-         <h2>our glaze</h2>
-         <p>Our hard glaze coastings surface shows high resistance to wear everyday use.
+<h2>{isTurkish ? "Bizim Sırrımız": "our glaze"}</h2>
+         <p>{isTurkish ? "Sert sır kaplama yüzeyimiz günlük kullanımda aşınmaya karşı yüksek direnç gösterir.": "Our hard glaze coastings surface shows high resistance to wear everyday use."}
 </p>
 </div>
     
@@ -232,8 +232,8 @@ const ProductFeaturesTest = () => {
 
 <img src={p4}  className="product-features-test-item-image" />
  <div className="product-features-test-item-texts3">
-     <h2>thermal shock resıstance</h2>
-     <p>It is not affected by sudden temperature changes.</p>
+ <h2>{isTurkish ? "Termal şok direnci": "Thermal Shock Resıstance"}</h2>
+     <p>{isTurkish ? "Termal şok direnci": "It is not affected by sudden temperature changes."}</p>
   </div>
 
 </div>

@@ -20,7 +20,7 @@ const Navbar = () => {
        const [isClickFlag,setİsClickFlag] = useState(false);
        const [isClickFlag2,setİsClickFlag2] = useState(true);
        
-       const [display, setDisplay] = useState(true);
+       const [display, setDisplay] = useState(false);
        const[isTurkish] = useGlobalState("isTurkish");
        //  onClick={() =>  setGlobalState("isTurkish", false) }
        const[isDisplaySideNavbar] = useGlobalState("isDisplaySideNavbar");
@@ -129,6 +129,8 @@ const Navbar = () => {
               
 
         
+          <img className="youtube-logo" src="https://img.icons8.com/color/480/000000/youtube-play.png"/>
+          <img className="instagram-logo" src="https://img.icons8.com/fluency/240/000000/instagram-new.png"/>
           <div
           className="navbar-button">  {isTurkish ? "Giriş Yap" : "Sign In" }</div>
 
@@ -152,7 +154,7 @@ borderLeft: isClickFlag2 && "2px solid white",
 
 }}>
  
- <img src={eng} className="navbar-flag-eng" alt="english"  onClick={() => {setGlobalState("isTurkish", false); setİsClickFlag(false);  setİsClickFlag2(true)}} />
+ <img src=" https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-uk-flag-countrys-flags-justicon-flat-justicon.png " className="navbar-flag-eng" alt="english"  onClick={() => {setGlobalState("isTurkish", false); setİsClickFlag(false);  setİsClickFlag2(true)}} />
  </div>
 
  </div>
