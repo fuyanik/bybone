@@ -26,6 +26,10 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default class SimpleSlider extends Component {
   render() {
+
+    const mq = window.matchMedia( "(max-width: 768px)" );
+
+    
     const settings = {
       dots: true,
       infinite: true,
@@ -50,48 +54,98 @@ export default class SimpleSlider extends Component {
             <LazyLoadImage className="react-slick-image" src={r3} />
           </div>
         
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r13} />
+          {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r4} />
+          
           </div>
+        }
 
-         
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r2} />
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r6} />
+          
           </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r3} />
-          </div>
-        
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r13} />
-          </div>
+        }
+           
 
-         
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r2} />
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r7} />
+          
           </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r3} />
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r8} />
+          
           </div>
-        
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r13} />
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r9} />
+          
           </div>
-
-         
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r2} />
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r10} />
+          
           </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r3} />
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r11} />
+          
           </div>
-        
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r13} />
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r12} />
+          
           </div>
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r13} />
+          
+          </div>
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r14} />
+          
+          </div>
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r15} />
+          
+          </div>
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r17} />
+          
+          </div>
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r18} />
+          
+          </div>
+        }
+        {mq.matches && 
+           <div className="react-slick-item">
+           <LazyLoadImage className="react-slick-image" src={r16} />
+          
+          </div>
+        }
+           
+          
+          
+          
+          
 
          
          
