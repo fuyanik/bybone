@@ -50,7 +50,7 @@
 .about-us-main-center h2 {
     z-index: 2;
     bottom: 23vh;
-    border-bottom: 2px solid rgb(151, 44, 44);
+    
     position: relative;
     font-size: 49px;
     letter-spacing: 4px;
@@ -246,7 +246,7 @@
      .about-us-main-center h2 {
          z-index: 2;
          bottom: 0vh;
-         border-bottom: 2px solid rgb(151, 44, 44);
+       
          position: relative;
          font-size: 49px;
          letter-spacing: 4px;

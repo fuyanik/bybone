@@ -5,9 +5,9 @@ import Navbar from "../../components/1.Navbar/navbar";
 import "../collections.css";
 import CollectionsHeader from "../collectionsHeader";
 import DeleteCollections from "./deleteCollections";
-import {useAuthState} from "react-firebase-hooks/auth";
+//import {useAuthState} from "react-firebase-hooks/auth";
 
-import { setGlobalState, useGlobalState } from "../../hookState.js";
+import { useGlobalState } from "../../hookState.js";
 
 
 
@@ -18,7 +18,7 @@ const Blance = () => {
   const[isTurkish] = useGlobalState("isTurkish");
 
   // user status control
-  const [user] = useAuthState(auth);
+  //const [user] = useAuthState(auth);
   
   // all user data array
   const [articles, setArticles] = useState([]);
@@ -47,7 +47,7 @@ const Blance = () => {
                const getClass3 = idx => (`item ${clicked[idx] ? ' collection-item-texts-head-selected' : ' collection-item-texts-head'}`);
                const getClass4 = idx => (`item ${clicked[idx] ? ' collection-item-texts-right-selected' : ' collection-item-texts-right'}`);
 
-                console.log(user);
+               
             
     return (
       <> 
