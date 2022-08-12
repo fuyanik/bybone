@@ -1,6 +1,6 @@
 import YoutubeEmbed from "../3.HeroFooter/youtubeEmbed";
 import "./hero.css";
-
+import {Routes, Route, Link, NavLink} from 'react-router-dom';
 // import illüst from './illüst.png';
 //   <img src={illüst} className="illüst" alt="logo"  data-aos="fade-left"  data-aos-duration="1100" data-aos-delay="3000" />
 import { setGlobalState, useGlobalState } from "../../hookState.js";
@@ -24,11 +24,11 @@ const Hero = () => {
 
                  <div className="hero-main-text-buttons"> 
                      
-                         <a style={
+                         <Link style={
                           {textDecoration: "none",}
-                         }  href="/contact" className="hero-button"  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="700"> {isTurkish ? "İLETİŞİM" : "LET'S WORK"} </a>
+                         }  to="/contact" className="hero-button"  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="700"> {isTurkish ? "İLETİŞİM" : "LET'S WORK"} </Link>
                         
-                    <a href="/about">      <button class="learn-more"   data-aos="fade-left"  data-aos-duration="600" data-aos-delay="900"  >
+                    <Link to="/about">      <button class="learn-more"   data-aos="fade-left"  data-aos-duration="600" data-aos-delay="900"  >
                                 
                                 <span class="circle" aria-hidden="true">
                                     <span class="icon arrow"></span>
@@ -36,7 +36,7 @@ const Hero = () => {
                                
                                 <span class="button-text">{isTurkish ? "Daha Fazla" : "Learn More"}</span>
                           
-                          </button> </a>
+                          </button> </Link>
                           
                       
                         
