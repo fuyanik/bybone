@@ -3,28 +3,30 @@ import "./hero.css";
 
 // import illüst from './illüst.png';
 //   <img src={illüst} className="illüst" alt="logo"  data-aos="fade-left"  data-aos-duration="1100" data-aos-delay="3000" />
-
+import { setGlobalState, useGlobalState } from "../../hookState.js";
 const Hero = () => {
-
+  
+  const[isTurkish] = useGlobalState("isTurkish");
   var mq = window.matchMedia( "(max-width: 768px)" );
+
     return (
        <div className="hero" id="header-route"> 
               
               
           <div className="hero-main"> 
                
-               
+        
              <div className="hero-main-text"> 
 
-                 <p  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="100"> We are byBone, </p>
-                 <h2  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="300">SIMA PORCELAIN AND KITCHENWARE..</h2>
-                 <p data-aos="fade-up"  data-aos-duration="600" data-aos-delay="500">Introduce the product here. A small description about what it is and how it helps the user. </p>
+                 <p  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="100"> {isTurkish ? "ByBone INNOVATION" : "We are byBone,"} </p>
+                 <h2  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="300">{isTurkish ? "SİMA PORSELEN VE MUTFAK EŞYALARI" : "SIMA PORCELAIN AND KITCHENWARE."}</h2>
+                 <p data-aos="fade-up"  data-aos-duration="600" data-aos-delay="500">{isTurkish ? "  Güçlü teknik kadromuz ile yenilikçi, dinamik, verimli, güvenilir bir takım ruhu anlayışında; kalite, zamanındalık ve müşteri memnuniyeti ilkelerinden taviz vermeden hizmet sunar." : "In an innovative, dynamic, efficient, reliable team spirit understanding with our strong technical staff; offers a service that compromises quality, timeliness and information about customers"}</p>
 
                  <div className="hero-main-text-buttons"> 
                      
                          <a style={
                           {textDecoration: "none",}
-                         }  href="/contact" className="hero-button"  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="700"> LET'S WORK </a>
+                         }  href="/contact" className="hero-button"  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="700"> {isTurkish ? "İLETİŞİM" : "LET'S WORK"} </a>
                         
                     <a href="/about">      <button class="learn-more"   data-aos="fade-left"  data-aos-duration="600" data-aos-delay="900"  >
                                 
@@ -32,7 +34,7 @@ const Hero = () => {
                                     <span class="icon arrow"></span>
                                 </span>
                                
-                                <span class="button-text">Learn More</span>
+                                <span class="button-text">{isTurkish ? "Daha Fazla" : "Learn More"}</span>
                           
                           </button> </a>
                           

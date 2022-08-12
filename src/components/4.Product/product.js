@@ -1,11 +1,13 @@
 import "./product.css"
 import logos from './images/logos9.png';
 import arrow from './images/arrow.png';
+import { setGlobalState, useGlobalState } from "../../hookState.js";
 
 import ProductButton from "./productButton";
 import {useState, } from 'react';
 const Product = () => { 
-
+  
+  const[isTurkish] = useGlobalState("isTurkish");
 
 
     return(
@@ -18,8 +20,8 @@ const Product = () => {
               data-aos-delay="10"
               data-aos-offset="0" > 
             
-             <h1 id="product-route">THE PRODUCT</h1>
-             <p>Introduce the product here. A small description about what it is and how it helps the user. You can also add some photos below.</p>
+             <h1 id="product-route">{isTurkish ? "KENAR ÇİP GARANTİSİ" : "EDGE CHIP WARRANTY "}</h1>
+             <p>{isTurkish ? "Sert Malzemeler sizi her yıl Yontma plakaları yenilemekten kurtarır." : "Hard Materials save you on renewing Chipped plates each year."}</p>
             </div>
            
             

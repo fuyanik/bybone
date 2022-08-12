@@ -86,19 +86,19 @@
    position: relative;
   
    width: 98%;
-   height: 70%;
-   object-fit: cover;
- 
+   height: 65%;
+   object-fit: scale-down; 
 }
 .collection-item-image-selected{
    align-self: center;
    transition: 500ms;
    position: relative;
    top: 0px;
-   width: 410px;
-   height: 400px;
+   width: 570px;
+   height: 470px;
+ 
   /* border 2px solid red; */
-   object-fit: cover;
+   object-fit: scale-down;
 
    
 }

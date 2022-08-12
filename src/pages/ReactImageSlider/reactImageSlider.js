@@ -43,71 +43,55 @@ export default class SimpleSlider extends Component {
         <Slider {...settings}>
        
           <div className="react-slick-item">
-            <LazyLoadImage src={r2} />
+            <LazyLoadImage className="react-slick-image" src={r2} />
           </div>
          
           <div className="react-slick-item">
-            <LazyLoadImage src={r3} />
+            <LazyLoadImage className="react-slick-image" src={r3} />
           </div>
         
           <div className="react-slick-item">
-            <LazyLoadImage src={r4} />
+            <LazyLoadImage className="react-slick-image" src={r4} />
           </div>
           
           <div className="react-slick-item">
-            <LazyLoadImage src={r5} />
+            <LazyLoadImage className="react-slick-image" src={r5} />
+          </div>
+         
+         
+
+         
+         
+          <div className="react-slick-item">
+            <LazyLoadImage className="react-slick-image" src={r8} />
+          </div>
+         
+         
+          <div className="react-slick-item">
+            <LazyLoadImage className="react-slick-image" src={r10} />
+          </div>
+         
+         
+         
+         
+         
+          <div className="react-slick-item">
+            <LazyLoadImage className="react-slick-image" src={r13} />
+          </div>
+         
+        
+         
+       
+          <div className="react-slick-item">
+            <LazyLoadImage  className="react-slick-image"src={r16} />
           </div>
          
           <div className="react-slick-item">
-            <LazyLoadImage src={r6} />
+            <LazyLoadImage className="react-slick-image" src={r17} />
           </div>
          
           <div className="react-slick-item">
-            <LazyLoadImage src={r7} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r8} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r9} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r10} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r11} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r12} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r13} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r14} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r15} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r16} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r17} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage src={r18} />
+            <LazyLoadImage  className="react-slick-image"src={r18} />
           </div>
          
          

@@ -129,8 +129,8 @@ const Navbar = () => {
               
 
         
-          <img className="youtube-logo" src="https://img.icons8.com/color/480/000000/youtube-play.png"/>
-          <img className="instagram-logo" src="https://img.icons8.com/fluency/240/000000/instagram-new.png"/>
+          <a href="https://www.youtube.com/channel/UCjzVRJNLr13_u0sDH6OGFWw" target="_blank" ><img className="youtube-logo" src="https://img.icons8.com/color/480/000000/youtube-play.png"/></a>
+          <a href="https://www.instagram.com/bybone.innovation/" target="_blank"><img className="instagram-logo" src="https://img.icons8.com/fluency/240/000000/instagram-new.png"/></a>
           <div
           className="navbar-button">  {isTurkish ? "Giriş Yap" : "Sign In" }</div>
 

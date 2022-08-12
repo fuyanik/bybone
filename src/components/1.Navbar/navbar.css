@@ -76,7 +76,7 @@
 .navbar-button {
   
  position: relative;
- right: -10%;
+ right: -6%;
  cursor: pointer;
  display: flex;
  height: 42px;
@@ -455,23 +455,21 @@ width: 100%;
 .fincan-text{
   font-family: "Poppins";
   position: absolute;
-  left: 58.4%;
-  top: 44%;
-  font-size: 23px;
-  color: white;
-  font-weight: 400;
+
   
 }
 
 .instagram-logo{
   position: absolute;
-  left: 79%;
+  left: 81%;
+  bottom: 24%;
   width: 40px;
   cursor: pointer;
 }
 .youtube-logo{
   position: absolute;
-  left: 75.5%;
+  left: 77%;
+  bottom: 1%;
   width: 50px;
   cursor: pointer;
 }

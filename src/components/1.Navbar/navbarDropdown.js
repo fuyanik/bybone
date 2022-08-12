@@ -27,7 +27,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                   <img src={dropdownİmage2} className ="dropdown-image" />
                       <span className='dropdown-divider'>______________________________</span>
                       <div className='fincan-line'></div>
-                      <div className='fincan-text'>{`Fincanlar&Tabaklar ➔`}</div>
+                      <a href='/fincantabak' className='fincan-text'>{`Fincanlar&Tabaklar ➔`}</a>
 
        {/* Dekorsuz*/}
                       <div className="dropdown-item-line"> 

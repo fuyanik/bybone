@@ -64,6 +64,7 @@ import Gabbro from './pages/35.Gabbro/collections';
 import Flavor from './pages/36.Flavor/collections';
 import SimpleSlider from './pages/ReactImageSlider/reactImageSlider';
 import LoginPage from './pages/Auth/login/login';
+import FincanlarTabaklar from './pages/37.FincanlarTabaklar/collections';
 
 
 
@@ -140,6 +141,10 @@ export default function App() {
 
             <Route path="/slider" element={<SimpleSlider/>} />
             <Route path="/login" element={<LoginPage/>} />
+
+            <Route path="/fincantabak" element={<FincanlarTabaklar/>} />
+
+
             
 
             
