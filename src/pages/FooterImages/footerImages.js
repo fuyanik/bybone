@@ -38,7 +38,7 @@ import p34 from "./images/34.jpg";
 import p35 from "./images/35.jpg";
 
 import { setGlobalState, useGlobalState } from "../../hookState.js";
-
+import {Routes, Route, Link, NavLink} from 'react-router-dom';
 
 
 const FooterImages = () => { 
@@ -52,7 +52,7 @@ const FooterImages = () => {
               <LazyLoadImage src={footerImagesImage} className="footer-images-main-left"/>
               <div className="footer-images-main-right">
 
-                  <a style={{ textDecoration: "none"  }}   href="/IslandVelho" className="footer-images-main-right-items">   <LazyLoadImage  src="https://i.im.ge/2022/08/12/OMJLL0.1.md.jpg"  alt="image"  />  <p>Island Velho</p>  </a>
+                  <Link style={{ textDecoration: "none"  }}   to="/IslandVelho" className="footer-images-main-right-items">   <LazyLoadImage  src="https://i.im.ge/2022/08/12/OMJLL0.1.md.jpg"  alt="image"  />  <p>Island Velho</p>  </Link>
                   <a style={{ textDecoration: "none"  }}   href="/IslandOmbra" className="footer-images-main-right-items">  <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJ5PG.2.md.jpg" alt="image"  /> <p>Island Ombra</p> </a>
                   <a style={{ textDecoration: "none"  }}   href="IslandOnix" className="footer-images-main-right-items">  <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJ0qL.3.md.jpg" alt="image"  /> <p>Island onix</p> </a>
                   <a style={{ textDecoration: "none"  }}  href="/Island" className="footer-images-main-right-items"> <LazyLoadImage src="https://i.im.ge/2022/08/12/OMJhnc.4.md.jpg" alt="image"  /> <p>Island</p> </a>
