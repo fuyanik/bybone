@@ -56,8 +56,8 @@ const FooterImages = () => {
                   <a style={{ textDecoration: "none"  }}   href="/IslandOmbra" className="footer-images-main-right-items">  <LazyLoadImage src={p2} alt="image"  /> <p>Island Ombra</p> </a>
                   <a style={{ textDecoration: "none"  }}   href="IslandOnix" className="footer-images-main-right-items">  <LazyLoadImage src={p3} alt="image"  /> <p>Island onix</p> </a>
                   <a style={{ textDecoration: "none"  }}  href="/Island" className="footer-images-main-right-items"> <LazyLoadImage src={p4} alt="image"  /> <p>Island</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/SmoothYellow" className="footer-images-main-right-items"> <LazyLoadImage src={p5} alt="image"  /> <p>Smooth and Yellow</p> </a>
-                  <a style={{ textDecoration: "none"  }}  href="/SmoothBlue" className="footer-images-main-right-items"> <LazyLoadImage src={p6} alt="image" /> <p>Smooth and Blue</p> </a>
+                  <a style={{ textDecoration: "none"  }}  href="/SmoothYellow" className="footer-images-main-right-items"> <LazyLoadImage src={p5} alt="image"  /> <p>Smooth Amb. Yellow</p> </a>
+                  <a style={{ textDecoration: "none"  }}  href="/SmoothBlue" className="footer-images-main-right-items"> <LazyLoadImage src={p6} alt="image" /> <p>Smooth Amb. Blue</p> </a>
                   <a style={{ textDecoration: "none"  }}  href="/SmoothReaction" className="footer-images-main-right-items"> <LazyLoadImage src={p7} alt="image" /> <p>Smooth Reaction</p> </a>
                   <a style={{ textDecoration: "none"  }}  href="/Smooth" className="footer-images-main-right-items"> <LazyLoadImage src={p8} alt="image" /> <p>Smooth</p> </a>
 

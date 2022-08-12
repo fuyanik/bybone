@@ -135,7 +135,7 @@ const NavbarDropdown = ({onMouse,onLeave,display}) => {
                                <Link to="/CowryPurple"  style={{   textDecoration: "none",  color: "white",   }}>       <div className='image-area4'> <li>Cowry Purple</li> {isTurkish ?  <img src={newImage2}/>  : <img src={newImage}/> }  </div> </Link>
                                <Link to="/CowryBlack"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Black</li> </Link>
                               <Link to="/CowryYellow"  style={{   textDecoration: "none",  color: "white",   }}>   <li>Cowry Yellow</li> </Link>
-                              <Link to="/fincantabak"  style={{   textDecoration: "none",  color: "white", position:"relative",
+                              <Link to="/"  style={{   textDecoration: "none",  color: "white", position:"relative",
                          top:"20px"  }}>   <li > {isTurkish ? `Cups&Places ➔` : `Fincanlar&Tabaklar ➔`}</li></Link>
                                
                            </ul>

@@ -29,7 +29,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    left: -8%;
+    left: -4%;
     display: flex;
     list-style: none;
     color: rgba(255, 255, 255, 0.944);
@@ -296,7 +296,7 @@ width: 100%;
 
 .navbar-all-flags{
   position: relative;
-  right: 25px;
+  right: 7px;
   display: flex;
   flex-direction: column;
   gap: 10px;

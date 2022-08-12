@@ -55,42 +55,7 @@ export default class SimpleSlider extends Component {
           </div>
 
          
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r5} />
-          </div>
          
-         
-
-         
-         
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r8} />
-          </div>
-         
-         
-          
-         
-         
-         
-         
-      
-         
-        
-         
-       
-          <div className="react-slick-item">
-            <LazyLoadImage  className="react-slick-image"src={r16} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r17} />
-          </div>
-         
-          <div className="react-slick-item">
-            <LazyLoadImage  className="react-slick-image"src={r18} />
-          </div>
-       
-          
          
 
         </Slider>
