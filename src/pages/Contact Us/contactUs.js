@@ -4,7 +4,9 @@ import contactCard from './contactCard.png';
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { setGlobalState, useGlobalState } from "../../hookState.js";
-  
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import NavbarSide from "../../components/1.Navbar/components/navbarSide";
 
 
@@ -19,8 +21,9 @@ const ContactUs = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    console.log("sendEmail");
+  
     e.preventDefault();
+    toast.success("Email sent successfully!",);
 
     emailjs.sendForm('service_pl5i85y', 'template_1j2gzyl', form.current, '-nzf2NGBbFkxocsFX')
       .then((result) => {
@@ -132,6 +135,7 @@ const ContactUs = () => {
  
    >{isTurkish ? "Formu Gönder" : "Submit Form"}</span>
 </button>
+<ToastContainer />
       </form>
           </div>
      
