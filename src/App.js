@@ -65,6 +65,7 @@ import Flavor from './pages/36.Flavor/collections';
 import SimpleSlider from './pages/ReactImageSlider/reactImageSlider';
 import LoginPage from './pages/Auth/login/login';
 import FincanlarTabaklar from './pages/37.FincanlarTabaklar/collections';
+import NavbarSide from './components/1.Navbar/components/navbarSide';
 
 
 
@@ -72,9 +73,11 @@ import FincanlarTabaklar from './pages/37.FincanlarTabaklar/collections';
 
 export default function App() {
   return (
-  
+  <> 
+
    <BrowserRouter>
      <Routes>
+  
            <Route path="/" element={<Home/>} />
            <Route path="/contact" element={<ContactUs/>} />
            <Route path="/about" element={<AboutUs/>} />
@@ -158,6 +161,7 @@ export default function App() {
      </Routes>
      
    </BrowserRouter>
+   </>
 
   
   

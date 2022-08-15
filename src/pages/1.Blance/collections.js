@@ -7,13 +7,15 @@ import CollectionsHeader from "../collectionsHeader";
 import DeleteCollections from "./deleteCollections";
 //import {useAuthState} from "react-firebase-hooks/auth";
 
-import { useGlobalState } from "../../hookState.js";
+import { setGlobalState ,useGlobalState } from "../../hookState.js";
+import NavbarSide from "../../components/1.Navbar/components/navbarSide";
 
 
 
 
 const Blance = () => {
-  
+  const[isDisplaySideNavbar] = useGlobalState("isDisplaySideNavbar");
+  setGlobalState("isDisplaySideNavbar",false);
   //leangue control
   const[isTurkish] = useGlobalState("isTurkish");
 
@@ -52,6 +54,7 @@ const Blance = () => {
     return (
       <> 
       <Navbar/>
+      { isDisplaySideNavbar && <NavbarSide/> }   
         <div className="collections"> 
         
         

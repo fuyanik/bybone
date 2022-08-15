@@ -375,6 +375,7 @@ collection-item-texts-right-selected{
  }
 
 
+
  .collections-header{
    margin-top: 88px;
    width: 100vw;
@@ -394,7 +395,6 @@ collection-item-texts-right-selected{
 
  
  }
-
 
 
 
@@ -440,8 +440,8 @@ collection-item-texts-right-selected{
       
       display: flex;
       flex-direction: column;
-      width: 160px;
-      height: 190px;
+      width: 180px;
+      height: 240px;
       background-color: rgb(255, 255, 255);
       cursor: pointer;
       box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 8px 8px, rgba(0, 0, 0, 0.09) 0px 12px 1px;
@@ -505,12 +505,27 @@ collection-item-texts-right-selected{
       
    }
 
-   .collection-item-texts-head h2{
+   .collection-item-texts-head{
       position: relative;
-      left: 5px;
+      top: -10px;
+      display: flex;
+      flex-direction: column;
+      width: 30vw;
+      height: 8vh;
+      
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 20px;
+      background-color: rgb(255, 255, 255);
+      padding-inline: 10px;
+   }
+
+   .collection-item-texts-head h2{
+      margin-top: 14px;
+      
+      left: 0px;
       font-family: 'Roboto Flex', sans-serif;
       color: rgba(0, 0, 0, 0.712);
-      font-size: 9px;
+      font-size: 8px;
       text-align: center;
    }
    
@@ -519,7 +534,7 @@ collection-item-texts-right-selected{
       top: -5px;
       position: relative;
       font-family: 'Quicksand', sans-serif;
-      font-size: 8px;
+      font-size: 7px;
       color: #000000;
    }
    
@@ -619,6 +634,29 @@ collection-item-texts-right-selected{
    position: relative;
    top: -15px;
 
+}
+
+
+
+
+.collections-header{
+   margin-top: 70px;
+   width: 100vw;
+   height: 20vh;
+   background: rgb(87,91,94);
+   background: linear-gradient(0deg, rgba(87,91,94,1) 4%, rgba(43,48,52,1) 86%);
+   padding-left: 10vw;
+   display: flex;
+   align-items: center;
+ }
+
+ collection-item-texts-head h2{
+   position: relative;
+   left: 0px;
+   font-family: 'Roboto Flex', sans-serif;
+   color: rgba(0, 0, 0, 0.712);
+   font-size: 16px;
+   text-align: center;
 }
 
 
