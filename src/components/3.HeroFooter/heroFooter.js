@@ -51,7 +51,7 @@ const HeroFooter = () => {
   
   
   
-             <div className="app-footer-right"  > 
+             <div  className="app-footer-right"  > 
               
              
 

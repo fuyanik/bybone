@@ -42,7 +42,7 @@ export default class SimpleSlider extends Component {
       pauseOnHover: false
     };
     return (
-      <div className="react-slick">
+      <div data-aos="fade-up"  data-aos-duration="1900" data-aos-delay="000" className="react-slick">
       
         <Slider {...settings}>
        

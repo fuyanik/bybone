@@ -20,8 +20,8 @@ const Product = () => {
               data-aos-delay="10"
               data-aos-offset="0" > 
             
-             <h1 id="product-route">{isTurkish ? "KENAR ÇİP GARANTİSİ" : "EDGE CHIP WARRANTY "}</h1>
-             <p>{isTurkish ? "Sert Malzemeler sizi her yıl Yontma plakaları yenilemekten kurtarır." : "Hard Materials save you on renewing Chipped plates each year."}</p>
+             <h1 data-aos="fade-up"  data-aos-duration="2600" data-aos-delay="5000" id="product-route">{isTurkish ? "KENAR ÇİP GARANTİSİ" : "EDGE CHIP WARRANTY "}</h1>
+             <p data-aos="fade-up"  data-aos-duration="2300" data-aos-delay="5000" >{isTurkish ? "Sert Malzemeler sizi her yıl Yontma plakaları yenilemekten kurtarır." : "Hard Materials save you on renewing Chipped plates each year."}</p>
             </div>
            
             

@@ -18,9 +18,9 @@ const Hero = () => {
         
              <div className="hero-main-text"> 
 
-                 <p  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="100"> {isTurkish ? "ByBone INNOVATION" : "We are byBone,"} </p>
-                 <h2  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="300">{isTurkish ? "ByBone PORSELEN VE MUTFAK EŞYALARI" : "ByBone PORCELAIN AND KITCHENWARE."}</h2>
-                 <p data-aos="fade-up"  data-aos-duration="600" data-aos-delay="500">{isTurkish ? "  Güçlü teknik kadromuz ile yenilikçi, dinamik, verimli, güvenilir bir takım ruhu anlayışında; kalite, zamanındalık ve müşteri memnuniyeti ilkelerinden taviz vermeden hizmet sunar." : "In an innovative, dynamic, efficient, reliable team spirit understanding with our strong technical staff; offers a service that compromises quality, timeliness and information about customers"}</p>
+                 <p  data-aos="fade-up"  data-aos-duration="1100" data-aos-delay="000"> {isTurkish ? "ByBone INNOVATION" : "We are byBone,"} </p>
+                 <h2  data-aos="fade-up"  data-aos-duration="1100" data-aos-delay="000">{isTurkish ? "ByBone PORSELEN VE MUTFAK EŞYALARI" : "ByBone PORCELAIN AND KITCHENWARE."}</h2>
+                 <p data-aos="fade-up"  data-aos-duration="1100" data-aos-delay="00">{isTurkish ? "  Güçlü teknik kadromuz ile yenilikçi, dinamik, verimli, güvenilir bir takım ruhu anlayışında; kalite, zamanındalık ve müşteri memnuniyeti ilkelerinden taviz vermeden hizmet sunar." : "In an innovative, dynamic, efficient, reliable team spirit understanding with our strong technical staff; offers a service that compromises quality, timeliness and information about customers"}</p>
 
                  <div className="hero-main-text-buttons"> 
                      
@@ -46,7 +46,7 @@ const Hero = () => {
                </div> 
                  
             
-              <div className="hero-main-right">  
+              <div data-aos="fade-left"  data-aos-duration="1800" data-aos-delay="300" className="hero-main-right">  
               
               {mq.matches ?   <iframe
       

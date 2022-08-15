@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import HeroFooter from "./components/3.HeroFooter/heroFooter";
 import Product from "./components/4.Product/product";
-import Cards from "./components/5.Cards/cards";
+
 
 
 
