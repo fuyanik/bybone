@@ -47,7 +47,7 @@ const FooterImages = () => {
 
         <div className="Footer-Images">
 
-          <h1 className="footer-images-header">{isTurkish ? "KOLEKSİYON FOTOĞRAFLARI" :"COLLECTİON IMAGES" }</h1>
+          <h1 className="footer-images-header">{isTurkish ? "KOLEKSİYON FOTOĞRAFLARI" :"COLLECTION IMAGES" }</h1>
            <div className="footer-images-main">
               <LazyLoadImage src={footerImagesImage} className="footer-images-main-left"/>
               <div className="footer-images-main-right">

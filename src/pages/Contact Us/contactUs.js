@@ -23,7 +23,15 @@ const ContactUs = () => {
   const sendEmail = (e) => {
   
     e.preventDefault();
-    toast.success("Email sent successfully!",);
+    toast.success('Email sent successfully.', {
+      position: "bottom-right",
+      autoClose: 6000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
 
     emailjs.sendForm('service_pl5i85y', 'template_1j2gzyl', form.current, '-nzf2NGBbFkxocsFX')
       .then((result) => {
