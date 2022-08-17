@@ -24,16 +24,36 @@ const Navbar = () => {
        const[isTurkish] = useGlobalState("isTurkish");
        //  onClick={() =>  setGlobalState("isTurkish", false) }
        const[isDisplaySideNavbar] = useGlobalState("isDisplaySideNavbar");
-   
+
+       const [isHoverNavbar, setIsHoverNavbar] = useState(false);
+     //navbar change opacitiy and color when user scroll in
+     const [scrollNumber, setScrollNumber] = useState(0);
     
 
+       window.addEventListener('scroll', function() {
+   
+    
+   
+              setScrollNumber(window.pageYOffset);
+          
+              scrollNumber  < 20 ? setIsHoverNavbar(false) : setIsHoverNavbar(true);
+              console.log(scrollNumber);
+             
+             });
     
 
       
 
   return (
 
-   <div className="Navbar"  data-aos="fade-down"  data-aos-duration="700">
+   <div 
+   style={{
+       transition: "all 0.5s ease-in-out",
+       backgroundColor:  isHoverNavbar && "#2b3034c7",
+   }}
+   onMouseMove={() => setIsHoverNavbar(true)}
+   onMouseLeave={() => setIsHoverNavbar(false)}
+   className="Navbar"  data-aos="fade-down"  data-aos-duration="700">
 
  
    

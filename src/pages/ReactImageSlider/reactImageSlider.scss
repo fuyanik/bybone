@@ -2,7 +2,7 @@
     width: 100vw;
    z-index: 999999;
     background-color: aliceblue;
-    margin-top: 0vh;
+    margin-top: -5vh;
     background: rgb(87,91,94);
   background: linear-gradient(0deg, rgba(87,91,94,1) 26%, rgba(43,48,52,1) 67%);
 
@@ -11,14 +11,14 @@
          align-items: center;
          justify-content: center;
          width: 100vw;
-         height: 100vh;
+         height: 105vh;
          overflow: hidden;
 
          img{
-              
+               object-fit: cover;
                 margin-left: 0vw;
                 width: 100vw;
-                height: 114vh;
+                height: 110vh;
                 
                 border-bottom-left-radius: 0px;
                 border-bottom-right-radius: 0px;

@@ -54,12 +54,12 @@ export default class SimpleSlider extends Component {
             <LazyLoadImage className="react-slick-image" src={r3} />
           </div>
         
-          {mq.matches && 
+        
            <div className="react-slick-item">
            <LazyLoadImage className="react-slick-image" src={r4} />
           
           </div>
-        }
+        
 
         {mq.matches && 
            <div className="react-slick-item">
@@ -69,12 +69,12 @@ export default class SimpleSlider extends Component {
         }
            
 
-        {mq.matches && 
+       
            <div className="react-slick-item">
            <LazyLoadImage className="react-slick-image" src={r7} />
           
           </div>
-        }
+        
         {mq.matches && 
            <div className="react-slick-item">
            <LazyLoadImage className="react-slick-image" src={r8} />
@@ -93,12 +93,12 @@ export default class SimpleSlider extends Component {
           
           </div>
         }
-        {mq.matches && 
+      
            <div className="react-slick-item">
            <LazyLoadImage className="react-slick-image" src={r11} />
           
           </div>
-        }
+        
         {mq.matches && 
            <div className="react-slick-item">
            <LazyLoadImage className="react-slick-image" src={r12} />
@@ -111,18 +111,18 @@ export default class SimpleSlider extends Component {
           
           </div>
         }
-        {mq.matches && 
+          {mq.matches && 
            <div className="react-slick-item">
            <LazyLoadImage className="react-slick-image" src={r14} />
           
-          </div>
-        }
-        {mq.matches && 
+          </div> }
+        
+      
            <div className="react-slick-item">
            <LazyLoadImage className="react-slick-image" src={r15} />
           
           </div>
-        }
+       
         {mq.matches && 
            <div className="react-slick-item">
            <LazyLoadImage className="react-slick-image" src={r17} />

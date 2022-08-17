@@ -2,7 +2,7 @@
   width: 100vw;
   z-index: 999999;
   background-color: aliceblue;
-  margin-top: 0vh;
+  margin-top: -5vh;
   background: rgb(87, 91, 94);
   background: linear-gradient(0deg, rgb(87, 91, 94) 26%, rgb(43, 48, 52) 67%);
 }
@@ -11,13 +11,15 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   overflow: hidden;
 }
 .react-slick .react-slick-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 0vw;
   width: 100vw;
-  height: 114vh;
+  height: 110vh;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
