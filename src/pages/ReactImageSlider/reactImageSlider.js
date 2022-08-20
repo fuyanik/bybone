@@ -47,16 +47,16 @@ export default class SimpleSlider extends Component {
         <Slider {...settings}>
        
           <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r2} />
+            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2zLJ.r2.jpg" />
           </div>
          
           <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src={r3} />
+            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2K9G.r3.jpg" />
           </div>
         
         
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r4} />
+           <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2VRx.r4.jpg" />
           
           </div>
         
@@ -71,7 +71,7 @@ export default class SimpleSlider extends Component {
 
        
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r7} />
+           <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2ZFL.r7.jpg" />
           
           </div>
         
@@ -95,7 +95,7 @@ export default class SimpleSlider extends Component {
         }
       
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r11} />
+           <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2kTa.r11.jpg" />
           
           </div>
         
@@ -119,7 +119,7 @@ export default class SimpleSlider extends Component {
         
       
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r15} />
+           <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2H3y.r15.jpg" />
           
           </div>
        

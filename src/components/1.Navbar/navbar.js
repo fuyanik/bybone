@@ -36,7 +36,7 @@ const Navbar = () => {
    
               setScrollNumber(window.pageYOffset);
           
-              scrollNumber  < 20 ? setIsHoverNavbar(false) : setIsHoverNavbar(true);
+              scrollNumber  < 70 ? setIsHoverNavbar(false) : setIsHoverNavbar(true);
               console.log(scrollNumber);
              
              });
