@@ -144,6 +144,8 @@ export default function App() {
 
             <Route path="/slider" element={<SimpleSlider/>} />
             <Route path="/login" element={<LoginPage/>} />
+            <Route path="/en" element={<Home/>} />
+
 
             <Route path="/fincantabak" element={<FincanlarTabaklar/>} />
 
