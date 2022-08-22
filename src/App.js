@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom';
-import {Routes, Route, Link, NavLink} from 'react-router-dom';
+import {Routes, Route, Link, NavLink,} from 'react-router-dom';
 import Home from './Home';
 import Blance from './pages/1.Blance/collections';
 import Breeze from './pages/2.Breeze/collections';
@@ -77,7 +77,7 @@ export default function App() {
 
    <BrowserRouter>
      <Routes>
-  
+      
            <Route path="/" element={<Home/>} />
            <Route path="/contact" element={<ContactUs/>} />
            <Route path="/about" element={<AboutUs/>} />
@@ -144,11 +144,11 @@ export default function App() {
 
             <Route path="/slider" element={<SimpleSlider/>} />
             <Route path="/login" element={<LoginPage/>} />
-            <Route path="/en" element={<Home/>} />
+            <Route path="en/*" element={<Home/>} />
 
 
             <Route path="/fincantabak" element={<FincanlarTabaklar/>} />
-
+           
 
             
 
