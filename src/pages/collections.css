@@ -377,14 +377,14 @@ collection-item-texts-right-selected{
 
 
  .collections-header{
-   margin-top: 88px;
+  
    width: 100vw;
-   height: 20vh;
+   height: 30vh;
    background: rgb(87,91,94);
    background: linear-gradient(0deg, rgba(87,91,94,1) 4%, rgba(43,48,52,1) 86%);
    padding-left: 10vw;
    display: flex;
-   align-items: center;
+   align-items: flex-end;
  }
 
  .collections-header p {
