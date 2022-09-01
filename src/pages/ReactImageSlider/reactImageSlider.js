@@ -37,7 +37,7 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1,
       autoplay: true,
       speed: 1800,
-      autoplaySpeed: 2800,
+      autoplaySpeed: 3200,
       arrows: false,
       pauseOnHover: false
     };
@@ -45,6 +45,35 @@ export default class SimpleSlider extends Component {
       <div data-aos="fade-up"  data-aos-duration="1900" data-aos-delay="000" className="react-slick">
       
         <Slider {...settings}>
+
+        <div className="react-slick-item">
+            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30k0X.WhatsApp-Image-2022-09-01-at-17-09-46-1.jpg" />
+          </div>
+
+          <div className="react-slick-item">
+            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30fl9.WhatsApp-Image-2022-09-01-at-17-09-46.jpg" />
+          </div>
+
+          <div className="react-slick-item">
+            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30KKK.WhatsApp-Image-2022-09-01-at-17-09-47-1.jpg" />
+          </div>
+
+          <div className="react-slick-item">
+            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30zc8.WhatsApp-Image-2022-09-01-at-17-09-47-2.jpg" />
+          </div>
+
+          <div className="react-slick-item">
+            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30Z6F.WhatsApp-Image-2022-09-01-at-17-09-47.jpg" />
+          </div>
+
+          <div className="react-slick-item">
+            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30Heh.WhatsApp-Image-2022-09-01-at-17-09-48.jpg" />
+          </div>
+
+
+
+
+
        
           <div className="react-slick-item">
             <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2zLJ.r2.jpg" />
