@@ -46,28 +46,28 @@ export default class SimpleSlider extends Component {
       
         <Slider {...settings}>
 
-        <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30k0X.WhatsApp-Image-2022-09-01-at-17-09-46-1.jpg" />
+          <div className="react-slick-item">
+            <img className="react-slick-image" src="https://i.im.ge/2022/09/02/O30k0X.WhatsApp-Image-2022-09-01-at-17-09-46-1.jpg" />
           </div>
 
           <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30fl9.WhatsApp-Image-2022-09-01-at-17-09-46.jpg" />
+            <img className="react-slick-image" src="https://i.im.ge/2022/09/02/O30fl9.WhatsApp-Image-2022-09-01-at-17-09-46.jpg" />
           </div>
 
           <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30KKK.WhatsApp-Image-2022-09-01-at-17-09-47-1.jpg" />
+            <img className="react-slick-image" src="https://i.im.ge/2022/09/02/O30KKK.WhatsApp-Image-2022-09-01-at-17-09-47-1.jpg" />
           </div>
 
           <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30zc8.WhatsApp-Image-2022-09-01-at-17-09-47-2.jpg" />
+            <img className="react-slick-image" src="https://i.im.ge/2022/09/02/O30zc8.WhatsApp-Image-2022-09-01-at-17-09-47-2.jpg" />
           </div>
 
           <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30Z6F.WhatsApp-Image-2022-09-01-at-17-09-47.jpg" />
+            <img className="react-slick-image" src="https://i.im.ge/2022/09/02/O30Z6F.WhatsApp-Image-2022-09-01-at-17-09-47.jpg" />
           </div>
 
           <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/09/02/O30Heh.WhatsApp-Image-2022-09-01-at-17-09-48.jpg" />
+            <img className="react-slick-image" src="https://i.im.ge/2022/09/02/O30Heh.WhatsApp-Image-2022-09-01-at-17-09-48.jpg" />
           </div>
 
 
@@ -76,23 +76,23 @@ export default class SimpleSlider extends Component {
 
        
           <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2zLJ.r2.jpg" />
+            <img className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2zLJ.r2.jpg" />
           </div>
          
           <div className="react-slick-item">
-            <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2K9G.r3.jpg" />
+            <img className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2K9G.r3.jpg" />
           </div>
         
         
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2VRx.r4.jpg" />
+           <img className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2VRx.r4.jpg" />
           
           </div>
         
 
         {mq.matches && 
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r6} />
+           <img className="react-slick-image" src={r6} />
           
           </div>
         }
@@ -100,73 +100,73 @@ export default class SimpleSlider extends Component {
 
        
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2ZFL.r7.jpg" />
+           <img className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2ZFL.r7.jpg" />
           
           </div>
         
         {mq.matches && 
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r8} />
+           <img className="react-slick-image" src={r8} />
           
           </div>
         }
         {mq.matches && 
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r9} />
+           <img className="react-slick-image" src={r9} />
           
           </div>
         }
         {mq.matches && 
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r10} />
+           <img className="react-slick-image" src={r10} />
           
           </div>
         }
       
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2kTa.r11.jpg" />
+           <img className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2kTa.r11.jpg" />
           
           </div>
         
         {mq.matches && 
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r12} />
+           <img className="react-slick-image" src={r12} />
           
           </div>
         }
         {mq.matches && 
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r13} />
+           <img className="react-slick-image" src={r13} />
           
           </div>
         }
           {mq.matches && 
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r14} />
+           <img className="react-slick-image" src={r14} />
           
           </div> }
         
       
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2H3y.r15.jpg" />
+           <img className="react-slick-image" src="https://i.im.ge/2022/08/20/OL2H3y.r15.jpg" />
           
           </div>
        
         {mq.matches && 
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r17} />
+           <img className="react-slick-image" src={r17} />
           
           </div>
         }
         {mq.matches && 
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r18} />
+           <img className="react-slick-image" src={r18} />
           
           </div>
         }
         {mq.matches && 
            <div className="react-slick-item">
-           <LazyLoadImage className="react-slick-image" src={r16} />
+           <img className="react-slick-image" src={r16} />
           
           </div>
         }
