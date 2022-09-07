@@ -9,7 +9,7 @@ const PdfDownload = () => {
 
         console.log("PdfDownload");
 
-       window.location.replace("https://files.fm/down.php?i=au7nwv24c");
+       window.location.replace("https://files.fm/down.php?i=gdk8y7rjd");
     }, [])
 
 
