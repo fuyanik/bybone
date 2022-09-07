@@ -38,6 +38,7 @@ function Home() {
         { isDisplaySideNavbar && <NavbarSide/> }    
    
        <Navbar />
+      
        <SimpleSlider/>
        
        <Hero/>

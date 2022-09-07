@@ -66,6 +66,7 @@ import SimpleSlider from './pages/ReactImageSlider/reactImageSlider';
 import LoginPage from './pages/Auth/login/login';
 import FincanlarTabaklar from './pages/37.FincanlarTabaklar/collections';
 import NavbarSide from './components/1.Navbar/components/navbarSide';
+import PdfDownload from './pages/PdfDownload/pdfDownload';
 
 
 
@@ -83,7 +84,9 @@ export default function App() {
            <Route path="/about" element={<AboutUs/>} />
            <Route path="/product" element={<ProductFeaturesTest/>} />
            <Route path="/signup" element={<Register/>} />
-           <Route path="/login" element={<Login /> } />
+           <Route path="/login" element={<Login/> } />
+
+           <Route path="/image/catalog/pdf/bybone.pdf" element={<PdfDownload/> } />
          
          
 
