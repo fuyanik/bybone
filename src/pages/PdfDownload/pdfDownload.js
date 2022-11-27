@@ -1,15 +1,12 @@
 import React from 'react'
 import { useEffect } from 'react'
-import axios from 'axios'
-import fileDownload from 'js-file-download'
+
 
 const PdfDownload = () => {
 
     useEffect(() => {
-
         console.log("PdfDownload");
-
-       window.location.replace("https://files.fm/down.php?i=gdk8y7rjd");
+        window.location.replace("https://drive.google.com/file/d/1Rn3VCJg0hXIOqvZ1q_vNS5O0_heGuWz1/view?usp=sharing");
     }, [])
 
 
